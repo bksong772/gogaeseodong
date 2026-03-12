@@ -31,8 +31,13 @@ html {
 body {
   background-color: var(--bg);
   color: var(--text);
-  font-family: "Nanum Myeongjo", "Noto Sans KR", Georgia, serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+/* 모든 제목에 Pretendard 강제 적용 (인라인 스타일 명조체 override) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Pretendard", "Noto Sans KR", sans-serif !important;
 }
 
 /* ─── Glassmorphism Navbar ───────────────────────── */
@@ -65,7 +70,7 @@ body {
   color: var(--bg);
   padding: 13px 28px;
   border-radius: var(--radius-btn);
-  font-family: "Nanum Myeongjo", Georgia, serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
   font-size: 14px;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -95,7 +100,7 @@ body {
   color: var(--text);
   padding: 12px 26px;
   border-radius: var(--radius-btn);
-  font-family: "Nanum Myeongjo", Georgia, serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
   font-size: 14px;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -190,7 +195,7 @@ body {
   color: var(--bg);
   padding: 13px 28px;
   border-radius: var(--radius-btn);
-  font-family: "Nanum Myeongjo", Georgia, serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
   font-size: 14px;
   letter-spacing: 0.05em;
   cursor: pointer;
@@ -215,7 +220,7 @@ body {
   color: var(--text);
   padding: 12px 26px;
   border-radius: var(--radius-btn);
-  font-family: "Nanum Myeongjo", Georgia, serif;
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
   font-size: 14px;
   letter-spacing: 0.05em;
   cursor: pointer;

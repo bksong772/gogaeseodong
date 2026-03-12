@@ -60,7 +60,7 @@ export default function StayPage() {
           <h1
             className="leading-[1.05] mb-6"
             style={{
-              fontFamily: "'Nanum Myeongjo', Georgia, serif",
+              fontFamily: "Pretendard, sans-serif",
               fontSize: "clamp(44px, 8vw, 80px)",
               fontWeight: 800,
               color: "#2C1810",
@@ -111,7 +111,7 @@ export default function StayPage() {
                     <div className="flex items-center gap-3 mb-5">
                       <span
                         style={{
-                          fontFamily: "'Nanum Myeongjo', serif",
+                          fontFamily: "Pretendard, sans-serif",
                           fontSize: "20px",
                           color: "rgba(196, 168, 130, 0.6)",
                           fontWeight: 700,
@@ -124,7 +124,7 @@ export default function StayPage() {
                     <h2
                       className="mb-1"
                       style={{
-                        fontFamily: "'Nanum Myeongjo', serif",
+                        fontFamily: "Pretendard, sans-serif",
                         fontSize: "clamp(22px, 3vw, 32px)",
                         fontWeight: 700,
                         color: "#2C1810",
@@ -210,7 +210,7 @@ export default function StayPage() {
                         style={{
                           fontSize: "13px",
                           color: "#C4A882",
-                          fontFamily: "'Nanum Myeongjo', serif",
+                          fontFamily: "Pretendard, sans-serif",
                         }}
                       >
                         {room.name}
@@ -303,7 +303,7 @@ export default function StayPage() {
                 <div className="flex items-center justify-between">
                   <p
                     style={{
-                      fontFamily: "'Nanum Myeongjo', serif",
+                      fontFamily: "Pretendard, sans-serif",
                       fontSize: "22px",
                       fontWeight: 700,
                       color: "#2C1810",

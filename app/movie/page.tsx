@@ -45,7 +45,7 @@ export default function MoviePage() {
           <h1
             className="leading-[1.05] mb-6"
             style={{
-              fontFamily: "'Nanum Myeongjo', Georgia, serif",
+              fontFamily: "Pretendard, sans-serif",
               fontSize: "clamp(44px, 8vw, 80px)",
               fontWeight: 800,
               color: "#2C1810",
@@ -105,7 +105,7 @@ export default function MoviePage() {
                   style={{
                     fontSize: "13px",
                     color: "#C4A882",
-                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontFamily: "Pretendard, sans-serif",
                   }}
                 >
                   서동영화
@@ -141,7 +141,7 @@ export default function MoviePage() {
                       className="text-sm font-medium"
                       style={{
                         color: "#2C1810",
-                        fontFamily: "'Nanum Myeongjo', serif",
+                        fontFamily: "Pretendard, sans-serif",
                       }}
                     >
                       {value}
@@ -195,7 +195,7 @@ export default function MoviePage() {
                 <p
                   className="mb-3"
                   style={{
-                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontFamily: "Pretendard, sans-serif",
                     fontSize: "16px",
                     fontWeight: 700,
                     color: "#B5632A",
@@ -229,7 +229,7 @@ export default function MoviePage() {
             <h2
               className="mb-5"
               style={{
-                fontFamily: "'Nanum Myeongjo', serif",
+                fontFamily: "Pretendard, sans-serif",
                 fontSize: "clamp(20px, 3vw, 28px)",
                 fontWeight: 700,
                 color: "#2C1810",
@@ -276,7 +276,7 @@ export default function MoviePage() {
                 <div className="flex items-center justify-between">
                   <p
                     style={{
-                      fontFamily: "'Nanum Myeongjo', serif",
+                      fontFamily: "Pretendard, sans-serif",
                       fontSize: "22px",
                       fontWeight: 700,
                       color: "#2C1810",

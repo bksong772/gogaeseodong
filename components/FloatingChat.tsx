@@ -134,7 +134,7 @@ export default function FloatingChat() {
               <div>
                 <p
                   style={{
-                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontFamily: "Pretendard, sans-serif",
                     fontSize: "14px",
                     fontWeight: 700,
                     color: "#2C1810",
@@ -225,7 +225,7 @@ export default function FloatingChat() {
                     fontSize: "13px",
                     lineHeight: 1.65,
                     whiteSpace: "pre-wrap",
-                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontFamily: "Pretendard, sans-serif",
                     borderRadius: msg.role === "user" ? "18px 18px 4px 18px" : "18px 18px 18px 4px",
                     ...(msg.role === "user"
                       ? {
@@ -272,7 +272,7 @@ export default function FloatingChat() {
                     background: "transparent",
                     color: "#6B4C3B",
                     cursor: "pointer",
-                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontFamily: "Pretendard, sans-serif",
                     transition: "all 0.18s",
                   }}
                   onMouseEnter={(e) => {
@@ -322,7 +322,7 @@ export default function FloatingChat() {
                 padding: "10px 0",
                 fontSize: "13px",
                 color: "#2C1810",
-                fontFamily: "'Nanum Myeongjo', serif",
+                fontFamily: "Pretendard, sans-serif",
                 outline: "none",
               }}
             />

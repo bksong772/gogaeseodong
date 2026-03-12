@@ -23,7 +23,7 @@ export default function Footer() {
             <p
               className="mb-1"
               style={{
-                fontFamily: "'Nanum Myeongjo', Georgia, serif",
+                fontFamily: "Pretendard, sans-serif",
                 fontSize: "24px",
                 fontWeight: 800,
                 color: "#2C1810",
@@ -64,7 +64,7 @@ export default function Footer() {
                   key={item.href}
                   href={item.href}
                   className="footer-link flex items-center gap-2 text-sm"
-                  style={{ fontFamily: "'Nanum Myeongjo', serif" }}
+                  style={{ fontFamily: "Pretendard, sans-serif" }}
                 >
                   <span style={{ color: "#C4A882" }}>—</span>
                   {item.label}

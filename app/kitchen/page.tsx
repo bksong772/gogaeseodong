@@ -37,7 +37,7 @@ export default function KitchenPage() {
           <h1
             className="leading-[1.05] mb-6"
             style={{
-              fontFamily: "'Nanum Myeongjo', Georgia, serif",
+              fontFamily: "Pretendard, sans-serif",
               fontSize: "clamp(44px, 8vw, 80px)",
               fontWeight: 800,
               color: "#2C1810",
@@ -67,7 +67,7 @@ export default function KitchenPage() {
           </p>
           <p
             className="text-sm font-bold"
-            style={{ color: "#B5632A", fontFamily: "'Nanum Myeongjo', serif" }}
+            style={{ color: "#B5632A", fontFamily: "Pretendard, sans-serif" }}
           >
             ★ 5.0 — 리뷰 31개
           </p>
@@ -103,7 +103,7 @@ export default function KitchenPage() {
                   style={{
                     fontSize: "13px",
                     color: "#C4A882",
-                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontFamily: "Pretendard, sans-serif",
                   }}
                 >
                   서동부엌
@@ -139,7 +139,7 @@ export default function KitchenPage() {
                       className="text-sm font-medium"
                       style={{
                         color: "#2C1810",
-                        fontFamily: "'Nanum Myeongjo', serif",
+                        fontFamily: "Pretendard, sans-serif",
                       }}
                     >
                       {value}
@@ -181,7 +181,7 @@ export default function KitchenPage() {
                 <p
                   className="mb-3"
                   style={{
-                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontFamily: "Pretendard, sans-serif",
                     fontSize: "18px",
                     fontWeight: 700,
                     color: "#B5632A",
@@ -217,7 +217,7 @@ export default function KitchenPage() {
                 <div className="flex items-center justify-between">
                   <p
                     style={{
-                      fontFamily: "'Nanum Myeongjo', serif",
+                      fontFamily: "Pretendard, sans-serif",
                       fontSize: "22px",
                       fontWeight: 700,
                       color: "#2C1810",

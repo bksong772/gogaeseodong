@@ -98,7 +98,7 @@ export default function HomePage() {
           <h1
             className="leading-[1.0] mb-7"
             style={{
-              fontFamily: "'Nanum Myeongjo', Georgia, serif",
+              fontFamily: "Pretendard, sans-serif",
               fontSize: "clamp(52px, 9vw, 110px)",
               fontWeight: 800,
               color: "#FAF5ED",
@@ -166,7 +166,7 @@ export default function HomePage() {
                 <p
                   className="mb-1"
                   style={{
-                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontFamily: "Pretendard, sans-serif",
                     fontSize: "clamp(28px, 4vw, 44px)",
                     fontWeight: 800,
                     color: "#FAF5ED",
@@ -219,7 +219,7 @@ export default function HomePage() {
                     <span className="tag">{space.tag}</span>
                     <span
                       style={{
-                        fontFamily: "'Nanum Myeongjo', serif",
+                        fontFamily: "Pretendard, sans-serif",
                         fontSize: "24px",
                         color: "rgba(196, 168, 130, 0.4)",
                         fontWeight: 700,
@@ -231,7 +231,7 @@ export default function HomePage() {
                   <h2
                     className="mb-1"
                     style={{
-                      fontFamily: "'Nanum Myeongjo', Georgia, serif",
+                      fontFamily: "Pretendard, sans-serif",
                       fontSize: "clamp(20px, 2.5vw, 26px)",
                       fontWeight: 700,
                       color: "#2C1810",
@@ -279,7 +279,7 @@ export default function HomePage() {
               <h2
                 className="leading-snug mb-7"
                 style={{
-                  fontFamily: "'Nanum Myeongjo', serif",
+                  fontFamily: "Pretendard, sans-serif",
                   fontSize: "clamp(26px, 4vw, 36px)",
                   fontWeight: 700,
                   color: "#2C1810",
@@ -329,7 +329,7 @@ export default function HomePage() {
                     </span>
                     <span
                       style={{
-                        fontFamily: "'Nanum Myeongjo', serif",
+                        fontFamily: "Pretendard, sans-serif",
                         fontSize: "15px",
                         color: "#2C1810",
                         lineHeight: 1.7,
@@ -357,7 +357,7 @@ export default function HomePage() {
           <h2
             className="mb-5"
             style={{
-              fontFamily: "'Nanum Myeongjo', serif",
+              fontFamily: "Pretendard, sans-serif",
               fontSize: "clamp(28px, 5vw, 52px)",
               fontWeight: 700,
               color: "#2C1810",
