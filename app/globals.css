@@ -1,0 +1,250 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens ─────────────────────────────── */
+:root {
+  --bg:           #FAF5ED;
+  --bg-dark:      #F0E8D5;
+  --bg-darker:    #E5D9C3;
+  --text:         #2C1810;
+  --text-mid:     #6B4C3B;
+  --text-muted:   #9B7B6A;
+  --accent:       #B5632A;
+  --accent-light: #D4884E;
+  --border:       rgba(196, 168, 130, 0.5);
+  --border-dark:  rgba(139, 98, 80, 0.6);
+  --radius-card:  16px;
+  --radius-btn:   9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Nanum Myeongjo", "Noto Sans KR", Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Glassmorphism Navbar ───────────────────────── */
+.glass-navbar {
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  background: rgba(250, 245, 237, 0.88);
+  border-bottom: 1px solid rgba(196, 168, 130, 0.35);
+  box-shadow: 0 1px 24px rgba(44, 24, 16, 0.06);
+}
+
+/* ─── Cards ─────────────────────────────────────── */
+.card {
+  background: var(--bg);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(44, 24, 16, 0.07);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card-hover:hover {
+  box-shadow: 0 10px 32px rgba(44, 24, 16, 0.13);
+  transform: translateY(-4px);
+  border-color: rgba(181, 99, 42, 0.3);
+}
+
+/* ─── Buttons ────────────────────────────────────── */
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 13px 28px;
+  border-radius: var(--radius-btn);
+  font-family: "Nanum Myeongjo", Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 16px rgba(181, 99, 42, 0.28);
+  font-weight: 700;
+}
+
+.btn-primary:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(181, 99, 42, 0.38);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  padding: 12px 26px;
+  border-radius: var(--radius-btn);
+  font-family: "Nanum Myeongjo", Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1.5px solid rgba(196, 168, 130, 0.8);
+}
+
+.btn-secondary:hover {
+  border-color: var(--text);
+  background: var(--bg-dark);
+  transform: translateY(-1px);
+}
+
+/* ─── Typography Utilities ───────────────────────── */
+.section-label {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  color: var(--accent);
+  text-transform: uppercase;
+  display: block;
+}
+
+.tag {
+  font-size: 11px;
+  color: var(--accent);
+  border: 1px solid rgba(181, 99, 42, 0.35);
+  padding: 3px 12px;
+  border-radius: 9999px;
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 0.04em;
+  background: rgba(181, 99, 42, 0.06);
+  display: inline-block;
+}
+
+.display-serif {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+}
+
+/* ─── Dividers ───────────────────────────────────── */
+.ruled-line {
+  border-bottom: 1px solid var(--border);
+}
+
+.section-divider {
+  border-bottom: 1px solid rgba(196, 168, 130, 0.3);
+}
+
+/* ─── Scrollbar ──────────────────────────────────── */
+::-webkit-scrollbar       { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: rgba(196, 168, 130, 0.6); border-radius: 4px; }
+
+/* ─── Selection ──────────────────────────────────── */
+::selection {
+  background: rgba(181, 99, 42, 0.18);
+  color: var(--text);
+}
+
+/* ─── Utilities ──────────────────────────────────── */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* 히어로 bounce 화살표 */
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50%       { transform: translateX(-50%) translateY(8px); }
+}
+
+/* Footer link hover (server component용 CSS only) */
+.footer-link {
+  color: #6B4C3B;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.footer-link:hover { color: #B5632A; }
+
+/* Timeline row hover */
+.timeline-row { transition: background-color 0.2s ease; }
+.timeline-row:hover { background-color: #FDFAF5; }
+
+/* ─── Legacy aliases (backward compat) ───────────── */
+.vintage-btn-accent {
+  background: var(--accent);
+  color: var(--bg);
+  padding: 13px 28px;
+  border-radius: var(--radius-btn);
+  font-family: "Nanum Myeongjo", Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 2px solid var(--accent);
+  box-shadow: 0 4px 16px rgba(181, 99, 42, 0.28);
+  font-weight: 700;
+}
+.vintage-btn-accent:hover {
+  background: var(--accent-light);
+  border-color: var(--accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(181, 99, 42, 0.38);
+}
+
+.vintage-btn {
+  background: transparent;
+  color: var(--text);
+  padding: 12px 26px;
+  border-radius: var(--radius-btn);
+  font-family: "Nanum Myeongjo", Georgia, serif;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  border: 1.5px solid rgba(196, 168, 130, 0.8);
+}
+.vintage-btn:hover {
+  border-color: var(--text);
+  background: var(--bg-dark);
+  transform: translateY(-1px);
+}
+
+.vintage-box-hover {
+  background: var(--bg);
+  border-radius: var(--radius-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(44, 24, 16, 0.07);
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+.vintage-box-hover:hover {
+  box-shadow: 0 10px 32px rgba(44, 24, 16, 0.13);
+  transform: translateY(-4px);
+  border-color: rgba(181, 99, 42, 0.3);
+}
+
+.vintage-border       { border: 1px solid var(--border); }
+.vintage-border-dark  { border: 1px solid var(--border-dark); }
+.vintage-box          { border: 1px solid var(--border-dark); background: var(--bg); border-radius: 12px; }
