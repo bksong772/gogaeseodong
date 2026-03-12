@@ -45,7 +45,7 @@ export default function MoviePage() {
           <h1
             className="leading-[1.05] mb-6"
             style={{
-              fontFamily: "Pretendard, sans-serif",
+              fontFamily: "Gowun Batang, serif",
               fontSize: "clamp(44px, 8vw, 80px)",
               fontWeight: 800,
               color: "#2C1810",
@@ -105,7 +105,7 @@ export default function MoviePage() {
                   style={{
                     fontSize: "13px",
                     color: "#C4A882",
-                    fontFamily: "Pretendard, sans-serif",
+                    fontFamily: "Gowun Batang, serif",
                   }}
                 >
                   서동영화
@@ -141,7 +141,7 @@ export default function MoviePage() {
                       className="text-sm font-medium"
                       style={{
                         color: "#2C1810",
-                        fontFamily: "Pretendard, sans-serif",
+                        fontFamily: "Gowun Batang, serif",
                       }}
                     >
                       {value}
@@ -195,7 +195,7 @@ export default function MoviePage() {
                 <p
                   className="mb-3"
                   style={{
-                    fontFamily: "Pretendard, sans-serif",
+                    fontFamily: "Gowun Batang, serif",
                     fontSize: "16px",
                     fontWeight: 700,
                     color: "#B5632A",
@@ -229,7 +229,7 @@ export default function MoviePage() {
             <h2
               className="mb-5"
               style={{
-                fontFamily: "Pretendard, sans-serif",
+                fontFamily: "Gowun Batang, serif",
                 fontSize: "clamp(20px, 3vw, 28px)",
                 fontWeight: 700,
                 color: "#2C1810",
@@ -276,7 +276,7 @@ export default function MoviePage() {
                 <div className="flex items-center justify-between">
                   <p
                     style={{
-                      fontFamily: "Pretendard, sans-serif",
+                      fontFamily: "Gowun Batang, serif",
                       fontSize: "22px",
                       fontWeight: 700,
                       color: "#2C1810",

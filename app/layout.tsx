@@ -42,10 +42,10 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
           rel="stylesheet"
         />
-        {/* Pretendard — 한국 힙 브랜드 표준 산세리프 */}
+        {/* 고운바탕 — 전통 바탕체 계열 세리프 */}
         <link
+          href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css"
         />
       </head>
       <body

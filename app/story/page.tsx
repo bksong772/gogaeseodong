@@ -52,7 +52,7 @@ export default function StoryPage() {
           <h1
             className="leading-[1.05]"
             style={{
-              fontFamily: "Pretendard, sans-serif",
+              fontFamily: "Gowun Batang, serif",
               fontSize: "clamp(44px, 8vw, 80px)",
               fontWeight: 800,
               color: "#2C1810",
@@ -73,7 +73,7 @@ export default function StoryPage() {
             <p
               className="leading-tight mb-10"
               style={{
-                fontFamily: "Pretendard, sans-serif",
+                fontFamily: "Gowun Batang, serif",
                 fontSize: "clamp(22px, 4vw, 36px)",
                 fontWeight: 700,
                 color: "#2C1810",
@@ -147,7 +147,7 @@ export default function StoryPage() {
                   <p
                     className="mb-1"
                     style={{
-                      fontFamily: "Pretendard, sans-serif",
+                      fontFamily: "Gowun Batang, serif",
                       fontWeight: 700,
                       fontSize: "16px",
                       color: "#2C1810",
@@ -192,7 +192,7 @@ export default function StoryPage() {
                 <p
                   className="mb-4"
                   style={{
-                    fontFamily: "Pretendard, sans-serif",
+                    fontFamily: "Gowun Batang, serif",
                     fontWeight: 700,
                     fontSize: "17px",
                     color: "#2C1810",
@@ -215,7 +215,7 @@ export default function StoryPage() {
           <h2
             className="mb-5"
             style={{
-              fontFamily: "Pretendard, sans-serif",
+              fontFamily: "Gowun Batang, serif",
               fontSize: "clamp(24px, 4vw, 44px)",
               fontWeight: 700,
               color: "#2C1810",

@@ -37,7 +37,7 @@ export default function KitchenPage() {
           <h1
             className="leading-[1.05] mb-6"
             style={{
-              fontFamily: "Pretendard, sans-serif",
+              fontFamily: "Gowun Batang, serif",
               fontSize: "clamp(44px, 8vw, 80px)",
               fontWeight: 800,
               color: "#2C1810",
@@ -67,7 +67,7 @@ export default function KitchenPage() {
           </p>
           <p
             className="text-sm font-bold"
-            style={{ color: "#B5632A", fontFamily: "Pretendard, sans-serif" }}
+            style={{ color: "#B5632A", fontFamily: "Gowun Batang, serif" }}
           >
             ★ 5.0 — 리뷰 31개
           </p>
@@ -103,7 +103,7 @@ export default function KitchenPage() {
                   style={{
                     fontSize: "13px",
                     color: "#C4A882",
-                    fontFamily: "Pretendard, sans-serif",
+                    fontFamily: "Gowun Batang, serif",
                   }}
                 >
                   서동부엌
@@ -139,7 +139,7 @@ export default function KitchenPage() {
                       className="text-sm font-medium"
                       style={{
                         color: "#2C1810",
-                        fontFamily: "Pretendard, sans-serif",
+                        fontFamily: "Gowun Batang, serif",
                       }}
                     >
                       {value}
@@ -181,7 +181,7 @@ export default function KitchenPage() {
                 <p
                   className="mb-3"
                   style={{
-                    fontFamily: "Pretendard, sans-serif",
+                    fontFamily: "Gowun Batang, serif",
                     fontSize: "18px",
                     fontWeight: 700,
                     color: "#B5632A",
@@ -217,7 +217,7 @@ export default function KitchenPage() {
                 <div className="flex items-center justify-between">
                   <p
                     style={{
-                      fontFamily: "Pretendard, sans-serif",
+                      fontFamily: "Gowun Batang, serif",
                       fontSize: "22px",
                       fontWeight: 700,
                       color: "#2C1810",

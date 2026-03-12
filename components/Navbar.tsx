@@ -25,7 +25,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3" style={{ textDecoration: "none" }}>
             <span
               style={{
-                fontFamily: "Pretendard, sans-serif",
+                fontFamily: "Gowun Batang, serif",
                 fontSize: "20px",
                 fontWeight: 700,
                 color: "#2C1810",
@@ -56,7 +56,7 @@ export default function Navbar() {
                   href={item.href}
                   className="px-4 py-2 rounded-full text-sm transition-all duration-200"
                   style={{
-                    fontFamily: "Pretendard, sans-serif",
+                    fontFamily: "Gowun Batang, serif",
                     letterSpacing: "0.05em",
                     textDecoration: "none",
                     backgroundColor: isActive ? "#B5632A" : "transparent",
@@ -123,7 +123,7 @@ export default function Navbar() {
                 onClick={() => setMenuOpen(false)}
                 className="flex items-center justify-between px-6 py-4 transition-colors"
                 style={{
-                  fontFamily: "Pretendard, sans-serif",
+                  fontFamily: "Gowun Batang, serif",
                   fontSize: "16px",
                   color: isActive ? "#B5632A" : "#2C1810",
                   textDecoration: "none",
