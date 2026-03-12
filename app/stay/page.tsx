@@ -66,16 +66,18 @@ export default function StayPage() {
               color: "#2C1810",
             }}
           >
-            서동여관
+            할머니 집 같은
+            <br />
+            부산의 하룻밤
             <span
               style={{
                 display: "block",
                 fontFamily: "'Playfair Display', serif",
                 fontStyle: "italic",
-                fontSize: "clamp(18px, 3vw, 28px)",
+                fontSize: "clamp(16px, 2.5vw, 24px)",
                 fontWeight: 400,
                 color: "#9B7B6A",
-                marginTop: "10px",
+                marginTop: "12px",
               }}
             >
               Seodong Stay
@@ -85,8 +87,8 @@ export default function StayPage() {
             className="text-sm leading-relaxed mb-4"
             style={{ color: "#6B4C3B", maxWidth: "480px" }}
           >
-            90년대 지어진 오래된 여관입니다. 낡았습니다.<br />
-            그래서 더 좋습니다. 세 개의 방, 각기 다른 이야기.
+            90년대 서동의 낡은 여관. 세 개의 방, 각기 다른 이야기.<br />
+            깔끔하진 않지만, 따뜻합니다.
           </p>
           <p className="text-xs" style={{ color: "#9B7B6A" }}>
             ※ 모든 예약은 Airbnb를 통해 진행됩니다.

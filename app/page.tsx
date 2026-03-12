@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "고개서동 | 부산 서동의 낡은 공간들",
   description:
-    "부산 금정구 서동. 버려지고 낡은 공간들을 다시 쓰임 있게 만드는 프로젝트. 서동여관, 서동부엌, 서동영화.",
+    "부산 금정구 서동. 동네 곳곳의 비어있던 공간들을 하나씩 되살리는 프로젝트. 서동여관, 서동부엌, 서동영화.",
 };
 
 const spaces = [
@@ -15,7 +15,7 @@ const spaces = [
     ko: "서동여관",
     en: "Seodong Stay",
     desc: "취향의방 · 그림의방 · 필사의방",
-    sub: "90년대 여관에서 하룻밤",
+    sub: "할머니 집 같은 부산의 하룻밤",
     tag: "숙박",
     cta: "Airbnb 예약",
   },
@@ -42,9 +42,9 @@ const spaces = [
 ];
 
 const stats = [
-  { label: "운영 중인 공간", value: "3개",     note: "여관 · 부엌 · 영화" },
-  { label: "건물 건축 연도", value: "1990년대", note: "30년이 넘은 건물" },
-  { label: "서동 방문객 리뷰", value: "★ 4.8",  note: "에어비앤비 평균" },
+  { label: "운영 중인 공간", value: "3",     unit: "개",     note: "여관 · 부엌 · 영화" },
+  { label: "건물 건축 연도", value: "1990",   unit: "년대",   note: "30년이 넘은 건물" },
+  { label: "에어비앤비 리뷰", value: "4.8",   unit: "★",      note: "방문객 평균 평점" },
 ];
 
 const manifesto = [
@@ -58,7 +58,7 @@ export default function HomePage() {
   return (
     <div className="pt-16">
 
-      {/* ── 히어로 (풀스크린 영상 배경) ─────────────────────── */}
+      {/* ── 히어로 (풀스크린 영상 + 센터 카피) ─────────────── */}
       <section className="relative min-h-screen flex flex-col justify-end overflow-hidden">
 
         {/* 배경 영상 */}
@@ -73,133 +73,120 @@ export default function HomePage() {
           <source src="/hero.mp4" type="video/mp4" />
         </video>
 
-        {/* 오버레이: 아래로 갈수록 짙어지는 그라디언트 */}
+        {/* 오버레이 */}
         <div
           className="absolute inset-0"
           style={{
             zIndex: 1,
             background:
-              "linear-gradient(to bottom, rgba(44,24,16,0.15) 0%, rgba(44,24,16,0.35) 40%, rgba(44,24,16,0.75) 80%, rgba(44,24,16,0.92) 100%)",
+              "linear-gradient(to bottom, rgba(20,12,8,0.1) 0%, rgba(20,12,8,0.3) 35%, rgba(20,12,8,0.72) 70%, rgba(20,12,8,0.92) 100%)",
           }}
         />
 
-        {/* 콘텐츠 */}
-        <div className="relative px-6 sm:px-8 pb-16 sm:pb-24 pt-40" style={{ zIndex: 2, maxWidth: "1152px", margin: "0 auto", width: "100%" }}>
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_380px] gap-12 lg:gap-20 items-end">
+        {/* 카피 — 좌하단 정렬 */}
+        <div
+          className="relative px-6 sm:px-12 pb-20 sm:pb-28"
+          style={{ zIndex: 2, maxWidth: "1152px", margin: "0 auto", width: "100%" }}
+        >
+          <p
+            className="section-label mb-6"
+            style={{ color: "rgba(240, 213, 184, 0.7)" }}
+          >
+            BUSAN · GEUMJEONG · SEODONG
+          </p>
 
-            {/* 왼쪽: 메인 카피 */}
-            <div>
-              <p
-                className="section-label mb-6"
-                style={{ color: "rgba(240, 213, 184, 0.85)" }}
-              >
-                BUSAN · GEUMJEONG · SEODONG
-              </p>
-              <h1
-                className="leading-[1.05] mb-7"
-                style={{
-                  fontFamily: "'Nanum Myeongjo', Georgia, serif",
-                  fontSize: "clamp(48px, 8vw, 96px)",
-                  fontWeight: 800,
-                  color: "#FAF5ED",
-                  textShadow: "0 2px 24px rgba(0,0,0,0.3)",
-                }}
-              >
-                낡았습니다.
-                <br />
-                <span style={{ color: "#D4884E", fontStyle: "italic" }}>그게 저희</span>
-                <br />
-                자랑입니다.
-              </h1>
-              <p
-                className="text-base leading-relaxed mb-10"
-                style={{
-                  color: "rgba(250, 245, 237, 0.78)",
-                  maxWidth: "400px",
-                }}
-              >
-                부산 금정구 서동. 사람들이 떠난 동네에<br />
-                버려진 공간들이 있었습니다.<br />
-                우리는 그 공간들을 다시 엽니다.
-              </p>
-              <div className="flex flex-wrap items-center gap-4">
-                <Link href="/stay" className="btn-primary">
-                  공간 둘러보기 <ArrowRight size={16} />
-                </Link>
-                <Link
-                  href="/story"
-                  className="btn-secondary"
-                  style={{
-                    borderColor: "rgba(250, 245, 237, 0.45)",
-                    color: "#FAF5ED",
-                  }}
-                >
-                  우리 이야기
-                </Link>
-              </div>
-            </div>
+          <h1
+            className="leading-[1.0] mb-7"
+            style={{
+              fontFamily: "'Nanum Myeongjo', Georgia, serif",
+              fontSize: "clamp(52px, 9vw, 110px)",
+              fontWeight: 800,
+              color: "#FAF5ED",
+              letterSpacing: "-0.01em",
+            }}
+          >
+            아직 모르는
+            <br />
+            <span style={{ color: "#D4884E" }}>부산</span>이
+            <br />
+            있습니다
+          </h1>
 
-            {/* 오른쪽: 통계 카드 */}
-            <div
+          <p
+            className="text-sm sm:text-base leading-relaxed mb-10"
+            style={{
+              color: "rgba(250, 245, 237, 0.65)",
+              maxWidth: "420px",
+            }}
+          >
+            부산 금정구 서동. 동네 곳곳의 비어있던 공간들을<br />
+            하나씩 되살리고 있습니다.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-4">
+            <Link href="/stay" className="btn-primary">
+              서동 구경하기 <ArrowRight size={16} />
+            </Link>
+            <Link
+              href="/story"
+              className="btn-secondary"
               style={{
-                background: "rgba(250, 245, 237, 0.1)",
-                backdropFilter: "blur(16px)",
-                WebkitBackdropFilter: "blur(16px)",
-                border: "1px solid rgba(250, 245, 237, 0.2)",
-                borderRadius: "16px",
-                padding: "32px",
+                borderColor: "rgba(250, 245, 237, 0.35)",
+                color: "#FAF5ED",
               }}
             >
-              <p
-                className="section-label mb-5 pb-5"
-                style={{
-                  color: "rgba(240, 213, 184, 0.85)",
-                  borderBottom: "1px solid rgba(250, 245, 237, 0.2)",
-                }}
-              >
-                RECORD · 서동 기록부
-              </p>
-              {stats.map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-start justify-between py-4"
-                  style={{
-                    borderBottom:
-                      i < stats.length - 1 ? "1px dashed rgba(250, 245, 237, 0.15)" : "none",
-                  }}
-                >
-                  <div>
-                    <p className="text-sm mb-1" style={{ color: "rgba(250,245,237,0.65)" }}>
-                      {item.label}
-                    </p>
-                    <p className="text-xs" style={{ color: "rgba(250,245,237,0.4)" }}>
-                      {item.note}
-                    </p>
-                  </div>
-                  <p
-                    className="text-xl"
-                    style={{
-                      fontFamily: "'Nanum Myeongjo', serif",
-                      fontWeight: 700,
-                      color: "#FAF5ED",
-                    }}
-                  >
-                    {item.value}
-                  </p>
-                </div>
-              ))}
-            </div>
+              우리 이야기
+            </Link>
           </div>
         </div>
 
-        {/* 아래 화살표 */}
+        {/* 스크롤 화살표 */}
         <div
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
           style={{ zIndex: 2, animation: "bounce 2s infinite" }}
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M12 5v14M5 12l7 7 7-7" stroke="rgba(250,245,237,0.5)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 5v14M5 12l7 7 7-7"
+              stroke="rgba(250,245,237,0.4)"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
+        </div>
+      </section>
+
+      {/* ── 통계 스트립 ───────────────────────────────────── */}
+      <section style={{ backgroundColor: "#2C1810" }}>
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-3 divide-x divide-white/10">
+            {stats.map((s) => (
+              <div key={s.label} className="py-10 px-6 text-center">
+                <p
+                  className="mb-1"
+                  style={{
+                    fontFamily: "'Nanum Myeongjo', serif",
+                    fontSize: "clamp(28px, 4vw, 44px)",
+                    fontWeight: 800,
+                    color: "#FAF5ED",
+                    lineHeight: 1,
+                  }}
+                >
+                  {s.value}
+                  <span style={{ fontSize: "0.5em", marginLeft: "2px", color: "#D4884E" }}>
+                    {s.unit}
+                  </span>
+                </p>
+                <p className="text-xs mb-1" style={{ color: "rgba(250,245,237,0.5)" }}>
+                  {s.label}
+                </p>
+                <p className="text-xs" style={{ color: "rgba(250,245,237,0.3)" }}>
+                  {s.note}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -234,7 +221,7 @@ export default function HomePage() {
                       style={{
                         fontFamily: "'Nanum Myeongjo', serif",
                         fontSize: "24px",
-                        color: "rgba(196, 168, 130, 0.45)",
+                        color: "rgba(196, 168, 130, 0.4)",
                         fontWeight: 700,
                       }}
                     >
@@ -264,10 +251,7 @@ export default function HomePage() {
                   </p>
                   <p className="text-sm mb-2" style={{ color: "#6B4C3B" }}>{space.desc}</p>
                   <p className="text-xs mb-10" style={{ color: "#9B7B6A" }}>{space.sub}</p>
-                  <div
-                    className="flex items-center gap-2 text-sm"
-                    style={{ color: "#B5632A" }}
-                  >
+                  <div className="flex items-center gap-2 text-sm" style={{ color: "#B5632A" }}>
                     <span>{space.cta}</span>
                     <ArrowRight
                       size={14}
@@ -290,7 +274,6 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-            {/* Why Seodong */}
             <div className="card p-10 sm:p-12">
               <p className="section-label mb-7">WHY SEODONG</p>
               <h2
@@ -302,27 +285,23 @@ export default function HomePage() {
                   color: "#2C1810",
                 }}
               >
-                왜 하필<br />서동입니까
+                서동은<br />어떤 동네인가요
               </h2>
-              <div
-                className="flex flex-col gap-4 text-sm leading-relaxed"
-                style={{ color: "#6B4C3B" }}
-              >
+              <div className="flex flex-col gap-4 text-sm leading-relaxed" style={{ color: "#6B4C3B" }}>
                 <p>
-                  서동은 부산 금정구의 작은 동네입니다.
-                  젊은이들이 떠나고, 건물은 낡아갔습니다.
+                  부산 금정구 서동. 오래된 주택과 비어있는 공간들이 많은 동네입니다.
                 </p>
                 <p>
-                  우리는 그 낡음이 오히려 가능성이라고 생각했습니다.
-                  임대료가 낮고, 이웃이 따뜻하고, 골목이 조용합니다.
+                  어떤 사람에게는 낡고 불편한 동네처럼 보일 수 있습니다.
+                  고개서동은 그 낡음을 오히려 가능성으로 봤습니다.
                 </p>
                 <p style={{ color: "#2C1810", fontWeight: 600 }}>
-                  오래된 건물을 부수지 않고,<br />있는 그대로 열었습니다.
+                  버려진 공간을 하나씩 되살려,<br />
+                  동네 안에 작은 공간들을 만들고 있습니다.
                 </p>
               </div>
             </div>
 
-            {/* Manifesto */}
             <div className="card p-10 sm:p-12" style={{ backgroundColor: "#F0E8D5" }}>
               <p className="section-label mb-7">MANIFESTO</p>
               <div className="flex flex-col gap-5">
