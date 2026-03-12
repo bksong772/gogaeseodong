@@ -17,7 +17,7 @@ const spaces = [
     desc: "취향의방 · 그림의방 · 필사의방",
     sub: "할머니 집 같은 부산의 하룻밤",
     tag: "숙박",
-    cta: "Airbnb 예약",
+    cta: "카카오로 예약하기",
   },
   {
     no: "二",
@@ -25,9 +25,9 @@ const spaces = [
     ko: "서동부엌",
     en: "Seodong Kitchen",
     desc: "노을이 예쁜 동네의 공유주방",
-    sub: "요리하고, 먹고, 어울리는 시간",
+    sub: "노을 지는 서동에서 차려먹는 밥 한 끼",
     tag: "공유주방",
-    cta: "스페이스클라우드 예약",
+    cta: "카카오로 예약하기",
   },
   {
     no: "三",
@@ -35,16 +35,16 @@ const spaces = [
     ko: "서동영화",
     en: "Seodong Movie",
     desc: "오래된 공간에서 보는 프라이빗 영화",
-    sub: "빔프로젝터 · OTT · 완전 암전",
+    sub: "옥탑방 빔프로젝터, 우리만의 상영관",
     tag: "영화감상실",
-    cta: "스페이스클라우드 예약",
+    cta: "카카오로 예약하기",
   },
 ];
 
 const stats = [
-  { label: "운영 중인 공간", value: "3",     unit: "개",     note: "여관 · 부엌 · 영화" },
-  { label: "건물 건축 연도", value: "1990",   unit: "년대",   note: "30년이 넘은 건물" },
-  { label: "에어비앤비 리뷰", value: "4.8",   unit: "★",      note: "방문객 평균 평점" },
+  { label: "운영 중인 공간", value: "5",   unit: "개",  note: "여관 3개 방 · 부엌 · 영화" },
+  { label: "서동여관 평점",  value: "4.7", unit: "★",   note: "에어비앤비 방문객 평균" },
+  { label: "서동부엌 평점",  value: "5.0", unit: "★",   note: "스페이스클라우드 리뷰 31개" },
 ];
 
 const manifesto = [
@@ -98,9 +98,9 @@ export default function HomePage() {
           <h1
             className="leading-[1.0] mb-7"
             style={{
-              fontFamily: "Gowun Batang, serif",
+              fontFamily: "'Noto Serif KR', serif",
               fontSize: "clamp(52px, 9vw, 110px)",
-              fontWeight: 800,
+              fontWeight: 300,
               color: "#FAF5ED",
               letterSpacing: "-0.01em",
             }}
@@ -166,9 +166,9 @@ export default function HomePage() {
                 <p
                   className="mb-1"
                   style={{
-                    fontFamily: "Gowun Batang, serif",
+                    fontFamily: "'Noto Serif KR', serif",
                     fontSize: "clamp(28px, 4vw, 44px)",
-                    fontWeight: 800,
+                    fontWeight: 300,
                     color: "#FAF5ED",
                     lineHeight: 1,
                   }}
@@ -219,7 +219,7 @@ export default function HomePage() {
                     <span className="tag">{space.tag}</span>
                     <span
                       style={{
-                        fontFamily: "Gowun Batang, serif",
+                        fontFamily: "'Noto Serif KR', serif",
                         fontSize: "24px",
                         color: "rgba(196, 168, 130, 0.4)",
                         fontWeight: 700,
@@ -231,9 +231,9 @@ export default function HomePage() {
                   <h2
                     className="mb-1"
                     style={{
-                      fontFamily: "Gowun Batang, serif",
+                      fontFamily: "'Noto Serif KR', serif",
                       fontSize: "clamp(20px, 2.5vw, 26px)",
-                      fontWeight: 700,
+                      fontWeight: 400,
                       color: "#2C1810",
                     }}
                   >
@@ -279,9 +279,9 @@ export default function HomePage() {
               <h2
                 className="leading-snug mb-7"
                 style={{
-                  fontFamily: "Gowun Batang, serif",
+                  fontFamily: "'Noto Serif KR', serif",
                   fontSize: "clamp(26px, 4vw, 36px)",
-                  fontWeight: 700,
+                  fontWeight: 300,
                   color: "#2C1810",
                 }}
               >
@@ -329,7 +329,7 @@ export default function HomePage() {
                     </span>
                     <span
                       style={{
-                        fontFamily: "Gowun Batang, serif",
+                        fontFamily: "'Noto Serif KR', serif",
                         fontSize: "15px",
                         color: "#2C1810",
                         lineHeight: 1.7,
@@ -357,9 +357,9 @@ export default function HomePage() {
           <h2
             className="mb-5"
             style={{
-              fontFamily: "Gowun Batang, serif",
+              fontFamily: "'Noto Serif KR', serif",
               fontSize: "clamp(28px, 5vw, 52px)",
-              fontWeight: 700,
+              fontWeight: 300,
               color: "#2C1810",
             }}
           >

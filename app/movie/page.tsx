@@ -25,10 +25,10 @@ const equipment = [
 ];
 
 const users = [
-  { tag: "사진사",   desc: "오래된 공간의 필름 감성 포트폴리오" },
-  { tag: "사진 동아리", desc: "정기 모임, 작품 합평회" },
   { tag: "연인",    desc: "기념일 이벤트, 프라이빗 상영회" },
+  { tag: "친구들",  desc: "함께 보고 싶은 영화 한 편" },
   { tag: "소모임",  desc: "영화 토론, 프리젠테이션" },
+  { tag: "사진사",  desc: "오래된 공간의 필름 감성 촬영" },
 ];
 
 export default function MoviePage() {
@@ -45,13 +45,15 @@ export default function MoviePage() {
           <h1
             className="leading-[1.05] mb-6"
             style={{
-              fontFamily: "Gowun Batang, serif",
+              fontFamily: "'Noto Serif KR', serif",
               fontSize: "clamp(44px, 8vw, 80px)",
-              fontWeight: 800,
+              fontWeight: 300,
               color: "#2C1810",
             }}
           >
-            서동영화
+            우리만의 상영관,
+            <br />
+            서동 옥탑방
             <span
               style={{
                 display: "block",
@@ -71,7 +73,7 @@ export default function MoviePage() {
             style={{ color: "#6B4C3B", maxWidth: "480px" }}
           >
             오래된 공간에서 보는 영화는 더 영화답습니다.<br />
-            빔프로젝터, OTT, 완전 암전. 우리만의 상영관.
+            빔프로젝터, OTT, 완전 암전.
           </p>
         </div>
       </section>
@@ -105,7 +107,7 @@ export default function MoviePage() {
                   style={{
                     fontSize: "13px",
                     color: "#C4A882",
-                    fontFamily: "Gowun Batang, serif",
+                    fontFamily: "'Noto Serif KR', serif",
                   }}
                 >
                   서동영화
@@ -141,7 +143,7 @@ export default function MoviePage() {
                       className="text-sm font-medium"
                       style={{
                         color: "#2C1810",
-                        fontFamily: "Gowun Batang, serif",
+                        fontFamily: "'Noto Serif KR', serif",
                       }}
                     >
                       {value}
@@ -195,7 +197,7 @@ export default function MoviePage() {
                 <p
                   className="mb-3"
                   style={{
-                    fontFamily: "Gowun Batang, serif",
+                    fontFamily: "'Noto Serif KR', serif",
                     fontSize: "16px",
                     fontWeight: 700,
                     color: "#B5632A",
@@ -229,7 +231,7 @@ export default function MoviePage() {
             <h2
               className="mb-5"
               style={{
-                fontFamily: "Gowun Batang, serif",
+                fontFamily: "'Noto Serif KR', serif",
                 fontSize: "clamp(20px, 3vw, 28px)",
                 fontWeight: 700,
                 color: "#2C1810",
@@ -276,7 +278,7 @@ export default function MoviePage() {
                 <div className="flex items-center justify-between">
                   <p
                     style={{
-                      fontFamily: "Gowun Batang, serif",
+                      fontFamily: "'Noto Serif KR', serif",
                       fontSize: "22px",
                       fontWeight: 700,
                       color: "#2C1810",

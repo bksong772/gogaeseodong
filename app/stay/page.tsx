@@ -29,8 +29,8 @@ const rooms = [
     name: "그림의방",
     en: "Room of Painting",
     tag: "커플 추천",
-    desc: "벽에 걸린 그림들, 오래된 프레임들. 미술 전공자가 고른 작품들이 가득한 방. 연인과 함께 머물기 좋은 조용한 공간입니다.",
-    features: ["독채", "더블침대", "최대 2인", "에어컨·난방"],
+    desc: "주인장이 직접 고른 그림들, 오래된 프레임들. 빔프로젝터로 영화도 볼 수 있는 옥탑방. 취향이 담긴 공간에서 조용히 쉬어가고 싶은 커플에게 어울립니다.",
+    features: ["옥탑방 독채", "더블침대", "최대 2인", "빔프로젝터"],
     airbnb: "https://www.airbnb.co.kr/rooms/699514631888252996",
     note: "커플에게 추천",
   },
@@ -39,8 +39,8 @@ const rooms = [
     name: "필사의방",
     en: "Room of Writing",
     tag: "커플 추천",
-    desc: "글을 쓰고 싶은 사람들을 위한 방. 조용한 책상, 편지지, 오래된 책장. 느린 하루를 위한 공간입니다.",
-    features: ["독채", "더블침대", "최대 2인", "에어컨·난방"],
+    desc: "TV도 없고, 영상 매체도 없습니다. 조용한 책상, 편지지, 오래된 책장만 있습니다. 아무것도 하지 않아도 되는 하루, 또는 오랫동안 미뤄둔 글을 쓰고 싶은 분들을 위한 방입니다.",
+    features: ["독채", "더블침대", "최대 2인", "TV 없음"],
     airbnb: "https://www.airbnb.co.kr/rooms/746091488451213213",
     note: "커플에게 추천",
   },
@@ -60,9 +60,9 @@ export default function StayPage() {
           <h1
             className="leading-[1.05] mb-6"
             style={{
-              fontFamily: "Gowun Batang, serif",
+              fontFamily: "'Noto Serif KR', serif",
               fontSize: "clamp(44px, 8vw, 80px)",
-              fontWeight: 800,
+              fontWeight: 300,
               color: "#2C1810",
             }}
           >
@@ -91,7 +91,7 @@ export default function StayPage() {
             깔끔하진 않지만, 따뜻합니다.
           </p>
           <p className="text-xs" style={{ color: "#9B7B6A" }}>
-            ※ 모든 예약은 Airbnb를 통해 진행됩니다.
+            ※ 예약은 카카오채널로 문의 후 계좌이체로 진행됩니다. Airbnb보다 저렴하게 이용하실 수 있습니다.
           </p>
         </div>
       </section>
@@ -111,7 +111,7 @@ export default function StayPage() {
                     <div className="flex items-center gap-3 mb-5">
                       <span
                         style={{
-                          fontFamily: "Gowun Batang, serif",
+                          fontFamily: "'Noto Serif KR', serif",
                           fontSize: "20px",
                           color: "rgba(196, 168, 130, 0.6)",
                           fontWeight: 700,
@@ -124,9 +124,9 @@ export default function StayPage() {
                     <h2
                       className="mb-1"
                       style={{
-                        fontFamily: "Gowun Batang, serif",
+                        fontFamily: "'Noto Serif KR', serif",
                         fontSize: "clamp(22px, 3vw, 32px)",
-                        fontWeight: 700,
+                        fontWeight: 400,
                         color: "#2C1810",
                       }}
                     >
@@ -180,12 +180,12 @@ export default function StayPage() {
                       {room.note}
                     </p>
                     <a
-                      href={room.airbnb}
+                      href="https://pf.kakao.com/_gogaeseodong"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="btn-primary"
                     >
-                      Airbnb에서 예약하기 <ArrowRight size={15} />
+                      카카오로 예약하기 <ArrowRight size={15} />
                     </a>
                   </div>
 
@@ -210,7 +210,7 @@ export default function StayPage() {
                         style={{
                           fontSize: "13px",
                           color: "#C4A882",
-                          fontFamily: "Gowun Batang, serif",
+                          fontFamily: "'Noto Serif KR', serif",
                         }}
                       >
                         {room.name}
@@ -238,9 +238,9 @@ export default function StayPage() {
               <div className="flex flex-col gap-5">
                 {[
                   "위의 방을 선택하세요",
-                  "Airbnb 예약하기 버튼을 누르세요",
-                  "날짜와 인원을 선택하세요",
-                  "예약 완료 후 카카오톡으로 안내드립니다",
+                  "카카오채널 '고개서동'으로 문의하세요",
+                  "원하는 날짜와 인원을 알려주세요",
+                  "계좌이체로 예약이 확정됩니다 (에어비앤비보다 저렴해요)",
                 ].map((step, i) => (
                   <div key={i} className="flex items-start gap-4">
                     <span
@@ -303,7 +303,7 @@ export default function StayPage() {
                 <div className="flex items-center justify-between">
                   <p
                     style={{
-                      fontFamily: "Gowun Batang, serif",
+                      fontFamily: "'Noto Serif KR', serif",
                       fontSize: "22px",
                       fontWeight: 700,
                       color: "#2C1810",

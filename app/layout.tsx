@@ -42,9 +42,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
           rel="stylesheet"
         />
-        {/* 고운바탕 — 전통 바탕체 계열 세리프 */}
+        {/* Noto Serif KR — 얇고 현대적인 한국어 명조체 */}
         <link
-          href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;600&display=swap"
           rel="stylesheet"
         />
       </head>

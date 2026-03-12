@@ -37,13 +37,15 @@ export default function KitchenPage() {
           <h1
             className="leading-[1.05] mb-6"
             style={{
-              fontFamily: "Gowun Batang, serif",
+              fontFamily: "'Noto Serif KR', serif",
               fontSize: "clamp(44px, 8vw, 80px)",
-              fontWeight: 800,
+              fontWeight: 300,
               color: "#2C1810",
             }}
           >
-            서동부엌
+            노을 지는 서동에서
+            <br />
+            차려먹는 밥 한 끼
             <span
               style={{
                 display: "block",
@@ -62,12 +64,12 @@ export default function KitchenPage() {
             className="text-sm leading-relaxed mb-3"
             style={{ color: "#6B4C3B", maxWidth: "480px" }}
           >
-            노을이 예쁜 동네, 서동에서의 프라이빗 공유주방.<br />
+            부산 금정구 서동의 프라이빗 공유주방.<br />
             요리하고, 먹고, 어울리는 시간.
           </p>
           <p
             className="text-sm font-bold"
-            style={{ color: "#B5632A", fontFamily: "Gowun Batang, serif" }}
+            style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}
           >
             ★ 5.0 — 리뷰 31개
           </p>
@@ -103,7 +105,7 @@ export default function KitchenPage() {
                   style={{
                     fontSize: "13px",
                     color: "#C4A882",
-                    fontFamily: "Gowun Batang, serif",
+                    fontFamily: "'Noto Serif KR', serif",
                   }}
                 >
                   서동부엌
@@ -139,7 +141,7 @@ export default function KitchenPage() {
                       className="text-sm font-medium"
                       style={{
                         color: "#2C1810",
-                        fontFamily: "Gowun Batang, serif",
+                        fontFamily: "'Noto Serif KR', serif",
                       }}
                     >
                       {value}
@@ -181,7 +183,7 @@ export default function KitchenPage() {
                 <p
                   className="mb-3"
                   style={{
-                    fontFamily: "Gowun Batang, serif",
+                    fontFamily: "'Noto Serif KR', serif",
                     fontSize: "18px",
                     fontWeight: 700,
                     color: "#B5632A",
@@ -217,7 +219,7 @@ export default function KitchenPage() {
                 <div className="flex items-center justify-between">
                   <p
                     style={{
-                      fontFamily: "Gowun Batang, serif",
+                      fontFamily: "'Noto Serif KR', serif",
                       fontSize: "22px",
                       fontWeight: 700,
                       color: "#2C1810",
