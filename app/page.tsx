@@ -54,11 +54,59 @@ const manifesto = [
   "서동을 알리되, 서동답게 한다",
 ];
 
+/* ── 게스트 후기 ─────────────────────────── */
+/* 실제 후기로 업데이트해 주세요 (에어비앤비 / 네이버블로그 등) */
+const reviews = [
+  {
+    text: "처음 사진 봤을 때 낡아 보여서 살짝 걱정했는데, 막상 오니까 완전 제 취향이었어요. 주인장분이 카페랑 맛집 리스트도 보내주셔서 여행이 훨씬 풍성해졌어요.",
+    space: "취향의방",
+    platform: "에어비앤비",
+    date: "2025.02",
+    stars: 5,
+  },
+  {
+    text: "노을 지는 거 보면서 요리하는 게 이렇게 좋을 줄 몰랐어요. 공간도 깔끔하고 필요한 도구가 다 있었어요. 꼭 다시 오고 싶은 곳이에요.",
+    space: "서동부엌",
+    platform: "스페이스클라우드",
+    date: "2025.01",
+    stars: 5,
+  },
+  {
+    text: "부산 여행 여러 번 했는데 이런 경험은 처음이에요. 관광지 말고 진짜 부산 동네에 있는 기분. 주인장분이 너무 친절하셔서 감동이었어요.",
+    space: "그림의방",
+    platform: "에어비앤비",
+    date: "2025.03",
+    stars: 5,
+  },
+];
+
+/* ── 주인장 추천 동네 스팟 ─────────────────── */
+const localSpots = [
+  {
+    category: "카페",
+    name: "카페드팽",
+    desc: "부산대 캠퍼스 근처. 주인장이 20대부터 다녀온 곳. 카페라떼가 특히 맛있어요.",
+    distance: "차 10분",
+  },
+  {
+    category: "고찰",
+    name: "범어사",
+    desc: "금정산 자락의 천년 고찰. 이른 아침 고요한 산책 코스로 최고.",
+    distance: "차 15분",
+  },
+  {
+    category: "시장",
+    name: "동래시장",
+    desc: "부산 사람들이 일상에서 다니는 재래시장. 국밥과 분식 맛집.",
+    distance: "차 10분",
+  },
+];
+
 export default function HomePage() {
   return (
     <div className="pt-16">
 
-      {/* ── 히어로 (풀스크린 영상 + 센터 카피) ─────────────── */}
+      {/* ── 히어로 (풀스크린 영상 + 센터 카피) ─────────────────── */}
       <section className="relative min-h-screen flex flex-col justify-end overflow-hidden">
 
         {/* 배경 영상 */}
@@ -100,7 +148,7 @@ export default function HomePage() {
             style={{
               fontFamily: "'Noto Serif KR', serif",
               fontSize: "clamp(52px, 9vw, 110px)",
-              fontWeight: 300,
+              fontWeight: 400,
               color: "#FAF5ED",
               letterSpacing: "-0.01em",
             }}
@@ -190,6 +238,178 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── 서동 동네 이야기 ─────────────────────────────── */}
+      <section
+        className="py-28"
+        style={{ backgroundColor: "#1E0F08" }}
+      >
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+
+            {/* 왼쪽: 동네 소개 */}
+            <div>
+              <p
+                className="section-label mb-6"
+                style={{ color: "rgba(212,136,78,0.8)" }}
+              >
+                SEODONG NEIGHBORHOOD
+              </p>
+              <h2
+                className="mb-8"
+                style={{
+                  fontFamily: "'Noto Serif KR', serif",
+                  fontSize: "clamp(30px, 5vw, 52px)",
+                  fontWeight: 400,
+                  color: "#FAF5ED",
+                  lineHeight: 1.2,
+                }}
+              >
+                부산 토박이도<br />잘 모르는 동네
+              </h2>
+              <div
+                className="flex flex-col gap-4 text-sm leading-relaxed"
+                style={{ color: "rgba(250,245,237,0.6)", maxWidth: "440px" }}
+              >
+                <p>
+                  서동은 부산 금정구의 조용한 산동네입니다.
+                  금정산 자락 아래, 60–70년대 골목 풍경이 그대로 남아있어요.
+                </p>
+                <p>
+                  유명 관광지는 없습니다.
+                  대신 노을이 예쁘고, 이웃이 정겹고,
+                  한 번 오면 다시 오고 싶어지는 동네입니다.
+                </p>
+                <p style={{ color: "rgba(250,245,237,0.85)", fontWeight: 500 }}>
+                  고개서동은 그 낡음을 가능성으로 봤습니다.
+                </p>
+              </div>
+              {/* 키워드 태그 */}
+              <div className="flex flex-wrap gap-2 mt-8">
+                {["조용한 골목", "금정산 자락", "노을 명소", "60년대 정취", "부산의 진짜 동네"].map((kw) => (
+                  <span
+                    key={kw}
+                    style={{
+                      fontSize: "11px",
+                      color: "rgba(212,136,78,0.9)",
+                      border: "1px solid rgba(212,136,78,0.3)",
+                      padding: "5px 14px",
+                      borderRadius: "9999px",
+                      letterSpacing: "0.03em",
+                    }}
+                  >
+                    {kw}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* 오른쪽: 주인장 추천 스팟 */}
+            <div>
+              <p
+                className="section-label mb-3"
+                style={{ color: "rgba(212,136,78,0.8)" }}
+              >
+                LOCAL PICKS
+              </p>
+              <p
+                className="text-xs mb-8"
+                style={{ color: "rgba(250,245,237,0.35)", letterSpacing: "0.02em" }}
+              >
+                주인장이 직접 추천하는 서동 주변 스팟.
+                예약 완료 후 개인 메시지로 안내해 드립니다.
+              </p>
+
+              <div className="flex flex-col">
+                {localSpots.map((spot, i) => (
+                  <div
+                    key={i}
+                    style={{
+                      display: "flex",
+                      gap: "16px",
+                      padding: "20px 0",
+                      borderBottom:
+                        i < localSpots.length - 1
+                          ? "1px solid rgba(250,245,237,0.07)"
+                          : "none",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: "10px",
+                        color: "#D4884E",
+                        border: "1px solid rgba(212,136,78,0.35)",
+                        padding: "3px 9px",
+                        borderRadius: "4px",
+                        flexShrink: 0,
+                        height: "fit-content",
+                        marginTop: "2px",
+                        letterSpacing: "0.05em",
+                        fontFamily: "'Playfair Display', serif",
+                      }}
+                    >
+                      {spot.category}
+                    </span>
+                    <div>
+                      <p
+                        style={{
+                          fontFamily: "'Noto Serif KR', serif",
+                          fontSize: "16px",
+                          color: "#FAF5ED",
+                          fontWeight: 500,
+                          marginBottom: "5px",
+                        }}
+                      >
+                        {spot.name}
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "13px",
+                          color: "rgba(250,245,237,0.5)",
+                          lineHeight: 1.7,
+                        }}
+                      >
+                        {spot.desc}
+                      </p>
+                      <p
+                        style={{
+                          fontSize: "11px",
+                          color: "rgba(212,136,78,0.6)",
+                          marginTop: "6px",
+                        }}
+                      >
+                        {spot.distance}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* 큐레이션 강조 */}
+              <div
+                className="mt-8 p-5"
+                style={{
+                  borderRadius: "12px",
+                  border: "1px solid rgba(212,136,78,0.2)",
+                  backgroundColor: "rgba(212,136,78,0.05)",
+                }}
+              >
+                <p
+                  style={{
+                    fontSize: "13px",
+                    color: "rgba(250,245,237,0.7)",
+                    lineHeight: 1.8,
+                  }}
+                >
+                  <span style={{ color: "#D4884E", fontWeight: 600 }}>주인장 직접 응대 —</span>{" "}
+                  체크인 안내부터 동네 맛집·카페 정보까지,
+                  예약 후 개인 메시지로 꼼꼼히 챙겨드립니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── 공간 목록 ─────────────────────────────────────── */}
       <section
         className="py-28"
@@ -262,6 +482,132 @@ export default function HomePage() {
                 </div>
               </Link>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── 게스트 후기 ───────────────────────────────────── */}
+      <section
+        className="py-28"
+        style={{ borderBottom: "1px solid rgba(196, 168, 130, 0.3)" }}
+      >
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <div className="flex items-center gap-5 mb-16">
+            <span className="section-label">GUEST REVIEWS</span>
+            <div
+              className="flex-1 h-px"
+              style={{
+                background: "linear-gradient(to right, rgba(196,168,130,0.5), transparent)",
+              }}
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+            {reviews.map((r, i) => (
+              <div
+                key={i}
+                className="card p-7"
+                style={{ backgroundColor: i === 1 ? "#F0E8D5" : "#FAF5ED" }}
+              >
+                {/* 별점 */}
+                <div style={{ display: "flex", gap: "2px", marginBottom: "16px" }}>
+                  {Array.from({ length: r.stars }).map((_, j) => (
+                    <span key={j} style={{ color: "#B5632A", fontSize: "13px" }}>★</span>
+                  ))}
+                </div>
+                <p
+                  style={{
+                    fontFamily: "'Noto Serif KR', serif",
+                    fontSize: "14px",
+                    lineHeight: 1.9,
+                    color: "#2C1810",
+                    marginBottom: "20px",
+                  }}
+                >
+                  &ldquo;{r.text}&rdquo;
+                </p>
+                <div
+                  style={{
+                    borderTop: "1px solid rgba(196,168,130,0.4)",
+                    paddingTop: "16px",
+                  }}
+                >
+                  <p style={{ fontSize: "13px", color: "#6B4C3B", fontWeight: 600 }}>
+                    {r.space}
+                  </p>
+                  <p style={{ fontSize: "11px", color: "#9B7B6A", marginTop: "3px" }}>
+                    {r.platform} · {r.date}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* 플랫폼 평점 요약 + 링크 */}
+          <div
+            className="flex flex-col sm:flex-row items-center justify-between gap-5 p-6 rounded-2xl"
+            style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196,168,130,0.4)" }}
+          >
+            <div className="flex flex-wrap gap-6">
+              <div className="text-center">
+                <p
+                  style={{
+                    fontFamily: "'Noto Serif KR', serif",
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    color: "#B5632A",
+                  }}
+                >
+                  ★ 4.7
+                </p>
+                <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>
+                  에어비앤비 평균
+                </p>
+              </div>
+              <div
+                style={{
+                  width: "1px",
+                  height: "40px",
+                  backgroundColor: "rgba(196,168,130,0.5)",
+                  alignSelf: "center",
+                }}
+              />
+              <div className="text-center">
+                <p
+                  style={{
+                    fontFamily: "'Noto Serif KR', serif",
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    color: "#B5632A",
+                  }}
+                >
+                  ★ 5.0
+                </p>
+                <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>
+                  스페이스클라우드 리뷰 31개
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="https://www.airbnb.co.kr/rooms/997241625179311794"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary"
+                style={{ fontSize: "13px" }}
+              >
+                에어비앤비 후기 보기
+              </a>
+              <a
+                href="https://www.spacecloud.kr/space/37505"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary"
+                style={{ fontSize: "13px" }}
+              >
+                스페이스클라우드 후기
+              </a>
+            </div>
           </div>
         </div>
       </section>
