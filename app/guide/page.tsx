@@ -5,15 +5,14 @@ export const metadata: Metadata = {
   description: "부산 금정구 서동 토박이 주인장이 직접 다니는 가성비 노포 맛집·카페·산책 가이드. 서동에서 보내는 1박 2일 추천 코스.",
 };
 
-// mapUrl: 네이버 지도 공유 링크를 넣으면 "지도 →" 버튼이 자동으로 표시됩니다.
-// 네이버 지도에서 가게 검색 → 공유 → 링크 복사 후 mapUrl에 붙여넣기
+// mapUrl: 네이버 지도 공유 링크 / youtubeUrl: 유튜브 링크 → 각 버튼 자동 표시
 const foodSpots = [
   {
     category: "고기·메인",
     emoji: "🥩",
     hostNote: "이 골목은 어릴 때부터 냄새로 먼저 알았어요. 20년 가까이 다닌 집들만 골랐습니다.",
     items: [
-      { name: "송부장연탄갈비", desc: "20살부터 20년 가까이 다닌 단골. 양념갈비 필수. 유명 유튜버 부산 양념갈비 1등 픽.", mapUrl: "https://naver.me/FnVMZ5l2" },
+      { name: "송부장연탄갈비", desc: "20살부터 20년 가까이 다닌 단골. 양념갈비 필수. 유명 유튜버 부산 양념갈비 1등 픽.", mapUrl: "https://naver.me/FnVMZ5l2", youtubeUrl: "https://youtube.com/shorts/iOGiBQQK220?si=I-XDlGXY3HodWQxw" },
       { name: "팔도족발", desc: "동네에서 가장 인기 많은 족발집. 반반족발 최애. 저녁 9시 이후에는 족발이 없는 경우 많으니 일찍 가세요.", mapUrl: "https://naver.me/GdyGTaeL" },
       { name: "일단마포", desc: "친한 동생이 운영하는 가게. 얇은 고기 좋아하시는 분께 딱. 가성비 끝판왕. 츄릅켠 유튜브 출연.", mapUrl: "https://naver.me/FmGbs8MQ" },
       { name: "동키치킨 서동점", desc: "맛있을 때는 진짜 맛있는 옛날 통닭. 들쑥날쑥한 편이라 기대치 조절 추천. 후라이드 위주로 시키세요.", mapUrl: "" },
@@ -26,8 +25,8 @@ const foodSpots = [
     items: [
       { name: "우래돼지국밥", desc: "서동시장 안에 있는 현지인 맛집. 옛날 시장국밥 맛 그대로. 가성비 끝내주고 사람 진짜 많이 감.", mapUrl: "https://naver.me/GOhYNaI6" },
       { name: "명동손칼국수", desc: "초등학교 때부터 다닌 집. 가성비 최고. 칼국수+김밥, 선지국밥 추천. 서동 고개 바로 옆.", mapUrl: "" },
-      { name: "맛나분식", desc: "계란만두·떡볶이 시그니처. 4명이 먹어도 2만원 안 넘는 가성비.", mapUrl: "" },
-      { name: "동원김밥 (일미김밥)", desc: "부산 3대 김밥. 사장님 까탈스럽지만 맛은 인정. 체크아웃 날 포장 강추.", mapUrl: "" },
+      { name: "맛나분식", desc: "계란만두·떡볶이 시그니처. 배정남·안정환·최용수도 다녀간 집. 4명이 먹어도 2만원 안 넘는 가성비.", mapUrl: "", youtubeUrl: "https://youtu.be/arOOlumQzPo?si=jT5pnIa_wmofvXh7" },
+      { name: "동원김밥 (일미김밥)", desc: "부산 3대 김밥. 사장님 까탈스럽지만 맛은 인정. 체크아웃 날 포장 강추.", mapUrl: "", youtubeUrl: "https://youtu.be/m-070paMqf4?si=LYeM8veJYAd_43dF" },
       { name: "정가네선지국밥", desc: "선지국밥·우동이 맛있고 소주 한잔하기 딱. 새벽 4시까지 운영.", mapUrl: "https://naver.me/5h19VutU" },
     ],
   },
@@ -119,6 +118,20 @@ export default function GuidePage() {
               맛있게 먹고 적게 쓰는 여행을 원하시는 분께 딱 맞는 동네예요.
             </p>
           </div>
+          <div className="mt-4 p-4 border border-[#C4A882]/30 rounded-xl bg-white/40 flex items-center justify-between gap-4">
+            <div>
+              <p className="text-[#2C1810] text-sm font-semibold mb-0.5">📺 배정남의 서동 나들이</p>
+              <p className="text-[#9B7B6A] text-xs">서동을 영상으로 먼저 만나보세요</p>
+            </div>
+            <a
+              href="https://youtu.be/hNJ40NN0CYk?si=EyLykcJzok65-9Eb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-3 py-1.5 hover:bg-[#D4884E]/10 transition-colors"
+            >
+              영상 보기 →
+            </a>
+          </div>
         </section>
 
         {/* 이동 수단 요약 박스 */}
@@ -169,16 +182,28 @@ export default function GuidePage() {
                     <div key={item.name} className="border-b border-[#C4A882]/20 pb-4">
                       <div className="flex items-center justify-between gap-2">
                         <h3 className="font-semibold text-[#2C1810] text-[15px]">{item.name}</h3>
-                        {item.mapUrl && (
-                          <a
-                            href={item.mapUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="shrink-0 text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2.5 py-1 hover:bg-[#D4884E]/10 transition-colors"
-                          >
-                            지도 →
-                          </a>
-                        )}
+                        <div className="flex items-center gap-1.5 shrink-0">
+                          {item.mapUrl && (
+                            <a
+                              href={item.mapUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2.5 py-1 hover:bg-[#D4884E]/10 transition-colors"
+                            >
+                              지도 →
+                            </a>
+                          )}
+                          {(item as { youtubeUrl?: string }).youtubeUrl && (
+                            <a
+                              href={(item as { youtubeUrl?: string }).youtubeUrl}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-xs text-[#9B7B6A] border border-[#C4A882]/40 rounded-full px-2.5 py-1 hover:bg-[#C4A882]/10 transition-colors"
+                            >
+                              영상 →
+                            </a>
+                          )}
+                        </div>
                       </div>
                       <p className="text-[#9B7B6A] text-sm mt-1 leading-6">{item.desc}</p>
                     </div>
