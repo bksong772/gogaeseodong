@@ -2,53 +2,58 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "서동 여행 가이드 | 고개서동",
-  description: "서동 토박이 송군이 직접 추천하는 부산 가성비 노포 맛집 여행. 고개서동에 머무는 동안 더 즐겁게.",
+  description: "부산 금정구 서동 토박이 주인장이 직접 다니는 가성비 노포 맛집·카페·산책 가이드. 서동에서 보내는 1박 2일 추천 코스.",
 };
 
+// mapUrl: 네이버 지도 공유 링크를 넣으면 "지도 →" 버튼이 자동으로 표시됩니다.
+// 네이버 지도에서 가게 검색 → 공유 → 링크 복사 후 mapUrl에 붙여넣기
 const foodSpots = [
   {
     category: "고기·메인",
     emoji: "🥩",
+    hostNote: "이 골목은 어릴 때부터 냄새로 먼저 알았어요. 20년 가까이 다닌 집들만 골랐습니다.",
     items: [
-      { name: "송부장연탄갈비", desc: "20살부터 20년 가까이 다닌 단골. 양념갈비 필수. 유명 유튜버 부산 양념갈비 1등 픽." },
-      { name: "팔도족발", desc: "동네에서 가장 인기 많은 족발집. 반반족발 최애. 저녁 9시 이후에는 족발이 없는 경우 많으니 일찍 가세요." },
-      { name: "일단마포", desc: "친한 동생이 운영하는 가게. 얇은 고기 좋아하시는 분께 딱. 가성비 끝판왕. 츄릅켠 유튜브 출연." },
-      { name: "동키치킨 서동점", desc: "맛있을 때는 진짜 맛있는 옛날 통닭. 들쑥날쑥한 편이라 기대치 조절 추천. 후라이드 위주로 시키세요." },
+      { name: "송부장연탄갈비", desc: "20살부터 20년 가까이 다닌 단골. 양념갈비 필수. 유명 유튜버 부산 양념갈비 1등 픽.", mapUrl: "" },
+      { name: "팔도족발", desc: "동네에서 가장 인기 많은 족발집. 반반족발 최애. 저녁 9시 이후에는 족발이 없는 경우 많으니 일찍 가세요.", mapUrl: "" },
+      { name: "일단마포", desc: "친한 동생이 운영하는 가게. 얇은 고기 좋아하시는 분께 딱. 가성비 끝판왕. 츄릅켠 유튜브 출연.", mapUrl: "" },
+      { name: "동키치킨 서동점", desc: "맛있을 때는 진짜 맛있는 옛날 통닭. 들쑥날쑥한 편이라 기대치 조절 추천. 후라이드 위주로 시키세요.", mapUrl: "" },
     ],
   },
   {
     category: "국밥·분식",
     emoji: "🍜",
+    hostNote: "초등학교 때부터 다닌 집들이에요. 서동 시장 골목 안에 있는 현지인 맛집들입니다.",
     items: [
-      { name: "우래돼지국밥", desc: "서동시장 안에 있는 현지인 맛집. 옛날 시장국밥 맛 그대로. 가성비 끝내주고 사람 진짜 많이 감." },
-      { name: "명동손칼국수", desc: "초등학교 때부터 다닌 집. 가성비 최고. 칼국수+김밥, 선지국밥 추천. 서동 고개 바로 옆." },
-      { name: "맛나분식", desc: "BTS 지민이 어릴 적 자주 다녀간 곳. 계란만두·떡볶이 시그니처. 4명이 먹어도 2만원 안 넘는 가성비." },
-      { name: "동원김밥 (일미김밥)", desc: "부산 3대 김밥. 사장님 까탈스럽지만 맛은 인정. 체크아웃 날 포장 강추." },
-      { name: "정가네선지국밥", desc: "선지국밥·우동이 맛있고 소주 한잔하기 딱. 새벽 4시까지 운영." },
+      { name: "우래돼지국밥", desc: "서동시장 안에 있는 현지인 맛집. 옛날 시장국밥 맛 그대로. 가성비 끝내주고 사람 진짜 많이 감.", mapUrl: "" },
+      { name: "명동손칼국수", desc: "초등학교 때부터 다닌 집. 가성비 최고. 칼국수+김밥, 선지국밥 추천. 서동 고개 바로 옆.", mapUrl: "" },
+      { name: "맛나분식", desc: "계란만두·떡볶이 시그니처. 4명이 먹어도 2만원 안 넘는 가성비.", mapUrl: "" },
+      { name: "동원김밥 (일미김밥)", desc: "부산 3대 김밥. 사장님 까탈스럽지만 맛은 인정. 체크아웃 날 포장 강추.", mapUrl: "" },
+      { name: "정가네선지국밥", desc: "선지국밥·우동이 맛있고 소주 한잔하기 딱. 새벽 4시까지 운영.", mapUrl: "" },
     ],
   },
   {
     category: "2·3차",
     emoji: "🍶",
+    hostNote: "이 동네 술자리는 소박합니다. 그게 이 동네 분위기예요.",
     items: [
-      { name: "일차로", desc: "진짜 레트로. 40~50대 단골 가득한 찐 옛날 술집. 안주 1~3인 총 15,000원·추가 1인 5,000원. 소주·맥주 3,000원." },
-      { name: "노가리ok", desc: "노가리가 진짜 맛있음. 2·3차로 강추." },
-      { name: "단미포차", desc: "레트로 분위기는 아니지만 맛있는 포차. 편하게 마시기 좋음." },
+      { name: "일차로", desc: "진짜 레트로. 40~50대 단골 가득한 찐 옛날 술집. 안주 1~3인 총 15,000원·추가 1인 5,000원. 소주·맥주 3,000원.", mapUrl: "" },
+      { name: "노가리ok", desc: "노가리가 진짜 맛있음. 2·3차로 강추.", mapUrl: "" },
+      { name: "단미포차", desc: "레트로 분위기는 아니지만 맛있는 포차. 편하게 마시기 좋음.", mapUrl: "" },
     ],
   },
 ];
 
 const outsideSpots = [
-  { name: "칼맛나는횟집", desc: "주인장의 넘사벽 픽. 부산대 근처 (29번 버스 10분). 모듬회 필수. 대기가 워낙 많아 오후 6시 이전에 가야 함.", emoji: "🐟" },
-  { name: "컬리반스 피자", desc: "도우가 진짜 맛있음. 부산대 위치.", emoji: "🍕" },
-  { name: "수수하지만 굉장해", desc: "돈까스 체인인데 진짜 맛있음. 부산대 위치.", emoji: "🍱" },
+  { name: "칼맛나는횟집", desc: "주인장의 넘사벽 픽. 부산대 근처 (29번 버스 10분). 모듬회 필수. 대기가 워낙 많아 오후 6시 이전에 가야 함.", emoji: "🐟", mapUrl: "" },
+  { name: "컬리반스 피자", desc: "도우가 진짜 맛있음. 부산대 위치.", emoji: "🍕", mapUrl: "" },
+  { name: "수수하지만 굉장해", desc: "돈까스 체인인데 진짜 맛있음. 부산대 위치.", emoji: "🍱", mapUrl: "" },
 ];
 
 const cafeSpots = [
-  { name: "모모스커피 본점", dist: "도보 20분", desc: "온천장역 바로 앞. 부산 대표 스페셜티 커피. 취향의방은 지하철·버스 이용 추천." },
-  { name: "로제이브", dist: "부산대", desc: "콜드브루 강추!! 송군 최애 카페." },
-  { name: "수안커피", dist: "버스·지하철", desc: "프리미엄 다도 감성 커피. 1인 11,000원. 부산 여행객에게 추천." },
-  { name: "메가커피·컴포즈", dist: "서동 내", desc: "서동 내 가장 가까운 카페. 금사공단·부산은행 방면." },
+  { name: "모모스커피 본점", dist: "도보 20분", desc: "온천장역 바로 앞. 부산 대표 스페셜티 커피. 취향의방은 지하철·버스 이용 추천.", mapUrl: "" },
+  { name: "로제이브", dist: "부산대", desc: "콜드브루 강추!! 송군 최애 카페.", mapUrl: "" },
+  { name: "수안커피", dist: "버스·지하철", desc: "프리미엄 다도 감성 커피. 1인 11,000원. 부산 여행객에게 추천.", mapUrl: "" },
+  { name: "메가커피·컴포즈", dist: "서동 내", desc: "서동 내 가장 가까운 카페. 금사공단·부산은행 방면.", mapUrl: "" },
 ];
 
 const walkSpots = [
@@ -57,12 +62,14 @@ const walkSpots = [
     tag: "도보 5분",
     emoji: "🏘️",
     desc: "서동 골목 안에 숨어있는 작은 재래시장. 우래돼지국밥, 맛나분식이 이 안에 있어요. 밥 먹고 골목 한 바퀴 도는 것만으로도 충분합니다.",
+    mapUrl: "",
   },
   {
     name: "서명초등학교 전경",
     tag: "도보 15분",
     emoji: "🌄",
     desc: "고개를 올라 서명초등학교까지 가면 서동 전경이 멋지게 펼쳐집니다. 배정남·최용수·안정환이 TV에 나와서 이쪽에 왔던 곳. 밥 먹고 산책 삼아 걸어가기 딱 좋아요.",
+    mapUrl: "",
   },
 ];
 
@@ -87,7 +94,7 @@ export default function GuidePage() {
 
       <div className="max-w-3xl mx-auto px-6 py-14 space-y-16">
 
-        {/* 소개 */}
+        {/* 소개 — 유명인 트리비아 흡수, SEO 강화 */}
         <section>
           <h2
             className="text-2xl font-bold text-[#2C1810] mb-4"
@@ -96,11 +103,11 @@ export default function GuidePage() {
             반갑습니다, 고개서동 주인장입니다.
           </h2>
           <p className="text-[#6B4C3B] leading-8 text-[15px]">
-            제가 태어나고 자라난 동네를 조금이나마 알리기 위해 시작한 고개서동 프로젝트.
-            방문객들이 늘어나기 시작하면서, 사라져가는 이 동네를 누군가 알아간다는 것에 뿌듯함을 느끼곤 합니다.
+            부산 금정구 서동에서 태어나고 자란 주인장입니다.
+            배정남이 걸어 다닌 골목이고, 지민이 어릴 때 다닌 떡볶이집이 지금도 있어요.
+            그때나 지금이나 이 동네는 특별한 척 하지 않습니다.
           </p>
           <p className="text-[#6B4C3B] leading-8 text-[15px] mt-3">
-            서동에서 자란 저는 서동 골목이나 부산대 거리에서 주로 놀았어요.
             고개서동에 머무시면서 <strong className="text-[#2C1810]">서동 미로시장 골목</strong>을 즐기시거나,
             조금 더 활동적인 분들은 <strong className="text-[#2C1810]">부산대 거리</strong>로 나가시면 먹거리·카페·즐길 거리가 풍성해요.
             서동 ↔ 부산대는 버스로 10~15분 거리입니다.
@@ -114,23 +121,24 @@ export default function GuidePage() {
           </div>
         </section>
 
-        {/* 서동 유명인물 트리비아 */}
+        {/* 이동 수단 요약 박스 */}
         <section>
           <h2
             className="text-2xl font-bold text-[#2C1810] mb-4"
             style={{ fontFamily: "'Noto Serif KR', serif" }}
           >
-            서동이 낳은 사람들
+            이동 안내
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
-              { name: "배정남", desc: "모델·배우. 서동 출신." },
-              { name: "김은혜", desc: "아나운서·전 정치인. 서동 출신." },
-              { name: "BTS 지민", desc: "회동동 출신이지만 서동 주변에서 자라 이 동네 사람처럼 불림." },
-            ].map((p) => (
-              <div key={p.name} className="border border-[#C4A882]/30 rounded-2xl p-4 bg-white/40 text-center">
-                <p className="font-semibold text-[#2C1810] text-[15px] mb-1">{p.name}</p>
-                <p className="text-[#9B7B6A] text-xs leading-5">{p.desc}</p>
+              { icon: "🚶", label: "서동 내", desc: "주요 식당·시장까지 도보 5~15분" },
+              { icon: "🚌", label: "부산대 방면", desc: "금사공단 정류장 → 29번 버스 → 10~15분" },
+              { icon: "🚇", label: "모모스커피", desc: "도보 20분 or 온천장역 하차 (지하철 1호선)" },
+            ].map((item) => (
+              <div key={item.label} className="border border-[#C4A882]/30 rounded-2xl p-4 bg-white/40">
+                <p className="text-xl mb-2">{item.icon}</p>
+                <p className="font-semibold text-[#2C1810] text-sm mb-1">{item.label}</p>
+                <p className="text-[#9B7B6A] text-xs leading-5">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -148,14 +156,30 @@ export default function GuidePage() {
           <div className="space-y-10">
             {foodSpots.map((group) => (
               <div key={group.category}>
-                <h3 className="text-base font-semibold text-[#D4884E] mb-4 flex items-center gap-2">
+                <h3 className="text-base font-semibold text-[#D4884E] mb-2 flex items-center gap-2">
                   <span>{group.emoji}</span>
                   <span>{group.category}</span>
                 </h3>
+                {/* 주인장 코멘트 */}
+                <p className="text-xs text-[#9B7B6A] italic mb-4 pl-1">
+                  💬 {group.hostNote}
+                </p>
                 <div className="space-y-4">
                   {group.items.map((item) => (
                     <div key={item.name} className="border-b border-[#C4A882]/20 pb-4">
-                      <p className="font-semibold text-[#2C1810] text-[15px]">{item.name}</p>
+                      <div className="flex items-center justify-between gap-2">
+                        <h3 className="font-semibold text-[#2C1810] text-[15px]">{item.name}</h3>
+                        {item.mapUrl && (
+                          <a
+                            href={item.mapUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="shrink-0 text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2.5 py-1 hover:bg-[#D4884E]/10 transition-colors"
+                          >
+                            지도 →
+                          </a>
+                        )}
+                      </div>
                       <p className="text-[#9B7B6A] text-sm mt-1 leading-6">{item.desc}</p>
                     </div>
                   ))}
@@ -178,8 +202,20 @@ export default function GuidePage() {
             {outsideSpots.map((item) => (
               <div key={item.name} className="border-b border-[#C4A882]/20 pb-4 flex gap-3">
                 <span className="text-xl mt-0.5">{item.emoji}</span>
-                <div>
-                  <p className="font-semibold text-[#2C1810] text-[15px]">{item.name}</p>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="font-semibold text-[#2C1810] text-[15px]">{item.name}</h3>
+                    {item.mapUrl && (
+                      <a
+                        href={item.mapUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="shrink-0 text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2.5 py-1 hover:bg-[#D4884E]/10 transition-colors"
+                      >
+                        지도 →
+                      </a>
+                    )}
+                  </div>
                   <p className="text-[#9B7B6A] text-sm mt-1 leading-6">{item.desc}</p>
                 </div>
               </div>
@@ -202,11 +238,23 @@ export default function GuidePage() {
           <div className="space-y-4">
             {cafeSpots.map((item) => (
               <div key={item.name} className="border-b border-[#C4A882]/20 pb-4">
-                <div className="flex items-center gap-2 mb-1">
-                  <p className="font-semibold text-[#2C1810] text-[15px]">{item.name}</p>
-                  <span className="text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2 py-0.5">
-                    {item.dist}
-                  </span>
+                <div className="flex items-center justify-between gap-2 mb-1">
+                  <div className="flex items-center gap-2">
+                    <h3 className="font-semibold text-[#2C1810] text-[15px]">{item.name}</h3>
+                    <span className="text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2 py-0.5">
+                      {item.dist}
+                    </span>
+                  </div>
+                  {item.mapUrl && (
+                    <a
+                      href={item.mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="shrink-0 text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2.5 py-1 hover:bg-[#D4884E]/10 transition-colors"
+                    >
+                      지도 →
+                    </a>
+                  )}
                 </div>
                 <p className="text-[#9B7B6A] text-sm leading-6">{item.desc}</p>
               </div>
@@ -231,11 +279,23 @@ export default function GuidePage() {
                 <div className="flex items-start gap-4">
                   <span className="text-2xl mt-0.5">{item.emoji}</span>
                   <div className="flex-1">
-                    <div className="flex items-center gap-2 mb-1">
-                      <p className="font-semibold text-[#2C1810] text-[15px]">{item.name}</p>
-                      <span className="text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2 py-0.5">
-                        {item.tag}
-                      </span>
+                    <div className="flex items-center justify-between gap-2 mb-1">
+                      <div className="flex items-center gap-2">
+                        <h3 className="font-semibold text-[#2C1810] text-[15px]">{item.name}</h3>
+                        <span className="text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2 py-0.5">
+                          {item.tag}
+                        </span>
+                      </div>
+                      {item.mapUrl && (
+                        <a
+                          href={item.mapUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="shrink-0 text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2.5 py-1 hover:bg-[#D4884E]/10 transition-colors"
+                        >
+                          지도 →
+                        </a>
+                      )}
                     </div>
                     <p className="text-[#9B7B6A] text-sm leading-6">{item.desc}</p>
                   </div>
@@ -245,14 +305,18 @@ export default function GuidePage() {
           </div>
         </section>
 
-        {/* 1박2일 추천 코스 */}
+        {/* 1박2일 추천 코스 — 시각 강조 + DAY 연결 */}
         <section>
-          <h2
-            className="text-2xl font-bold text-[#2C1810] mb-6"
-            style={{ fontFamily: "'Noto Serif KR', serif" }}
-          >
-            1박 2일 가성비 노포 여행 코스
-          </h2>
+          <div className="bg-[#2C1810] rounded-2xl px-6 pt-6 pb-5 mb-6">
+            <p className="text-[#D4884E] text-xs tracking-widest mb-2">RECOMMENDED COURSE</p>
+            <h2
+              className="text-2xl font-bold text-[#FAF5ED]"
+              style={{ fontFamily: "'Noto Serif KR', serif" }}
+            >
+              1박 2일 가성비 노포 여행 코스
+            </h2>
+            <p className="text-[#FAF5ED]/50 text-sm mt-2">주인장이 직접 짠 동선입니다</p>
+          </div>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-[#2C1810] text-[#FAF5ED] rounded-2xl p-6">
               <p className="text-[#D4884E] text-xs tracking-widest mb-3">DAY 1</p>
@@ -263,6 +327,14 @@ export default function GuidePage() {
                 <li>🍶 2차: 일차로 or 노가리ok</li>
               </ul>
             </div>
+
+            {/* 모바일 DAY 연결 장치 */}
+            <div className="md:hidden flex items-center gap-3 py-1">
+              <div className="flex-1 border-t border-dashed border-[#C4A882]/40" />
+              <p className="text-xs text-[#D4884E] shrink-0">다음날 아침 →</p>
+              <div className="flex-1 border-t border-dashed border-[#C4A882]/40" />
+            </div>
+
             <div className="bg-[#FAF5ED] border border-[#C4A882]/30 rounded-2xl p-6">
               <p className="text-[#D4884E] text-xs tracking-widest mb-3">DAY 2</p>
               <ul className="space-y-2 text-sm text-[#6B4C3B] leading-7">
