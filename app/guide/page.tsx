@@ -149,7 +149,7 @@ export default function GuidePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
             {[
               { icon: "🚶", label: "서동 내", desc: "주요 식당·시장까지 도보 5~15분" },
-              { icon: "🚌", label: "부산대 방면", desc: "서동고개 정류장 → 29번 버스 → 10~15분 (취향의방은 금사공단 정류장)" },
+              { icon: "🚌", label: "부산대 방면", desc: "서동새마을금고 정류장 → 29번 버스 → 10~15분 (취향의방은 서동역 정류장)" },
               { icon: "🚇", label: "모모스커피", desc: "도보 20분 or 온천장역 하차 (지하철 1호선)" },
             ].map((item) => (
               <div key={item.label} className="border border-[#C4A882]/30 rounded-2xl p-4 bg-white/40">
