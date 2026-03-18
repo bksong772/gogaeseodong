@@ -10,6 +10,7 @@ const navItems = [
   { href: "/kitchen", label: "서동부엌" },
   { href: "/movie",   label: "서동영화" },
   { href: "/story",   label: "우리이야기" },
+  { href: "/guide",   label: "가이드" },
 ];
 
 export default function Navbar() {
