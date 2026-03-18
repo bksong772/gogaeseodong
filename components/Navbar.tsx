@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ChevronRight } from "lucide-react";
 
 const navItems = [
+  { href: "/story",   label: "우리이야기" },
   { href: "/stay",    label: "서동여관" },
   { href: "/kitchen", label: "서동부엌" },
   { href: "/movie",   label: "서동영화" },
-  { href: "/story",   label: "우리이야기" },
   { href: "/guide",   label: "가이드" },
 ];
 
