@@ -25,7 +25,7 @@ const foodSpots = [
     items: [
       { name: "우래돼지국밥", desc: "서동시장 안에 있는 현지인 맛집. 옛날 시장국밥 맛 그대로. 가성비 끝내주고 사람 진짜 많이 감.", mapUrl: "https://naver.me/GOhYNaI6" },
       { name: "명동손칼국수", desc: "초등학교 때부터 다닌 집. 가성비 최고. 칼국수+김밥, 선지국밥 추천. 서동 고개 바로 옆.", mapUrl: "" },
-      { name: "맛나분식", desc: "계란만두·떡볶이 시그니처. 배정남·안정환·최용수도 다녀간 집. 4명이 먹어도 2만원 안 넘는 가성비.", mapUrl: "", youtubeUrl: "https://youtu.be/arOOlumQzPo?si=jT5pnIa_wmofvXh7" },
+      { name: "맛나분식", desc: "계란만두·떡볶이 시그니처. 배정남·안정환·최용수도 다녀간 집. 4명이 먹어도 2만원 안 넘는 가성비.", mapUrl: "https://naver.me/Fr7pxpMb", youtubeUrl: "https://youtu.be/arOOlumQzPo?si=jT5pnIa_wmofvXh7" },
       { name: "동원김밥 (일미김밥)", desc: "부산 3대 김밥. 사장님 까탈스럽지만 맛은 인정. 체크아웃 날 포장 강추.", mapUrl: "", youtubeUrl: "https://youtu.be/m-070paMqf4?si=LYeM8veJYAd_43dF" },
       { name: "정가네선지국밥", desc: "선지국밥·우동이 맛있고 소주 한잔하기 딱. 새벽 4시까지 운영.", mapUrl: "https://naver.me/5h19VutU" },
     ],
@@ -62,6 +62,10 @@ const walkSpots = [
     emoji: "🏘️",
     desc: "서동 골목 안에 숨어있는 작은 재래시장. 우래돼지국밥, 맛나분식이 이 안에 있어요. 밥 먹고 골목 한 바퀴 도는 것만으로도 충분합니다.",
     mapUrl: "",
+    youtubeUrls: [
+      { label: "낮술 영상", url: "https://youtu.be/BUmXJ2Dpz_Y?si=vFukn1z1ljYMEV5h" },
+      { label: "여행 영상", url: "https://youtu.be/op2t5Zn60wk?si=G7GKV0wQ4cLYkfw5" },
+    ],
   },
   {
     name: "서명초등학교 전경",
@@ -311,16 +315,29 @@ export default function GuidePage() {
                           {item.tag}
                         </span>
                       </div>
-                      {item.mapUrl && (
-                        <a
-                          href={item.mapUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="shrink-0 text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2.5 py-1 hover:bg-[#D4884E]/10 transition-colors"
-                        >
-                          지도 →
-                        </a>
-                      )}
+                      <div className="flex items-center gap-1.5 shrink-0">
+                        {item.mapUrl && (
+                          <a
+                            href={item.mapUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-2.5 py-1 hover:bg-[#D4884E]/10 transition-colors"
+                          >
+                            지도 →
+                          </a>
+                        )}
+                        {(item as { youtubeUrls?: { label: string; url: string }[] }).youtubeUrls?.map((yt) => (
+                          <a
+                            key={yt.url}
+                            href={yt.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-[#9B7B6A] border border-[#C4A882]/40 rounded-full px-2.5 py-1 hover:bg-[#C4A882]/10 transition-colors"
+                          >
+                            {yt.label} →
+                          </a>
+                        ))}
+                      </div>
                     </div>
                     <p className="text-[#9B7B6A] text-sm leading-6">{item.desc}</p>
                   </div>
