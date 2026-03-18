@@ -7,12 +7,6 @@ export const metadata: Metadata = {
   description: "고개서동 주인장이 태어나고 자란 동네, 그 건물 이야기.",
 };
 
-const timeline = [
-  { year: "2023", event: "서동여관 오픈", desc: "그림의방, 필사의방, 취향의방" },
-  { year: "2023", event: "서동부엌 오픈", desc: "엄마가 슈퍼 하던 1층" },
-  { year: "2024", event: "서동영화 오픈", desc: "형님들 살던 2층" },
-  { year: "2024", event: "부산일보 소개", desc: "서동의 도시재생 프로젝트로 언론에 소개됨" },
-];
 
 const hostCares = [
   {
@@ -230,57 +224,6 @@ export default function StoryPage() {
         </div>
       </section>
 
-      {/* ── 타임라인 ─────────────────────────────────────── */}
-      <section
-        className="py-24"
-        style={{ borderBottom: "1px solid rgba(196, 168, 130, 0.3)" }}
-      >
-        <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <p className="section-label mb-12">TIMELINE</p>
-          <div className="card overflow-hidden">
-            {timeline.map((item, i) => (
-              <div
-                key={i}
-                className="flex items-start gap-8 p-7 sm:p-8"
-                style={{
-                  borderBottom:
-                    i < timeline.length - 1
-                      ? "1px solid rgba(196, 168, 130, 0.3)"
-                      : "none",
-                }}
-              >
-                <span
-                  style={{
-                    fontFamily: "'Playfair Display', serif",
-                    fontStyle: "italic",
-                    fontSize: "14px",
-                    color: "#B5632A",
-                    flexShrink: 0,
-                    marginTop: "2px",
-                    minWidth: "40px",
-                  }}
-                >
-                  {item.year}
-                </span>
-                <div>
-                  <p
-                    className="mb-1"
-                    style={{
-                      fontFamily: "'Noto Serif KR', serif",
-                      fontWeight: 700,
-                      fontSize: "16px",
-                      color: "#2C1810",
-                    }}
-                  >
-                    {item.event}
-                  </p>
-                  <p className="text-sm" style={{ color: "#9B7B6A" }}>{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ── CTA ──────────────────────────────────────────── */}
       <section className="py-32">
