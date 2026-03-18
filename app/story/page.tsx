@@ -62,116 +62,99 @@ export default function StoryPage() {
         </div>
       </section>
 
-      {/* ── 이 동네 이야기 ────────────────────────────────── */}
+      {/* ── 이야기 ───────────────────────────────────────── */}
       <section
         className="py-28"
         style={{ borderBottom: "1px solid rgba(196, 168, 130, 0.3)" }}
       >
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <div style={{ maxWidth: "640px" }}>
+          <div
+            className="space-y-8"
+            style={{
+              maxWidth: "600px",
+              fontSize: "15px",
+              lineHeight: "2",
+              color: "#6B4C3B",
+            }}
+          >
 
-            {/* 동네 역사 */}
-            <p className="section-label mb-10">이 동네에 대해</p>
-            <div
-              className="flex flex-col gap-3 text-sm leading-8"
-              style={{ color: "#6B4C3B" }}
-            >
-              <p>6·25 때 영주동에 자리가 없어서 올라온 사람들이 서동에 정착했다.</p>
-              <p>신발공장이 생겼다. 소형공장들이 생겼다. 사람들이 살았다.</p>
-              <p>그러다 공장들이 문을 닫았다. 사람들이 떠났다.</p>
-              <p>재개발은 주인장이 중학교 때부터 된다고 했다. 아직도 안 됐다.</p>
-              <p>지금은 고양이와 할머니들이 남아있다.</p>
-            </div>
+            {/* 동네 */}
+            <p>
+              6·25 때 영주동에 자리가 없어서 올라온 사람들이 서동에 정착했다.
+              신발공장이 생겼다. 소형공장들이 생겼다. 사람들이 살았다.
+              그러다 공장들이 문을 닫았다. 사람들이 떠났다.
+              재개발은 주인장이 중학교 때부터 된다고 했다. 아직도 안 됐다.
+              지금은 고양이와 할머니들이 남아있다.
+            </p>
 
-            {/* 건물 이야기 */}
-            <p className="section-label mt-16 mb-10">이 건물에 대해</p>
+            {/* 건물 */}
+            <p>
+              지금 고개서동은 원래 사람들이 살던 곳이다.
+            </p>
+
+            <p>
+              그림의방 4층엔 9명이 살았다. 할아버지, 할머니, 엄빠, 고모들, 누나, 주인장, 동생.
+              방 세 개였다. 그게 이상한 건지 한동안 몰랐다.
+            </p>
+
+            <p>
+              1층엔 엄마가 오랫동안 슈퍼를 했다. 동네 아지트였다.
+              바람피다 걸린 아줌마가 숨어있던 적도 있고,
+              매날 음식 나눠주던 아줌마가 알고보니 사기꾼이었던 적도 있다.
+              계 돈 떼이는 이야기도 하도 들어서, 지금도 계는 안 한다.
+              매주 싸움이 일어났다. 다들 이렇게 사는 줄 알았다.
+            </p>
+
+            <p>
+              필사의방 3층엔 수빈이네가 살았다.
+              신혼부터 살았는데 부부싸움을 너무 심하게 해서,
+              주인장은 결혼하면 다 그런 줄 알았다.
+              커서 보니 아니더라.
+            </p>
+
+            {/* 주인장 */}
+            <p>
+              중학교 때 알았다. 친구들은 다들 자기 방이 있었다.
+              온천장역에서 집까지 오르막 20분, 버스 타면 서동고개에서 다들 내린다.
+              종점도 아닌데 다 내린다.
+              어릴 땐 이 동네에 사는 게 좀 쪽팔렸다.
+            </p>
+
+            <p>
+              할아버지가 계단에서 굴러 피를 흘렸다. 그다음엔 뇌경색이 왔다.
+              엘베 없는 집에서 간호는 무리였다. 그래서 떠났다. 별 드라마 없이.
+            </p>
+
+            {/* 마무리 */}
             <div
-              className="flex flex-col gap-3 text-sm leading-8"
-              style={{ color: "#6B4C3B" }}
+              style={{
+                borderLeft: "3px solid rgba(181, 99, 42, 0.4)",
+                paddingLeft: "24px",
+                marginTop: "16px",
+              }}
             >
-              <p>지금 고개서동, 원래 사람들이 살던 곳이다.</p>
               <p
                 style={{
                   fontFamily: "'Noto Serif KR', serif",
-                  fontSize: "15px",
+                  fontSize: "17px",
+                  fontWeight: 700,
                   color: "#2C1810",
-                  fontWeight: 600,
+                  marginBottom: "16px",
                 }}
               >
-                그림의방 4층엔 9명이 살았다.
+                그래도 돌아왔다.
               </p>
-              <p>할아버지, 할머니, 엄빠, 고모들, 누나, 주인장, 동생. 방 세 개였다.</p>
-              <p>그게 이상한 건지 한동안 몰랐다.</p>
-            </div>
-
-            <div
-              className="flex flex-col gap-3 text-sm leading-8 mt-8"
-              style={{ color: "#6B4C3B" }}
-            >
-              <p>1층엔 엄마가 오랫동안 슈퍼를 했다. 동네 아지트였다.</p>
-              <p>바람피다 걸린 아줌마가 숨어있던 적도 있고,</p>
-              <p>매날 음식 나눠주던 아줌마가 알고보니 사기꾼이었던 적도 있다.</p>
-              <p>그냥 그런 동네였다.</p>
-            </div>
-
-            <div
-              className="flex flex-col gap-3 text-sm leading-8 mt-8"
-              style={{ color: "#6B4C3B" }}
-            >
-              <p>필사의방 3층엔 수빈이네가 살았다.</p>
-              <p>신혼부터 살았는데 부부싸움을 너무 심하게 해서,</p>
-              <p>주인장은 결혼하면 다 그런 줄 알았다.</p>
-              <p>커서 보니 아니더라.</p>
-            </div>
-
-            {/* 주인장 성장기 */}
-            <p className="section-label mt-16 mb-10">주인장에 대해</p>
-            <div
-              className="flex flex-col gap-3 text-sm leading-8"
-              style={{ color: "#6B4C3B" }}
-            >
-              <p>중학교 때 알았다. 친구들은 다들 자기 방이 있었다.</p>
-              <p>온천장역에서 집까지 오르막 20분.</p>
-              <p>버스 타면 서동고개에서 다들 내린다. 종점도 아닌데 다 내린다.</p>
-              <p>어릴 땐 이 동네에 사는 게 좀 쪽팔렸다.</p>
-            </div>
-
-            <div
-              className="flex flex-col gap-3 text-sm leading-8 mt-8"
-              style={{ color: "#6B4C3B" }}
-            >
-              <p>할아버지가 계단에서 굴러 피를 흘렸다.</p>
-              <p>그다음엔 뇌경색이 왔다.</p>
-              <p>엘베 없는 집에서 간호는 무리였다.</p>
-              <p>그래서 떠났다. 별 드라마 없이.</p>
-            </div>
-
-            {/* 왜 돌아왔나 */}
-            <div
-              className="mt-16 p-8 rounded-2xl"
-              style={{ backgroundColor: "#F0E8D5" }}
-            >
-              <div className="flex flex-col gap-3 text-sm leading-8" style={{ color: "#6B4C3B" }}>
-                <p
-                  style={{
-                    fontFamily: "'Noto Serif KR', serif",
-                    fontSize: "16px",
-                    color: "#2C1810",
-                    fontWeight: 700,
-                  }}
-                >
-                  돌아와서 고쳤다.
-                </p>
-                <p>아무리 고쳐도 시간의 흔적은 어쩔 수 없더라.</p>
-                <p>그 부분은 오시는 분들께 솔직히 미안한 마음이 있다.</p>
-                <p>그래서 최대한 친절함으로 보답하려고 한다.</p>
-                <p>없는 장점까지 끄집어내서 이 동네를 알리려고 한다.</p>
-                <p>주인장의 모든 역량을 이 공간에 다 쏟고 있다.</p>
-                <p style={{ color: "#9B7B6A", marginTop: "4px" }}>
-                  사라지기 전에 누군가 이 동네를 알았으면 했다.<br />
-                  그리고 솔직히, 먹고는 살아야 하니까.
-                </p>
-              </div>
+              <p>
+                아무리 고쳐도 시간의 흔적은 어쩔 수 없더라.
+                그 부분은 오시는 분들께 솔직히 미안한 마음이 있다.
+                그래서 최대한 친절함으로 보답하려고 한다.
+                없는 장점까지 끄집어내서 이 동네를 알리려고 한다.
+                주인장의 모든 역량을 이 공간에 다 쏟고 있다.
+              </p>
+              <p style={{ color: "#9B7B6A", marginTop: "12px" }}>
+                사라지기 전에 누군가 이 동네를 알았으면 했다.
+                그리고 솔직히, 먹고는 살아야 하니까.
+              </p>
             </div>
 
           </div>
