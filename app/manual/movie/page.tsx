@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import type { LucideIcon } from "lucide-react";
+import Image from "next/image";
 import {
   MapPin,
   Key,
@@ -56,15 +57,8 @@ export default function MovieManualPage() {
     <div className="pt-16">
       {/* ── 히어로 ─────────────────────────────────────── */}
       <div className="relative w-full" style={{ height: "280px" }}>
-        <div
-          className="absolute inset-0 flex items-center justify-center"
-          style={{ backgroundColor: "#2C1810" }}
-        >
-          <p style={{ color: "rgba(250,245,237,0.12)", fontFamily: "'Playfair Display', serif", fontSize: "80px", fontStyle: "italic" }}>
-            film
-          </p>
-        </div>
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(44,24,16,0.2) 0%, rgba(44,24,16,0.75) 100%)" }} />
+        <Image src="/manual/movie/서동영화.png" alt="서동영화" fill className="object-cover" priority />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(44,24,16,0.05) 0%, rgba(44,24,16,0.72) 100%)" }} />
         <div className="absolute bottom-0 left-0 right-0 pb-7 px-6 sm:px-8">
           <div className="max-w-2xl mx-auto">
             <p className="section-label mb-3" style={{ color: "rgba(250,245,237,0.75)" }}>
@@ -102,12 +96,14 @@ export default function MovieManualPage() {
             style={{ backgroundColor: "#FFF8F0", border: "1px solid rgba(181, 99, 42, 0.25)" }}>
             <p className="section-label" style={{ fontSize: "10px", marginBottom: "6px" }}>📌 비밀번호 안내</p>
             <p className="text-sm font-semibold" style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}>
-              비밀번호는 이용 당일 별도로 전달드려요
+              이용 시작 30분 전에 카카오 채널로 전달드려요
             </p>
             <p className="text-xs mt-2" style={{ color: "#9B7B6A" }}>
               못 받으셨으면{" "}
-              <a href="http://pf.kakao.com/_VCxnsb" target="_blank" rel="noopener noreferrer" style={{ color: "#B5632A" }}>카카오 채널 &lsquo;고개서동&rsquo;</a>
-              {" "}으로 쪽지 남겨주세요
+              <a href="http://pf.kakao.com/_VCxnsb" target="_blank" rel="noopener noreferrer" style={{ color: "#B5632A" }}>카카오 채널</a>
+              {" "}또는{" "}
+              <a href="tel:01035484572" style={{ color: "#B5632A" }}>010-3548-4572</a>
+              {" "}로 연락 주세요
             </p>
           </div>
           <div className="text-sm space-y-2" style={{ color: "#2C1810", lineHeight: "1.9" }}>
@@ -122,6 +118,9 @@ export default function MovieManualPage() {
               2층으로 올라오시면 <strong>회색 문</strong>이 서동영화입니다.<br />
               도어락 커버를 올리고 비밀번호 입력 후 닫으면 문이 열립니다.
             </p>
+            <div className="rounded-xl overflow-hidden mt-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/movie/입구문.JPG" alt="서동영화 입구 문" width={600} height={400} className="w-full object-cover" />
+            </div>
           </div>
         </Block>
 
@@ -129,17 +128,17 @@ export default function MovieManualPage() {
         <Block icon={Wifi} title="와이파이">
           <div className="space-y-2">
             {[
-              { id: "seodongwifi1", pw: "seodong12!@", best: true },
-              { id: "seodongwifi3", pw: "seodong12!@", best: false },
-              { id: "seodongwifi4", pw: "seodong12!@", best: false },
+              { id: "seodongwifi1", pw: "seodong12!@", badge: "신호 강함 ★★", highlight: true },
+              { id: "seodongwifi3", pw: "seodong12!@", badge: "신호 강함 ★", highlight: true },
+              { id: "seodongwifi4", pw: "seodong12!@", badge: null, highlight: false },
             ].map((wifi) => (
               <div key={wifi.id} className="rounded-xl p-3 flex items-center justify-between"
-                style={{ backgroundColor: wifi.best ? "#FFF8F0" : "#F0E8D5", border: wifi.best ? "1px solid rgba(181, 99, 42, 0.5)" : "1px solid rgba(196, 168, 130, 0.4)" }}>
+                style={{ backgroundColor: wifi.highlight ? "#FFF8F0" : "#F0E8D5", border: wifi.highlight ? "1px solid rgba(181, 99, 42, 0.5)" : "1px solid rgba(196, 168, 130, 0.4)" }}>
                 <div>
                   <p className="text-xs" style={{ color: "#9B7B6A" }}>ID</p>
                   <p className="text-sm font-semibold" style={{ color: "#2C1810" }}>
                     {wifi.id}
-                    {wifi.best && <span className="ml-2 text-xs font-normal" style={{ color: "#B5632A" }}>신호 강함 ★</span>}
+                    {wifi.badge && <span className="ml-2 text-xs font-normal" style={{ color: "#B5632A" }}>{wifi.badge}</span>}
                   </p>
                 </div>
                 <div className="text-right">
@@ -167,8 +166,15 @@ export default function MovieManualPage() {
               <p>
                 카카오택시 →{" "}
                 <strong style={{ color: "#B5632A" }}>&lsquo;네네치킨 서동점&rsquo;</strong>
-                {" "}으로 설정하면 쉽게 찾으실 수 있어요.
+                {" "}으로 설정 후 내린 뒤,{" "}
+                <strong>새한씽크 사잇길</strong>로 30m 정도 올라오시면 고개서동이 보입니다.
               </p>
+              <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>네네치킨 바로 앞이 아니에요!</p>
+            </div>
+            <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
+              <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                <Image src="/manual/movie/가는길.png" alt="서동영화 가는 길 지도" width={600} height={400} className="w-full object-cover" />
+              </div>
             </div>
             <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
               <a href="https://m.blog.naver.com/bksong77/222609333636" target="_blank" rel="noopener noreferrer"
@@ -197,6 +203,10 @@ export default function MovieManualPage() {
               <p>에어컨, 빔프로젝터 등 전자제품과 전등을 모두 끈 후<br />
                 <strong style={{ color: "#B5632A" }}>차단기를 내려주세요.</strong>
               </p>
+            </div>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/movie/두꺼비집.jpg" alt="차단기(두꺼비집)" width={600} height={400} className="w-full object-cover" />
+              <p className="text-xs text-center py-2" style={{ color: "#9B7B6A", backgroundColor: "#F0E8D5" }}>입구 좌측 벽면 차단기</p>
             </div>
           </div>
         </Block>
