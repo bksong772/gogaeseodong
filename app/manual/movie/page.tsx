@@ -321,9 +321,7 @@ export default function MovieManualPage() {
           <div className="text-sm" style={{ color: "#2C1810" }}>
             <p className="mb-3">스튜디오 조명과 거울을 이용한 셀프 촬영이 가능해요.</p>
             <a
-              href="https://www.notion.so/e6170b202802458eb3d4cd0390caf119"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/manual/movie/studio"
               className="flex items-center gap-2"
               style={{ color: "#B5632A" }}
             >
