@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import FloatingChat from "@/components/FloatingChat";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gogaeseodong-sigma.vercel.app"),
   title: {
     default: "고개서동 | 부산 서동의 낡은 공간들",
     template: "%s | 고개서동",
