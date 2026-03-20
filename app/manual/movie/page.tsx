@@ -215,6 +215,9 @@ export default function MovieManualPage() {
         <Block icon={Wind} title="냉난방기 (에어컨)">
           <div className="space-y-4 text-sm" style={{ color: "#2C1810" }}>
             <p>내부 에어컨(캐리어) 리모컨으로 조작합니다.</p>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/movie/리모컨.JPG" alt="에어컨 리모컨" width={600} height={400} className="w-full object-cover" />
+            </div>
             <div className="rounded-xl p-4"
               style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>운전 선택 모드</p>
@@ -229,6 +232,12 @@ export default function MovieManualPage() {
             <p className="text-xs" style={{ color: "#9B7B6A" }}>
               ① 전원 ON → ② 운전 선택 → ③ 온도·풍향·풍량 선택
             </p>
+            <div className="rounded-xl p-3"
+              style={{ backgroundColor: "#FFF8F0", border: "1px solid rgba(181, 99, 42, 0.3)" }}>
+              <p className="text-xs font-semibold" style={{ color: "#B5632A" }}>
+                ⚡ 인버터 방식이라 작동 후 3~5분 정도 지나야 냉난방이 됩니다.
+              </p>
+            </div>
           </div>
         </Block>
 
@@ -245,6 +254,9 @@ export default function MovieManualPage() {
                 style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
                 <p><strong>온수 전용</strong> — 온수만 나옵니다</p>
               </div>
+            </div>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/movie/보일러.jpg" alt="보일러" width={600} height={400} className="w-full object-cover" />
             </div>
             <p className="font-semibold" style={{ color: "#B5632A" }}>사용 후 전원을 꼭 꺼주세요!</p>
           </div>
@@ -275,11 +287,13 @@ export default function MovieManualPage() {
                 빔프로젝터 참고 영상
               </a>
             </div>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/movie/HDMI.png" alt="HDMI 연결" width={600} height={400} className="w-full object-cover" />
+            </div>
             <div className="rounded-xl p-4"
               style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>다른 연결 방법</p>
               <div className="space-y-1 text-sm" style={{ color: "#2C1810" }}>
-                <p>📺 <strong>HDMI</strong> — 비치된 HDMI 선으로 직접 연결</p>
                 <p>💾 <strong>USB</strong> — 빔프로젝터에 USB 연결 후 시청</p>
                 <p>📱 <strong>스마트폰 무선</strong> — 안드로이드: Miracast / 아이폰: iOS 미러링</p>
               </div>
