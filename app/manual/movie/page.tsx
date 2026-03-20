@@ -212,9 +212,9 @@ export default function MovieManualPage() {
         </Block>
 
         {/* 5. 냉난방기 */}
-        <Block icon={Wind} title="냉난방기 (에어컨)">
+        <Block icon={Wind} title="냉난방기 (에어컨/히터)">
           <div className="space-y-4 text-sm" style={{ color: "#2C1810" }}>
-            <p>내부 에어컨(캐리어) 리모컨으로 조작합니다.</p>
+            <p>내부 에어컨(캐리어) <strong>하얀 리모컨</strong>으로 조작합니다.</p>
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <Image src="/manual/movie/리모컨.JPG" alt="에어컨 리모컨" width={600} height={400} className="w-full object-cover" />
             </div>
