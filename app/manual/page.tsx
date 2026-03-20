@@ -21,6 +21,18 @@ import {
 export const metadata: Metadata = {
   title: "서동부엌 이용 메뉴얼 | 고개서동",
   description: "서동부엌 공유주방 이용 안내. 비밀번호 안내, 시설 사용법, 주차, 와이파이, 퇴실 방법.",
+  openGraph: {
+    title: "서동부엌 이용 메뉴얼",
+    description: "서동부엌 공유주방 이용 안내",
+    images: [
+      {
+        url: "/manual/서동부엌.png",
+        width: 1200,
+        height: 630,
+        alt: "서동부엌",
+      },
+    ],
+  },
 };
 
 function Block({ icon: Icon, title, children }: { icon: LucideIcon; title: string; children: ReactNode }) {
