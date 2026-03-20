@@ -346,6 +346,7 @@ export default function MovieManualPage() {
           <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
             <p>🗑 <strong>일반쓰레기</strong> — 냉장고 옆 쓰레기통에 넣어주세요.</p>
             <p>🥬 <strong>음식물</strong> — 싱크대에 놔두시면 됩니다.</p>
+            <p>♻️ <strong>재활용품</strong> — 싱크대에 놔두시면 됩니다.</p>
           </div>
         </Block>
 
@@ -423,7 +424,7 @@ export default function MovieManualPage() {
           <div className="card p-5 sm:p-6" style={{ backgroundColor: "#F0E8D5" }}>
             <p className="text-sm" style={{ color: "#2C1810" }}>스페이스클라우드 또는 네이버 리뷰 작성 시</p>
             <p className="text-base font-bold mt-2 mb-3" style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}>
-              🎁 30분 추가 이용 또는 무료 주차!
+              🎁 무료 주차!
             </p>
             <p className="text-xs" style={{ color: "#9B7B6A" }}>리뷰 작성 예정이시면 미리 알려주시면 더 챙겨드릴 수 있어요.</p>
           </div>
