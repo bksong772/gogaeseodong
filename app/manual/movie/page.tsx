@@ -424,7 +424,7 @@ export default function MovieManualPage() {
             <p className="text-base font-bold mt-2 mb-3" style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}>
               🎁 무료 주차!
             </p>
-            <p className="text-xs" style={{ color: "#9B7B6A" }}>리뷰 작성 예정이시면 미리 알려주시면 더 챙겨드릴 수 있어요.</p>
+            <p className="text-xs" style={{ color: "#9B7B6A" }}>리뷰 작성 예정이시면 미리 알려주세요 :) 감사합니다!</p>
           </div>
         </div>
 
