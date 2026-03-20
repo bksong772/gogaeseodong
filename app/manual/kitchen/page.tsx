@@ -16,6 +16,7 @@ import {
   Star,
   AlertCircle,
   ExternalLink,
+  Building2,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -321,6 +322,7 @@ export default function KitchenManualPage() {
               급한 문의:{" "}
               <a href="tel:01035484572" style={{ color: "#B5632A", fontWeight: 600 }}>010-3548-4572</a>
             </p>
+            <p className="text-xs" style={{ color: "#9B7B6A" }}>응답이 느린 경우도 있으니 양해 부탁드립니다 🙏</p>
           </div>
         </Block>
 
@@ -377,11 +379,48 @@ export default function KitchenManualPage() {
           <div className="card p-5 sm:p-6" style={{ backgroundColor: "#F0E8D5" }}>
             <p className="text-sm" style={{ color: "#2C1810" }}>스페이스클라우드 또는 네이버 리뷰 작성 시</p>
             <p className="text-base font-bold mt-2 mb-3" style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}>
-              🎁 30분 추가 이용 또는 무료 주차!
+              🎁 무료 주차!
             </p>
-            <p className="text-xs" style={{ color: "#9B7B6A" }}>리뷰 작성 전에 미리 알려주시면 더 챙겨드릴 수 있어요.</p>
+            <p className="text-xs" style={{ color: "#9B7B6A" }}>리뷰 작성 예정이시면 미리 알려주세요 :) 감사합니다!</p>
           </div>
         </div>
+
+        {/* 13. 주변 편의시설 */}
+        <Block icon={Building2} title="주변 편의시설">
+          <div className="space-y-4 text-sm" style={{ color: "#2C1810" }}>
+            <div>
+              <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>근처 편의시설</p>
+              <div className="space-y-2">
+                {[
+                  { name: "서동미로시장", addr: "부산 금정구 서동로141번길 16" },
+                  { name: "GS25 서동로점", addr: "부산 금정구 서동로 105" },
+                  { name: "엘마트", addr: "부산 금정구 서동로103번길 14" },
+                  { name: "새마을금고", addr: "부산 금정구 서동로 109" },
+                  { name: "부산은행", addr: "부산 금정구 서동로 75-7" },
+                ].map((place) => (
+                  <div key={place.name} className="flex items-start gap-2">
+                    <span className="font-semibold" style={{ flexShrink: 0 }}>{place.name}</span>
+                    <span style={{ color: "#9B7B6A" }}>{place.addr}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
+              <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>대형마트 (차량 이용)</p>
+              <div className="space-y-2">
+                {[
+                  { name: "탑마트 금사점", addr: "부산 금정구 공단서로 22" },
+                  { name: "GS더프레시 부곡점", addr: "부산 금정구 부곡로 79" },
+                ].map((place) => (
+                  <div key={place.name} className="flex items-start gap-2">
+                    <span className="font-semibold" style={{ flexShrink: 0 }}>{place.name}</span>
+                    <span style={{ color: "#9B7B6A" }}>{place.addr}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Block>
 
         {/* 푸터 */}
         <div className="text-center py-10" style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)" }}>
