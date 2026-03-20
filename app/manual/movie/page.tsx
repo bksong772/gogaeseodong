@@ -246,8 +246,14 @@ export default function MovieManualPage() {
             <div className="rounded-xl p-4"
               style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>연결 순서 (노트북 사용 시)</p>
+              <div className="rounded-xl p-3 text-center mb-3"
+                style={{ backgroundColor: "#FFF8F0", border: "2px solid rgba(181, 99, 42, 0.5)" }}>
+                <p className="section-label" style={{ fontSize: "10px", marginBottom: "4px" }}>💻 노트북 비밀번호</p>
+                <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "28px", fontWeight: 700, color: "#B5632A", letterSpacing: "4px" }}>
+                  11110000
+                </p>
+              </div>
               <div className="space-y-1 text-sm" style={{ color: "#2C1810" }}>
-                <p>노트북 비밀번호: <strong style={{ color: "#B5632A" }}>11110000</strong></p>
                 <p className="text-xs mt-2" style={{ color: "#9B7B6A" }}>① 노트북 전원 ON</p>
                 <p className="text-xs" style={{ color: "#9B7B6A" }}>② 까만 리모컨으로 빔 전원 ON <span style={{ color: "#C4A882" }}>(버튼을 잘 눌러야 작동됩니다)</span></p>
                 <p className="text-xs" style={{ color: "#9B7B6A" }}>③ 빔 화면에서 <strong>HDMI &amp; VGA 모드</strong>로 접속</p>
@@ -330,7 +336,7 @@ export default function MovieManualPage() {
             </p>
             <p>
               급한 문의:{" "}
-              <a href="tel:01086464572" style={{ color: "#B5632A", fontWeight: 600 }}>010-8646-4572</a>
+              <a href="tel:01035484572" style={{ color: "#B5632A", fontWeight: 600 }}>010-3548-4572</a>
             </p>
             <p className="text-xs" style={{ color: "#9B7B6A" }}>응답이 느린 경우도 있으니 양해 부탁드립니다 🙏</p>
           </div>
