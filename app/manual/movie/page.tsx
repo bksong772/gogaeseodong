@@ -336,7 +336,7 @@ export default function MovieManualPage() {
         {/* 9. 집기류 */}
         <Block icon={Package} title="컵 · 접시 · 집기류">
           <div className="text-sm space-y-2" style={{ color: "#2C1810" }}>
-            <p>2층 싱크대 선반에 구비되어 있습니다.</p>
+            <p>싱크대 상부장에 구비되어 있습니다.</p>
             <p style={{ color: "#9B7B6A" }}>이용 후 깨끗이 정리 부탁드립니다.</p>
           </div>
         </Block>
