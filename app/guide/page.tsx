@@ -403,7 +403,7 @@ export default function GuidePage() {
               <ul className="space-y-2 text-sm text-[#6B4C3B] leading-7">
                 <li>🍜 아침: 우래돼지국밥 or 명동손칼국수</li>
                 <li>🌄 오전: 서명초등학교까지 산책 + 전경 구경</li>
-                <li>☕ 로제이브 카페 (부산대, 29번 버스)</li>
+                <li>☕ 동네 테이크아웃 커피 한 잔</li>
                 <li>📦 체크아웃 전: 동원김밥 포장 후 귀가</li>
               </ul>
             </div>
