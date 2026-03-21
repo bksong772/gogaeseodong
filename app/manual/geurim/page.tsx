@@ -259,26 +259,22 @@ export default function GeurimManualPage() {
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>📱 스마트폰 무선 연결</p>
               <ol className="space-y-2" style={{ color: "#2C1810", paddingLeft: "4px" }}>
-                <li>1. 스마트폰을 <strong>seodongwifi4</strong>에 연결하세요.</li>
-                <li>2. 빔 프로젝터 메뉴에서 <strong>스마트뷰 or 미러링</strong> 선택</li>
-                <li>3. 스마트폰에서 스마트뷰 or 미러링 실행 후<br />
+                <li>1. 까만색 리모컨으로 <strong>빔 전원</strong>을 켭니다. <span style={{ color: "#9B7B6A" }}>(버튼 꾹 눌러야 작동해요)</span></li>
+                <li>2. 스마트폰을 <strong>seodongwifi4</strong>에 연결하세요.</li>
+                <li>3. 빔 프로젝터 메뉴에서 <strong>Miracast or iOS 미러링</strong> 선택</li>
+                <li>4. 스마트폰에서 미러링 실행 후<br />
                   <strong style={{ color: "#B5632A" }}>ZYCast로 시작하는 기기</strong>에 연결</li>
-                <li>4. 빔 화면에 <strong>Connect Success</strong> 뜨면 연결 완료!</li>
+                <li>5. 빔 화면에 <strong>Connect Success</strong> 뜨면 연결 완료!</li>
               </ol>
-              <div className="mt-3 pt-3" style={{ borderTop: "1px solid rgba(196,168,130,0.3)" }}>
-                <p className="text-xs" style={{ color: "#9B7B6A" }}>
-                  안드로이드 → miracast / 아이폰 → iOS 미러링
-                </p>
-              </div>
             </div>
 
             {/* 태블릿 사용 */}
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>📲 비치된 태블릿 사용 시</p>
               <ol className="space-y-2" style={{ color: "#2C1810", paddingLeft: "4px" }}>
-                <li>1. 까만색 리모컨으로 빔 전원을 켭니다. <span style={{ color: "#9B7B6A" }}>(버튼 꾹 눌러야 작동해요)</span></li>
-                <li>2. 리모컨으로 <strong>Miracast</strong> 접속</li>
-                <li>3. 태블릿에서 <strong>Smart View</strong> 켜기</li>
+                <li>1. 까만색 리모컨으로 <strong>빔 전원</strong>을 켭니다. <span style={{ color: "#9B7B6A" }}>(버튼 꾹 눌러야 작동해요)</span></li>
+                <li>2. 리모컨으로 빔 메뉴에서 <strong>Miracast</strong> 접속</li>
+                <li>3. 태블릿(안드로이드)에서 <strong>Smart View</strong> 켜기</li>
                 <li>4. <strong style={{ color: "#B5632A" }}>ZYCast</strong> 기기명 확인 후 접속</li>
                 <li>5. 빔 화면에 <strong>Connect Success</strong> 뜨면 완료!</li>
               </ol>
