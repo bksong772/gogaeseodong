@@ -32,6 +32,7 @@ const foodSpots = [
       { name: "맛나분식", desc: "계란만두·떡볶이 시그니처. 배정남·안정환·최용수도 다녀간 집. 4명이 먹어도 2만원 안 넘는 가성비.", mapUrl: "https://naver.me/Fr7pxpMb", youtubeUrl: "https://youtu.be/arOOlumQzPo?si=jT5pnIa_wmofvXh7" },
       { name: "동원김밥 (일미김밥)", desc: "부산 3대 김밥. 사장님 까탈스럽지만 맛은 인정. 체크아웃 날 포장 강추.", mapUrl: "https://naver.me/5yPnpmzx", youtubeUrl: "https://youtu.be/m-070paMqf4?si=LYeM8veJYAd_43dF" },
       { name: "정가네선지국밥", desc: "선지국밥·우동이 맛있고 소주 한잔하기 딱. 새벽 4시까지 운영.", mapUrl: "https://naver.me/5h19VutU" },
+      { name: "할매회무침", desc: "요즘 뜨는 서동 가성비 맛집. 부산 가성비 맛집 10위 안에 꼽히기도 하는 집. 정가네선지국밥 주변.", mapUrl: "https://naver.me/GOhjHSFn", youtubeUrl: "https://youtu.be/-iU7rqVp51o?si=38Rd5beUiHfegquE&t=663" },
     ],
   },
   {
