@@ -132,6 +132,7 @@ export default function YeogwanManualPage() {
               <span style={{ color: "#9B7B6A" }}>1층이 하얀 커튼으로 쳐진 집이에요.</span><br />
               <strong style={{ color: "#B5632A" }}>빨간 대문</strong>으로 올라오셔서
               계단을 따라 <strong style={{ color: "#B5632A" }}>3층 끝까지</strong> 오시면 파란 대문이 필사의방입니다.<br />
+              <span style={{ color: "#9B7B6A" }}>숫자 3이 적힌 파란 대문이 필사의방이에요.</span><br />
               도어락 커버를 올리고 비밀번호 입력 후 닫으면 열려요.
             </p>
             <div className="rounded-xl overflow-hidden mt-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
@@ -208,7 +209,7 @@ export default function YeogwanManualPage() {
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>공통 비치 품목</p>
               <div className="space-y-1.5 text-sm" style={{ color: "#2C1810" }}>
-                <p>🛁 수건 (1인 3장/1박), 드라이기, 고데기</p>
+                <p>🛁 수건 (1인 3장/1박), 드라이기, 고데기, 치약</p>
                 <p>🧴 샴푸·바디워시·컨디셔너·샤워타월·손세정제</p>
                 <p>🍳 그릇·수저·냄비·팬·와인잔·오프너</p>
                 <p>🌿 공기청정기·무드등·인센스 스틱</p>
@@ -249,6 +250,9 @@ export default function YeogwanManualPage() {
         {/* 7. 보일러 */}
         <Block icon={Wind} title="보일러">
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
+            <div className="rounded-xl overflow-hidden mb-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/philsa/보일러.jpg" alt="보일러" width={600} height={400} className="w-full object-cover" />
+            </div>
             <p><strong>우측 아래 전원 버튼</strong>을 누르면 작동합니다.</p>
             <div className="grid grid-cols-2 gap-2 mt-3">
               <div className="rounded-xl p-3 text-center"
@@ -270,15 +274,15 @@ export default function YeogwanManualPage() {
         <Block icon={Flame} title="가스렌지">
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
             <p>가스렌지 <strong>좌측에 가스밸브</strong>가 위치합니다.</p>
-            <p className="font-semibold" style={{ color: "#B5632A" }}>가스 사용 시 꼭 안전에 유의해주세요 🙏</p>
+            <p className="font-semibold" style={{ color: "#B5632A" }}>⚠️ 사용 후 반드시 가스밸브를 잠궈주세요! 안전을 위해 꼭 확인 부탁드립니다 🙏</p>
           </div>
         </Block>
 
         {/* 9. 쓰레기 */}
         <Block icon={Trash2} title="쓰레기 분리수거">
           <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
-            <p>🗑 <strong>일반쓰레기</strong> — 주방 쪽 쓰레기통에 버려주세요.</p>
-            <p>🥬 <strong>음식물</strong> — 주방 위생백에 담아 싱크대에 놔둬주세요.</p>
+            <p>🗑 <strong>일반쓰레기</strong> — 냉장고 옆 쓰레기통에 버려주세요.</p>
+            <p>🥬 <strong>음식물</strong> — 주방 싱크대 음식물통에 넣어주세요.</p>
             <p>♻️ <strong>재활용</strong> (플라스틱·캔·병) — 화장실 내 분리수거함에 부탁드려요.</p>
           </div>
         </Block>
