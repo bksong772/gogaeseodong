@@ -272,13 +272,35 @@ export default function GeurimManualPage() {
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "6px" }}>📲 비치된 태블릿 사용 시</p>
               <p className="text-xs mb-3" style={{ color: "#B5632A" }}>태블릿이 잘 안 될 때는 스마트폰 미러링을 추천해요!</p>
-              <ol className="space-y-2" style={{ color: "#2C1810", paddingLeft: "4px" }}>
-                <li>1. 까만색 리모컨으로 <strong>빔 전원</strong>을 켭니다. <span style={{ color: "#9B7B6A" }}>(버튼 꾹 눌러야 작동해요)</span></li>
-                <li>2. 리모컨으로 빔 메뉴에서 <strong>Miracast</strong> 접속</li>
-                <li>3. 태블릿(안드로이드)에서 <strong>Smart View</strong> 켜기</li>
-                <li>4. <strong style={{ color: "#B5632A" }}>ZYCast</strong> 기기명 확인 후 접속</li>
-                <li>5. 빔 화면에 <strong>Connect Success</strong> 뜨면 완료!</li>
-              </ol>
+              <div className="space-y-4">
+                <div>
+                  <p style={{ color: "#2C1810" }}>1. 까만색 리모컨으로 <strong>빔 전원</strong>을 켭니다. <span style={{ color: "#9B7B6A" }}>(버튼 꾹 눌러야 작동해요)</span></p>
+                </div>
+                <div>
+                  <p style={{ color: "#2C1810" }} className="mb-2">2. 리모컨으로 빔 메뉴에서 <strong>Miracast</strong> 접속</p>
+                  <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                    <Image src="/manual/geurim/beam/빔프로젝트메뉴.jpeg" alt="빔 프로젝터 메뉴" width={600} height={400} className="w-full object-cover" />
+                  </div>
+                </div>
+                <div>
+                  <p style={{ color: "#2C1810" }} className="mb-2">3. 태블릿(안드로이드)에서 <strong>Smart View</strong> 켜기</p>
+                  <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                    <Image src="/manual/geurim/beam/smartview화면.jpeg" alt="Smart View 화면" width={600} height={400} className="w-full object-cover" />
+                  </div>
+                </div>
+                <div>
+                  <p style={{ color: "#2C1810" }} className="mb-2">4. <strong style={{ color: "#B5632A" }}>ZYCast</strong> 기기명 확인 후 접속</p>
+                  <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                    <Image src="/manual/geurim/beam/ZYCast.jpeg" alt="ZYCast 연결" width={600} height={400} className="w-full object-cover" />
+                  </div>
+                </div>
+                <div>
+                  <p style={{ color: "#2C1810" }} className="mb-2">5. 빔 화면에 <strong>Connect Success</strong> 뜨면 완료!</p>
+                  <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                    <Image src="/manual/geurim/beam/Connect Success.jpeg" alt="Connect Success" width={600} height={400} className="w-full object-cover" />
+                  </div>
+                </div>
+              </div>
             </div>
 
 
