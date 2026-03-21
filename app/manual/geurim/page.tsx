@@ -337,6 +337,9 @@ export default function GeurimManualPage() {
         {/* 10. 온풍기 */}
         <Block icon={Wind} title="온풍기 안내 · 겨울 한정 비치">
           <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/geurim/온풍기.jpg" alt="온풍기" width={600} height={400} className="w-full object-cover" />
+            </div>
             <p>안방과 다락방에 비치된 온풍기입니다. 직접 조작하시면 됩니다.</p>
             <div className="rounded-xl p-4"
               style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.25)" }}>
