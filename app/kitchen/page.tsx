@@ -78,12 +78,16 @@ export default function KitchenPage() {
             부산 금정구 서동의 프라이빗 공유주방.<br />
             요리하고, 먹고, 어울리는 시간.
           </p>
-          <p
-            className="text-sm font-bold mb-4"
-            style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}
-          >
-            ★ 5.0 — 리뷰 31개
-          </p>
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <p
+              className="text-sm font-bold"
+              style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}
+            >
+              ★ 5.0 — 스페이스클라우드 리뷰 31개
+            </p>
+            <span style={{ color: "rgba(196, 168, 130, 0.5)" }}>|</span>
+            <p className="text-xs" style={{ color: "#9B7B6A" }}>네이버 리뷰도 좋아요</p>
+          </div>
           <div
             className="rounded-xl p-4 mb-5"
             style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)", maxWidth: "480px" }}
