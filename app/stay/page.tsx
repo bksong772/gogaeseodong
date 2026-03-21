@@ -23,11 +23,10 @@ const rooms = [
     tag: "커플 추천",
     addr: "서동로91번길 7, 3층",
     desc: "TV도 없고, 영상 매체도 없습니다. 책상, 안락의자, 스탠드 조명, 블루투스 스피커. 아무것도 하지 않아도 되는 하루, 오랫동안 미뤄둔 글을 쓰고 싶은 분들을 위한 방입니다.",
-    features: ["독채 3층", "최대 2인", "TV 없음", "안락의자·책상"],
+    features: ["독채 3층", "최대 3인", "TV 없음", "안락의자·책상"],
     highlight: "책상·스탠드 조명 · 안락의자 · 블루투스 스피커",
     airbnb: "https://www.airbnb.co.kr/rooms/746091488451213213",
     note: "조용한 하룻밤을 원한다면",
-    manual: "/manual/philsa",
   },
   {
     no: "二",
@@ -35,12 +34,11 @@ const rooms = [
     en: "Room of Painting",
     tag: "커플 추천",
     addr: "서동로91번길 7, 4층",
-    desc: "드래곤볼·귀멸의칼날 전집, LP 턴테이블, 아크릴 물감. 주인장이 직접 고른 그림들로 채워진 4층 독채. 빔프로젝터로 영화도 볼 수 있습니다.",
-    features: ["독채 4층", "최대 2인", "빔프로젝터", "LP 턴테이블"],
-    highlight: "드래곤볼·귀멸의칼날 · LP 턴테이블 · 아크릴 물감·이젤",
+    desc: "드래곤볼·귀멸의칼날 전집, LP 턴테이블, 그림북과 색연필, 데코용 아크릴 물감. 4층 독채에서 영화도 보고, 그림도 그리고, 음악도 듣는 방입니다.",
+    features: ["독채 4층", "최대 4인", "빔프로젝터", "LP 턴테이블", "그림북·색연필"],
+    highlight: "드래곤볼·귀멸의칼날 · LP 턴테이블 · 그림북·색연필",
     airbnb: "https://www.airbnb.co.kr/rooms/699514631888252996",
     note: "커플에게 추천",
-    manual: "/manual/geurim",
   },
   {
     no: "三",
@@ -48,12 +46,11 @@ const rooms = [
     en: "Room of Taste",
     tag: "가족 추천",
     addr: "옥봉로13번길 26, 2층",
-    desc: "서동여관의 시작. 90년대 고택 한 층 독채. 거실과 침실이 분리되어 가족이 함께 머물기에 딱입니다. 원피스 전권, 빔프로젝터, 빈백소파가 기다리고 있어요.",
-    features: ["독채 2층", "최대 4인", "빔프로젝터", "원피스 전권", "빈백소파"],
-    highlight: "원피스 전권 · 빔프로젝터 · 에피하임 빈백소파",
+    desc: "서동여관의 시작. 90년대 고택 한 층 독채. 거실과 침실이 분리되어 가족이 함께 머물기에 딱입니다. 원피스 97권 전권, 빔프로젝터, 빈백소파가 기다리고 있어요.",
+    features: ["독채 2층", "최대 4인", "빔프로젝터", "원피스 97권", "빈백소파"],
+    highlight: "원피스 97권 전권 · 빔프로젝터 · 에피하임 빈백소파",
     airbnb: "https://www.airbnb.co.kr/rooms/997241625179311794",
     note: "★ 4.65 · 에어비앤비 리뷰 26개",
-    manual: "/manual/chwihyang",
   },
 ];
 
@@ -229,25 +226,15 @@ export default function StayPage() {
                         <MessageCircle size={15} />
                         카카오로 예약하기 (직예약 할인)
                       </a>
-                      <div className="flex flex-wrap gap-3 items-center">
-                        <a
-                          href={room.airbnb}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-xs inline-flex items-center gap-1"
-                          style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
-                        >
-                          에어비앤비로 예약 <ArrowRight size={11} />
-                        </a>
-                        <span style={{ color: "rgba(196, 168, 130, 0.5)", fontSize: "10px" }}>|</span>
-                        <Link
-                          href={room.manual}
-                          className="text-xs inline-flex items-center gap-1"
-                          style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
-                        >
-                          이용 메뉴얼 <ArrowRight size={11} />
-                        </Link>
-                      </div>
+                      <a
+                        href={room.airbnb}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs inline-flex items-center gap-1"
+                        style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                      >
+                        에어비앤비로 예약 <ArrowRight size={11} />
+                      </a>
                     </div>
                   </div>
 
