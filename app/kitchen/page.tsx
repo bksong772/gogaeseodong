@@ -29,7 +29,7 @@ const equipment = [
 
 const users = [
   { tag: "커플",  desc: "기념일 요리, 집밥 데이트" },
-  { tag: "친구들", desc: "파티, 바베큐, 소셜다이닝" },
+  { tag: "친구들", desc: "파티, 소셜다이닝, 함께 요리" },
   { tag: "클래스", desc: "베이킹 클래스, 쿠킹 모임" },
   { tag: "촬영",  desc: "푸드 스타일링, SNS 콘텐츠" },
 ];
