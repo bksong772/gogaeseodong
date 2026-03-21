@@ -15,6 +15,7 @@ import {
   Clock,
   Building2,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -118,7 +119,7 @@ export default function YeogwanManualPage() {
                 카카오 채널
               </a>
               {" "}또는{" "}
-              <a href="tel:01086464572" style={{ color: "#B5632A" }}>010-8646-4572</a>
+              <a href="tel:01035484572" style={{ color: "#B5632A" }}>010-3548-4572</a>
               {" "}로 연락 주세요
             </p>
           </div>
@@ -128,9 +129,12 @@ export default function YeogwanManualPage() {
               부산 금정구 서동로91번길 7, <strong>3층</strong><br />
               <span style={{ color: "#9B7B6A" }}>1층이 하얀 커튼으로 쳐진 집이에요.</span><br />
               <strong style={{ color: "#B5632A" }}>빨간 대문</strong>으로 올라오셔서
-              첫번째 <strong style={{ color: "#B5632A" }}>파란 대문</strong>이 필사의방입니다.<br />
+              두번째 <strong style={{ color: "#B5632A" }}>파란 대문</strong>이 필사의방입니다. (3층)<br />
               도어락 커버를 올리고 비밀번호 입력 후 닫으면 열려요.
             </p>
+            <div className="rounded-xl overflow-hidden mt-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/philsa/입구문.JPG" alt="필사의방 입구 문" width={600} height={400} className="w-full object-cover" />
+            </div>
           </div>
         </Block>
 
@@ -138,8 +142,8 @@ export default function YeogwanManualPage() {
         <Block icon={Wifi} title="와이파이">
           <div className="space-y-2">
             {[
-              { id: "seodongwifi1", pw: "seodong12!@", best: true },
-              { id: "seodongwifi3", pw: "seodong12!@", best: false },
+              { id: "seodongwifi1", pw: "seodong12!@", best: false },
+              { id: "seodongwifi3", pw: "seodong12!@", best: true },
               { id: "seodongwifi4", pw: "seodong12!@", best: false },
             ].map((wifi) => (
               <div key={wifi.id} className="rounded-xl p-3 flex items-center justify-between"
@@ -283,7 +287,7 @@ export default function YeogwanManualPage() {
             </p>
             <p>
               급한 문의:{" "}
-              <a href="tel:01086464572" style={{ color: "#B5632A", fontWeight: 600 }}>010-8646-4572</a>
+              <a href="tel:01035484572" style={{ color: "#B5632A", fontWeight: 600 }}>010-3548-4572</a>
             </p>
             <p className="text-xs" style={{ color: "#9B7B6A" }}>응답이 느린 경우도 있으니 양해 부탁드립니다 🙏</p>
           </div>
