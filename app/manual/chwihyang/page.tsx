@@ -417,8 +417,6 @@ export default function ChwiyhangManualPage() {
                 {[
                   { name: "서동역 (4호선)", addr: "도보 약 200m" },
                   { name: "서동미로시장", addr: "부산 금정구 서동로141번길 16" },
-                  { name: "GS25 서동로점", addr: "부산 금정구 서동로 105" },
-                  { name: "엘마트", addr: "부산 금정구 서동로103번길 14" },
                   { name: "다이소", addr: "부산 금정구 반송로 400" },
                   { name: "스타벅스", addr: "부산 금정구 서동로 173" },
                 ].map((place) => (
