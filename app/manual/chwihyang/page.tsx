@@ -261,6 +261,11 @@ export default function ChwiyhangManualPage() {
               <ol className="space-y-3" style={{ color: "#2C1810", paddingLeft: "4px" }}>
                 <li>1. <strong>검정색 리모컨</strong>으로 <strong>크롬캐스트</strong>를 켜세요.</li>
                 <li>2. 검정색 리모컨에서 <strong>HDMI</strong>를 누르세요.</li>
+              </ol>
+              <div className="rounded-xl overflow-hidden my-3" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                <Image src="/manual/chwihyang/HDMI.png" alt="HDMI 연결" width={600} height={400} className="w-full object-cover" />
+              </div>
+              <ol className="space-y-3" style={{ color: "#2C1810", paddingLeft: "4px" }}>
                 <li>3. <strong>하얀색 리모컨</strong>의 <strong>넷플릭스</strong> 버튼을 누르세요.</li>
                 <li>4. <strong>개인 계정</strong>으로 로그인 후 감상하시면 됩니다 🎬</li>
               </ol>
@@ -290,6 +295,9 @@ export default function ChwiyhangManualPage() {
         {/* 8. 보일러 */}
         <Block icon={Wind} title="보일러">
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
+            <div className="rounded-xl overflow-hidden mb-3" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/chwihyang/보일러.jpg" alt="보일러" width={600} height={400} className="w-full object-cover" />
+            </div>
             <p><strong>오른쪽 중간 전원 버튼</strong>을 누르면 작동합니다.</p>
             <div className="grid grid-cols-2 gap-2 mt-3">
               <div className="rounded-xl p-3 text-center"
@@ -311,17 +319,22 @@ export default function ChwiyhangManualPage() {
         {/* 9. 온풍기 */}
         <Block icon={Zap} title="온풍기 안내 · 겨울 한정 비치">
           <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
-            <p>전기 온풍기입니다. 직접 조작하시면 됩니다.</p>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/chwihyang/온풍기.jpg" alt="온풍기" width={600} height={400} className="w-full object-cover" />
+            </div>
+            <p>리모컨 없이 기기를 직접 조작하시면 됩니다.</p>
             <div className="rounded-xl p-4 space-y-2"
               style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.25)" }}>
-              <p className="font-semibold" style={{ color: "#B52A2A" }}>⚠️ 전기 온풍기 사용 시 주의사항</p>
-              <p>• <strong>4시간 타이머</strong>를 반드시 설정해 주세요</p>
-              <p>• 사용 후 <strong>코드를 꼭 뽑아</strong> 주세요</p>
-              <p>• 켜 둔 채로 취침하지 마세요</p>
+              <p className="font-semibold" style={{ color: "#B52A2A" }}>⚠️ 반드시 타이머를 맞춰 이용해 주세요 (과열 위험)</p>
+              <p>• 낮에는 <strong>2시간</strong>, 밤에는 <strong>4시간</strong> 타이머 설정</p>
+              <p>• 사용 후 <strong>콘센트를 꼭 뽑아</strong> 주세요</p>
             </div>
-            <p style={{ color: "#9B7B6A" }}>
-              온도 조절이 필요하시면 카카오 채널로 편하게 연락 주세요 😊
-            </p>
+            <a href="/manual/chwihyang/heater"
+              className="flex items-center justify-between rounded-xl px-4 py-3"
+              style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.5)", textDecoration: "none" }}>
+              <span className="text-sm font-semibold" style={{ color: "#2C1810" }}>🌡️ 온풍기 상세 사용법 보기</span>
+              <span className="text-xs" style={{ color: "#B5632A" }}>버튼별 설명 →</span>
+            </a>
           </div>
         </Block>
 
