@@ -431,6 +431,20 @@ export default function ChwiyhangManualPage() {
                 ))}
               </div>
             </div>
+            <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
+              <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>대형마트 (차량 이용)</p>
+              <div className="space-y-2">
+                {[
+                  { name: "탑마트 금사점", addr: "부산 금정구 공단서로 22" },
+                  { name: "GS더프레시 부곡점", addr: "부산 금정구 부곡로 79" },
+                ].map((place) => (
+                  <div key={place.name} className="flex items-start gap-2">
+                    <span className="font-semibold" style={{ flexShrink: 0 }}>{place.name}</span>
+                    <span style={{ color: "#9B7B6A" }}>{place.addr}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </Block>
 
