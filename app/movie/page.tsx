@@ -5,7 +5,7 @@ import { ArrowRight, Users, Clock, Car, Timer, MonitorPlay, MessageCircle, Camer
 export const metadata: Metadata = {
   title: "서동영화 | 부산 프라이빗 영화감상실",
   description:
-    "부산 금정구 서동, 골목 안 2층의 프라이빗 영화감상실. 빔프로젝터, OTT 개인계정, 완전 암전. 커플·소모임·사진촬영. 카카오 직예약.",
+    "부산 금정구 서동, 골목 안 2층의 프라이빗 영화감상실. 빔프로젝터, OTT 개인계정, 완전 암전. 커플·소모임·사진촬영. 카카오 직접예약.",
   keywords: [
     "서동영화", "부산 영화감상실", "부산 OTT룸", "부산 빔프로젝터",
     "부산 프라이빗 상영관", "부산 데이트", "부산 사진스튜디오",
@@ -129,7 +129,7 @@ export default function MoviePage() {
             <p className="text-xs" style={{ color: "#9B7B6A" }}>네이버 리뷰도 좋아요</p>
           </div>
           <p className="text-xs mb-6" style={{ color: "#9B7B6A" }}>
-            카카오채널 직예약 시 더 저렴하게 이용하실 수 있습니다
+            카카오 직접예약(계좌이체) 시 더 저렴하게 이용하실 수 있습니다
           </p>
           <a
             href={KAKAO_URL}
@@ -228,7 +228,7 @@ export default function MoviePage() {
                   className="btn-primary inline-flex items-center gap-2"
                 >
                   <MessageCircle size={15} />
-                  카카오로 예약하기 (직예약 할인)
+                  카카오로 예약하기 (직접예약·계좌이체 할인)
                 </a>
                 <a
                   href="https://www.spacecloud.kr/space/40932"

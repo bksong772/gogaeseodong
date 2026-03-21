@@ -5,7 +5,7 @@ import { ArrowRight, Check, MessageCircle } from "lucide-react";
 export const metadata: Metadata = {
   title: "서동여관 | 부산 독채 감성 숙박",
   description:
-    "부산 금정구 서동의 낡은 여관. 취향의방(가족), 그림의방(커플), 필사의방(커플). 카카오채널 직예약 가능. 에어비앤비보다 저렴하게.",
+    "부산 금정구 서동의 낡은 여관. 취향의방(가족), 그림의방(커플), 필사의방(커플). 카카오채널 직접예약(계좌이체) 가능. 에어비앤비보다 저렴하게.",
   keywords: [
     "서동여관", "부산 독채 숙박", "부산 감성 숙박", "부산 에어비앤비",
     "금정구 숙박", "취향의방", "그림의방", "필사의방",
@@ -228,7 +228,7 @@ export default function StayPage() {
                         className="btn-primary inline-flex items-center gap-2"
                       >
                         <MessageCircle size={15} />
-                        카카오로 예약하기 (직예약 할인)
+                        카카오로 예약하기 (직접예약·계좌이체 할인)
                       </a>
                       <a
                         href={room.airbnb}
