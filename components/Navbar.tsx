@@ -23,28 +23,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           {/* 로고 */}
-          <Link href="/" className="flex items-center gap-3" style={{ textDecoration: "none" }}>
-            <span
+          <Link href="/" className="flex items-center" style={{ textDecoration: "none" }}>
+            <img
+              src="/logo.png"
+              alt="고개서동"
               style={{
-                fontFamily: "'Noto Serif KR', serif",
-                fontSize: "20px",
-                fontWeight: 700,
-                color: "#2C1810",
-                letterSpacing: "0.15em",
+                height: "44px",
+                width: "auto",
+                mixBlendMode: "multiply",
               }}
-            >
-              고개서동
-            </span>
-            <span
-              className="hidden sm:block text-xs tracking-widest"
-              style={{
-                color: "#9B7B6A",
-                fontStyle: "italic",
-                fontFamily: "'Playfair Display', serif",
-              }}
-            >
-              Gogae Seodong
-            </span>
+            />
           </Link>
 
           {/* 데스크탑 메뉴 */}
