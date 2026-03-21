@@ -301,7 +301,7 @@ export default function YeogwanManualPage() {
         </Block>
 
         {/* 9. 선풍기 */}
-        <Block icon={Wind} title="선풍기">
+        <Block icon={Wind} title="선풍기 · 여름 한정 비치">
           <div className="text-sm" style={{ color: "#2C1810" }}>
             <p>선풍기 작동 버튼은 <strong>선풍기 머리 뒷부분</strong>에 있습니다.</p>
           </div>
