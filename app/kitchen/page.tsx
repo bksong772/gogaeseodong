@@ -127,36 +127,19 @@ export default function KitchenPage() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-            {/* 이미지 플레이스홀더 */}
-            <div
-              className="card min-h-[360px] flex items-center justify-center"
-              style={{ backgroundColor: "#E5D9C3" }}
-            >
-              <div className="text-center px-8">
-                <p
-                  style={{
-                    fontSize: "11px",
-                    color: "#C4A882",
-                    fontFamily: "'Playfair Display', serif",
-                    letterSpacing: "0.25em",
-                    marginBottom: "12px",
-                  }}
-                >
-                  SEODONG KITCHEN
-                </p>
-                <p
-                  style={{
-                    fontSize: "13px",
-                    color: "#9B7B6A",
-                    fontFamily: "'Noto Serif KR', serif",
-                    lineHeight: 1.8,
-                  }}
-                >
-                  오래된 골목 안,<br />
-                  혼자서도 여럿이서도<br />
-                  요리가 되는 주방
-                </p>
-              </div>
+            {/* 이미지 */}
+            <div className="card min-h-[360px] relative overflow-hidden">
+              <img
+                src="/images/kitchen/서동부엌.jpg"
+                alt="서동부엌"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
             </div>
 
             {/* 공간 정보 */}

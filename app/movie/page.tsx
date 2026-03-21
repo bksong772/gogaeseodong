@@ -146,36 +146,19 @@ export default function MoviePage() {
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-            {/* 이미지 플레이스홀더 */}
-            <div
-              className="card min-h-[400px] flex items-center justify-center"
-              style={{ backgroundColor: "#E5D9C3" }}
-            >
-              <div className="text-center px-8">
-                <p
-                  style={{
-                    fontSize: "11px",
-                    color: "#C4A882",
-                    fontFamily: "'Playfair Display', serif",
-                    letterSpacing: "0.25em",
-                    marginBottom: "16px",
-                  }}
-                >
-                  SEODONG MOVIE
-                </p>
-                <p
-                  style={{
-                    fontSize: "13px",
-                    color: "#9B7B6A",
-                    fontFamily: "'Noto Serif KR', serif",
-                    lineHeight: 2,
-                  }}
-                >
-                  골목 안 2층,<br />
-                  스크린 하나,<br />
-                  우리만의 상영관
-                </p>
-              </div>
+            {/* 이미지 */}
+            <div className="card min-h-[400px] relative overflow-hidden">
+              <img
+                src="/images/movie/서동영화.JPG"
+                alt="서동영화"
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
             </div>
 
             {/* 공간 정보 */}

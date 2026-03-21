@@ -27,6 +27,7 @@ const rooms = [
     highlight: "책상·스탠드 조명 · 안락의자 · 블루투스 스피커",
     airbnb: "https://www.airbnb.co.kr/rooms/746091488451213213",
     note: "조용한 하룻밤을 원한다면",
+    image: "/images/stay/필사의방.JPG",
   },
   {
     no: "二",
@@ -39,6 +40,7 @@ const rooms = [
     highlight: "드래곤볼·귀멸의칼날 · LP 턴테이블 · 그림북·색연필",
     airbnb: "https://www.airbnb.co.kr/rooms/699514631888252996",
     note: "커플에게 추천",
+    image: "/images/stay/그림의방.JPG",
   },
   {
     no: "三",
@@ -51,6 +53,7 @@ const rooms = [
     highlight: "원피스 97권 전권 · 빔프로젝터 · 에피하임 빈백소파",
     airbnb: "https://www.airbnb.co.kr/rooms/997241625179311794",
     note: "★ 4.65 · 에어비앤비 리뷰 26개",
+    image: "/images/stay/취향의방.jpg",
   },
 ];
 
@@ -238,36 +241,21 @@ export default function StayPage() {
                     </div>
                   </div>
 
-                  {/* 이미지 플레이스홀더 */}
+                  {/* 이미지 */}
                   <div
-                    className="min-h-[280px] lg:min-h-[360px] flex items-center justify-center"
-                    style={{ backgroundColor: "#E5D9C3" }}
+                    className="min-h-[280px] lg:min-h-[360px] relative overflow-hidden"
                   >
-                    <div className="text-center px-8">
-                      <p
-                        style={{
-                          fontSize: "11px",
-                          color: "#C4A882",
-                          fontFamily: "'Playfair Display', serif",
-                          letterSpacing: "0.25em",
-                          marginBottom: "16px",
-                        }}
-                      >
-                        {room.en.toUpperCase()}
-                      </p>
-                      <p
-                        style={{
-                          fontSize: "13px",
-                          color: "#9B7B6A",
-                          fontFamily: "'Noto Serif KR', serif",
-                          lineHeight: 2,
-                        }}
-                      >
-                        {room.highlight.split(" · ").map((item, i) => (
-                          <span key={i} style={{ display: "block" }}>{item}</span>
-                        ))}
-                      </p>
-                    </div>
+                    <img
+                      src={room.image}
+                      alt={room.name}
+                      style={{
+                        position: "absolute",
+                        inset: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
                   </div>
                 </div>
               </div>
