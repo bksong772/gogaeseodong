@@ -134,7 +134,7 @@ export default function ChwiyhangManualPage() {
                 카카오 채널
               </a>
               {" "}또는{" "}
-              <a href="tel:01035484572" style={{ color: "#B5632A" }}>010-3548-4572</a>
+              <a href="tel:01086464572" style={{ color: "#B5632A" }}>010-8646-4572</a>
               {" "}로 연락 주세요
             </p>
           </div>
@@ -157,7 +157,7 @@ export default function ChwiyhangManualPage() {
               </div>
             </div>
             <div className="rounded-xl overflow-hidden mt-2" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/chwihyang/입구문.jpg" alt="취향의방 입구 문" width={600} height={400} className="w-full object-cover" />
+              <Image src="/manual/chwihyang/입구.JPG" alt="취향의방 입구" width={600} height={400} className="w-full object-cover" />
             </div>
           </div>
         </Block>
@@ -354,7 +354,7 @@ export default function ChwiyhangManualPage() {
             </p>
             <p>
               급한 문의:{" "}
-              <a href="tel:01035484572" style={{ color: "#B5632A", fontWeight: 600 }}>010-3548-4572</a>
+              <a href="tel:01086464572" style={{ color: "#B5632A", fontWeight: 600 }}>010-8646-4572</a>
             </p>
             <p className="text-xs" style={{ color: "#9B7B6A" }}>응답이 느린 경우도 있으니 양해 부탁드립니다 🙏</p>
           </div>
