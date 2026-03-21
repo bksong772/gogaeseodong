@@ -15,7 +15,7 @@ const spaceInfo = [
   { icon: MapPin,  label: "위치",   value: "서동로91번길 7, 1층" },
   { icon: Users,   label: "수용인원", value: "최대 10인" },
   { icon: Clock,   label: "운영시간", value: "09:00 — 22:00" },
-  { icon: Timer,   label: "최소예약", value: "2시간" },
+  { icon: Timer,   label: "최소예약", value: "3시간" },
 ];
 
 const equipment = [
