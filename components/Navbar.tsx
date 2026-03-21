@@ -71,16 +71,18 @@ export default function Navbar() {
           </div>
 
           {/* 예약하기 버튼 (데스크탑) */}
-          <a
-            href="https://pf.kakao.com/_VCxnsb"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-2 btn-primary"
-            style={{ fontSize: "13px", padding: "8px 18px" }}
-          >
-            <MessageCircle size={14} />
-            예약하기
-          </a>
+          <div className="hidden md:block">
+            <a
+              href="https://pf.kakao.com/_VCxnsb"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex items-center gap-2"
+              style={{ fontSize: "13px", padding: "8px 18px" }}
+            >
+              <MessageCircle size={14} />
+              예약하기
+            </a>
+          </div>
 
           {/* 모바일 햄버거 */}
           <button
