@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: "NCmSUlylxVZTnOxYsc97UieZ58KABUKTxMh_IPz8ztY",
+  },
 };
 
 export default function RootLayout({
