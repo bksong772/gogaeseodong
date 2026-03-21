@@ -77,6 +77,9 @@ const walkSpots = [
     emoji: "🌄",
     desc: "고개를 올라 서명초등학교까지 가면 서동 전경이 멋지게 펼쳐집니다. 배정남·최용수·안정환이 TV에 나와서 이쪽에 왔던 곳. 밥 먹고 산책 삼아 걸어가기 딱 좋아요.",
     mapUrl: "https://naver.me/5SS60LPN",
+    youtubeUrls: [
+      { label: "배정남의 서동 나들이", url: "https://youtu.be/hNJ40NN0CYk?si=EyLykcJzok65-9Eb" },
+    ],
   },
 ];
 
@@ -125,20 +128,6 @@ export default function GuidePage() {
               서동은 부산에서도 물가가 무척 싼 동네입니다. 프랜차이즈보다 노포·가성비 식당이 많아서,
               맛있게 먹고 적게 쓰는 여행을 원하시는 분께 딱 맞는 동네예요.
             </p>
-          </div>
-          <div className="mt-4 p-4 border border-[#C4A882]/30 rounded-xl bg-white/40 flex items-center justify-between gap-4">
-            <div>
-              <p className="text-[#2C1810] text-sm font-semibold mb-0.5">📺 배정남의 서동 나들이</p>
-              <p className="text-[#9B7B6A] text-xs">서동을 영상으로 먼저 만나보세요</p>
-            </div>
-            <a
-              href="https://youtu.be/hNJ40NN0CYk?si=EyLykcJzok65-9Eb"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 text-xs text-[#D4884E] border border-[#D4884E]/40 rounded-full px-3 py-1.5 hover:bg-[#D4884E]/10 transition-colors"
-            >
-              영상 보기 →
-            </a>
           </div>
         </section>
 
