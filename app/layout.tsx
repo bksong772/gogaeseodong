@@ -40,6 +40,9 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   verification: {
     google: "NCmSUlylxVZTnOxYsc97UieZ58KABUKTxMh_IPz8ztY",
+    other: {
+      "naver-site-verification": ["0df98323fa4f583f383ab9aeb76a6ebb91784daa"],
+    },
   },
 };
 
