@@ -30,7 +30,6 @@ export default function Navbar() {
               style={{
                 height: "44px",
                 width: "auto",
-                mixBlendMode: "multiply",
               }}
             />
           </Link>
