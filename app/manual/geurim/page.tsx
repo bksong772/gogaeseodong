@@ -358,9 +358,9 @@ export default function GeurimManualPage() {
         {/* 13. 쓰레기 */}
         <Block icon={Trash2} title="쓰레기 분리수거">
           <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
-            <p>🗑 <strong>일반쓰레기</strong> — 냉장고 옆 쓰레기통에 버려주세요.</p>
+            <p>🗑 <strong>일반쓰레기</strong> — 가스렌지 옆 쓰레기통에 버려주세요.</p>
             <p>🥬 <strong>음식물</strong> — 주방 싱크대 음식물통에 넣어주세요.</p>
-            <p>♻️ <strong>재활용</strong> (플라스틱·캔·병) — 화장실 내 분리수거함에 부탁드려요.</p>
+            <p>♻️ <strong>재활용</strong> (플라스틱·캔·병) — 화장실 내 커다란 통에 넣어주세요.</p>
           </div>
         </Block>
 
