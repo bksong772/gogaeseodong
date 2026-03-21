@@ -5,6 +5,15 @@ export const metadata: Metadata = {
   description: "부산 금정구 서동 토박이 주인장이 직접 다니는 가성비 노포 맛집·카페·산책 가이드. 서동에서 보내는 1박 2일 추천 코스.",
 };
 
+// 서동 분위기 사진 — public/images/guide/ 에 파일 넣으면 자동 표시
+// 파일명 예: alley1.jpg, market1.jpg, restaurant1.jpg 등
+const atmospherePhotos = [
+  // { src: "/images/guide/alley1.jpg", caption: "서동 고개 골목" },
+  // { src: "/images/guide/market1.jpg", caption: "서동 미로시장" },
+  // { src: "/images/guide/restaurant1.jpg", caption: "맛나분식 외관" },
+  // { src: "/images/guide/view1.jpg", caption: "서동 전경" },
+];
+
 // mapUrl: 네이버 지도 공유 링크 / youtubeUrl: 유튜브 링크 → 각 버튼 자동 표시
 const foodSpots = [
   {
@@ -15,7 +24,7 @@ const foodSpots = [
       { name: "송부장연탄갈비", desc: "20살부터 20년 가까이 다닌 단골. 양념갈비 필수. 유명 유튜버 부산 양념갈비 1등 픽.", mapUrl: "https://naver.me/FnVMZ5l2", youtubeUrl: "https://youtube.com/shorts/iOGiBQQK220?si=I-XDlGXY3HodWQxw" },
       { name: "팔도족발", desc: "동네에서 가장 인기 많은 족발집. 반반족발 최애. 저녁 9시 이후에는 족발이 없는 경우 많으니 일찍 가세요.", mapUrl: "https://naver.me/GdyGTaeL" },
       { name: "일단마포", desc: "친한 동생이 운영하는 가게. 얇은 고기 좋아하시는 분께 딱. 가성비 끝판왕. 츄릅켠 유튜브 출연.", mapUrl: "https://naver.me/FmGbs8MQ" },
-      { name: "동키치킨 서동점", desc: "맛있을 때는 진짜 맛있는 옛날 통닭. 들쑥날쑥한 편이라 기대치 조절 추천. 후라이드 위주로 시키세요.", mapUrl: "" },
+      { name: "동키치킨 서동점", desc: "맛있을 때는 진짜 맛있는 옛날 통닭. 들쑥날쑥한 편이라 기대치 조절 추천. 후라이드 위주로 시키세요.", mapUrl: "https://naver.me/GDQeh70O" },
     ],
   },
   {
@@ -24,9 +33,9 @@ const foodSpots = [
     hostNote: "초등학교 때부터 다닌 집들이에요. 서동 시장 골목 안에 있는 현지인 맛집들입니다.",
     items: [
       { name: "우래돼지국밥", desc: "서동시장 안에 있는 현지인 맛집. 옛날 시장국밥 맛 그대로. 가성비 끝내주고 사람 진짜 많이 감.", mapUrl: "https://naver.me/GOhYNaI6" },
-      { name: "명동손칼국수", desc: "초등학교 때부터 다닌 집. 가성비 최고. 칼국수+김밥, 선지국밥 추천. 서동 고개 바로 옆.", mapUrl: "" },
+      { name: "명동손칼국수", desc: "초등학교 때부터 다닌 집. 가성비 최고. 칼국수+김밥, 선지국밥 추천. 서동 고개 바로 옆.", mapUrl: "https://naver.me/GNJoTfUL" },
       { name: "맛나분식", desc: "계란만두·떡볶이 시그니처. 배정남·안정환·최용수도 다녀간 집. 4명이 먹어도 2만원 안 넘는 가성비.", mapUrl: "https://naver.me/Fr7pxpMb", youtubeUrl: "https://youtu.be/arOOlumQzPo?si=jT5pnIa_wmofvXh7" },
-      { name: "동원김밥 (일미김밥)", desc: "부산 3대 김밥. 사장님 까탈스럽지만 맛은 인정. 체크아웃 날 포장 강추.", mapUrl: "", youtubeUrl: "https://youtu.be/m-070paMqf4?si=LYeM8veJYAd_43dF" },
+      { name: "동원김밥 (일미김밥)", desc: "부산 3대 김밥. 사장님 까탈스럽지만 맛은 인정. 체크아웃 날 포장 강추.", mapUrl: "https://naver.me/5yPnpmzx", youtubeUrl: "https://youtu.be/m-070paMqf4?si=LYeM8veJYAd_43dF" },
       { name: "정가네선지국밥", desc: "선지국밥·우동이 맛있고 소주 한잔하기 딱. 새벽 4시까지 운영.", mapUrl: "https://naver.me/5h19VutU" },
     ],
   },
@@ -35,8 +44,7 @@ const foodSpots = [
     emoji: "🍶",
     hostNote: "이 동네 술자리는 소박합니다. 그게 이 동네 분위기예요.",
     items: [
-      { name: "일차로", desc: "진짜 레트로. 40~50대 단골 가득한 찐 옛날 술집. 안주 1~3인 총 15,000원·추가 1인 5,000원. 소주·맥주 3,000원.", mapUrl: "" },
-      { name: "노가리ok", desc: "노가리가 진짜 맛있음. 2·3차로 강추.", mapUrl: "" },
+      { name: "일차로", desc: "진짜 레트로. 40~50대 단골 가득한 찐 옛날 술집. 안주 1~3인 총 15,000원·추가 1인 5,000원. 소주·맥주 3,000원.", mapUrl: "https://naver.me/58qg86Bv" },
       { name: "단미포차", desc: "레트로 분위기는 아니지만 맛있는 포차. 편하게 마시기 좋음.", mapUrl: "https://naver.me/FdqjKP58" },
     ],
   },
@@ -44,15 +52,16 @@ const foodSpots = [
 
 const outsideSpots = [
   { name: "칼맛나는횟집", desc: "주인장의 넘사벽 픽. 부산대 근처 (29번 버스 10분). 모듬회 필수. 대기가 워낙 많아 오후 6시 이전에 가야 함.", emoji: "🐟", mapUrl: "https://naver.me/FG7xnTlC" },
-  { name: "컬리반스 피자", desc: "도우가 진짜 맛있음. 부산대 위치.", emoji: "🍕", mapUrl: "" },
-  { name: "수수하지만 굉장해", desc: "돈까스 체인인데 진짜 맛있음. 부산대 위치.", emoji: "🍱", mapUrl: "" },
+  { name: "컬리반스 피자", desc: "도우가 진짜 맛있음. 부산대 위치.", emoji: "🍕", mapUrl: "https://naver.me/5FmwPxZ4" },
+  { name: "수수하지만 굉장해", desc: "돈까스 체인인데 진짜 맛있음. 부산대 위치.", emoji: "🍱", mapUrl: "https://naver.me/xv3DahEu" },
 ];
 
 const cafeSpots = [
-  { name: "모모스커피 본점", dist: "도보 20분", desc: "온천장역 바로 앞. 부산 대표 스페셜티 커피. 취향의방은 지하철·버스 이용 추천.", mapUrl: "" },
-  { name: "로제이브", dist: "부산대", desc: "콜드브루 강추!! 송군 최애 카페.", mapUrl: "" },
-  { name: "수안커피", dist: "버스·지하철", desc: "프리미엄 다도 감성 커피. 1인 11,000원. 부산 여행객에게 추천.", mapUrl: "" },
-  { name: "메가커피·컴포즈", dist: "서동 내", desc: "서동 내 가장 가까운 카페. 금사공단·부산은행 방면.", mapUrl: "" },
+  { name: "모모스커피 본점", dist: "도보 20분", desc: "온천장역 바로 앞. 부산 대표 스페셜티 커피. 취향의방은 지하철·버스 이용 추천.", mapUrl: "https://naver.me/5mI0AdxF" },
+  { name: "로제이브", dist: "부산대", desc: "콜드브루 강추!! 송군 최애 카페.", mapUrl: "https://naver.me/x9BxnTZY" },
+  { name: "수안커피", dist: "수안동 (버스·지하철)", desc: "프리미엄 다도 감성 커피. 1인 11,000원. 부산 여행객에게 추천.", mapUrl: "https://naver.me/GEXhR9sJ" },
+  { name: "메가커피 금사점", dist: "서동 내", desc: "서동 내 가장 가까운 카페. 금사공단 방면.", mapUrl: "https://naver.me/xP8zSrOb" },
+  { name: "컴포즈커피 서동점", dist: "서동 내", desc: "서동 내 컴포즈. 부산은행 방면.", mapUrl: "https://naver.me/xpjqZTxA" },
 ];
 
 const walkSpots = [
@@ -61,7 +70,7 @@ const walkSpots = [
     tag: "도보 5분",
     emoji: "🏘️",
     desc: "서동 골목 안에 숨어있는 작은 재래시장. 우래돼지국밥, 맛나분식이 이 안에 있어요. 밥 먹고 골목 한 바퀴 도는 것만으로도 충분합니다.",
-    mapUrl: "",
+    mapUrl: "https://naver.me/xX7jzogo",
     youtubeUrls: [
       { label: "낮술 영상", url: "https://youtu.be/BUmXJ2Dpz_Y?si=vFukn1z1ljYMEV5h" },
       { label: "여행 영상", url: "https://youtu.be/op2t5Zn60wk?si=G7GKV0wQ4cLYkfw5" },
@@ -72,7 +81,7 @@ const walkSpots = [
     tag: "도보 15분",
     emoji: "🌄",
     desc: "고개를 올라 서명초등학교까지 가면 서동 전경이 멋지게 펼쳐집니다. 배정남·최용수·안정환이 TV에 나와서 이쪽에 왔던 곳. 밥 먹고 산책 삼아 걸어가기 딱 좋아요.",
-    mapUrl: "",
+    mapUrl: "https://naver.me/5SS60LPN",
   },
 ];
 
@@ -137,6 +146,32 @@ export default function GuidePage() {
             </a>
           </div>
         </section>
+
+        {/* 서동 분위기 사진 그리드 — 사진 있을 때만 표시 */}
+        {atmospherePhotos.length > 0 && (
+          <section>
+            <h2
+              className="text-2xl font-bold text-[#2C1810] mb-4"
+              style={{ fontFamily: "'Noto Serif KR', serif" }}
+            >
+              서동 이런 곳이에요
+            </h2>
+            <div className="grid grid-cols-2 gap-2">
+              {atmospherePhotos.map((photo) => (
+                <div key={photo.src} className="relative aspect-square overflow-hidden rounded-xl">
+                  <img
+                    src={photo.src}
+                    alt={photo.caption}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent p-2">
+                    <p className="text-white text-xs">{photo.caption}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* 이동 수단 요약 박스 */}
         <section>
