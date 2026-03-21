@@ -319,7 +319,7 @@ export default function YeogwanManualPage() {
               { num: "1", label: "전체 소등", sub: "방·부엌·화장실 전부" },
               { num: "2", label: "보일러", sub: "전원 OFF" },
               { num: "3", label: "가스렌지", sub: "가스밸브 잠금" },
-              { num: "4", label: "전열기기", sub: "전자렌지 등 전원 OFF" },
+              { num: "4", label: "히터기·에어컨", sub: "켜두셨으면 전원 OFF" },
             ].map((item) => (
               <div key={item.num} className="rounded-xl p-4 text-center"
                 style={{ backgroundColor: "#FFF8F0", border: "1px solid rgba(181, 99, 42, 0.3)" }}>
