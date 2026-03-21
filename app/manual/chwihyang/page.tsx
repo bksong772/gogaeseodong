@@ -421,7 +421,6 @@ export default function ChwiyhangManualPage() {
                   { name: "엘마트", addr: "부산 금정구 서동로103번길 14" },
                   { name: "다이소", addr: "부산 금정구 반송로 400" },
                   { name: "스타벅스", addr: "부산 금정구 서동로 173" },
-                  { name: "새마을금고", addr: "부산 금정구 서동로 109" },
                 ].map((place) => (
                   <div key={place.name} className="flex items-start gap-2">
                     <span className="font-semibold" style={{ flexShrink: 0 }}>{place.name}</span>
