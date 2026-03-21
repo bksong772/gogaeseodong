@@ -302,16 +302,16 @@ export default function ChwiyhangManualPage() {
             <div className="grid grid-cols-2 gap-2 mt-3">
               <div className="rounded-xl p-3 text-center"
                 style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-                <p className="text-xs font-semibold" style={{ color: "#2C1810" }}>실온</p>
+                <p className="text-xs font-semibold" style={{ color: "#2C1810" }}>온수 전용</p>
                 <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>온수만 사용 시</p>
               </div>
               <div className="rounded-xl p-3 text-center"
                 style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-                <p className="text-xs font-semibold" style={{ color: "#2C1810" }}>온돌</p>
-                <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>바닥 난방 시</p>
+                <p className="text-xs font-semibold" style={{ color: "#2C1810" }}>실온</p>
+                <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>온수 + 바닥 난방</p>
               </div>
             </div>
-            <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>전원 버튼을 눌러 실온 또는 온돌 방향으로 돌려 선택하세요.</p>
+            <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>전원 버튼을 눌러 온수 전용 또는 실온 방향으로 돌려 선택하세요.</p>
             <p className="font-semibold mt-2" style={{ color: "#B5632A" }}>사용 후 전원을 꼭 꺼주세요.</p>
           </div>
         </Block>
