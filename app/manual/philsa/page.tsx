@@ -51,8 +51,10 @@ export default function YeogwanManualPage() {
       {/* ── 히어로 ─────────────────────────────────────── */}
       <div
         className="relative w-full flex items-end"
-        style={{ height: "220px", background: "linear-gradient(135deg, #2C1810 0%, #4A2C1A 100%)" }}
+        style={{ height: "280px" }}
       >
+        <Image src="/manual/philsa/필사의방.png" alt="필사의방" fill className="object-cover" priority />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(44,24,16,0.05) 0%, rgba(44,24,16,0.72) 100%)" }} />
         <div className="w-full pb-7 px-6 sm:px-8">
           <div className="max-w-2xl mx-auto">
             <p className="section-label mb-3" style={{ color: "rgba(250,245,237,0.65)" }}>
@@ -129,7 +131,7 @@ export default function YeogwanManualPage() {
               부산 금정구 서동로91번길 7, <strong>3층</strong><br />
               <span style={{ color: "#9B7B6A" }}>1층이 하얀 커튼으로 쳐진 집이에요.</span><br />
               <strong style={{ color: "#B5632A" }}>빨간 대문</strong>으로 올라오셔서
-              두번째 <strong style={{ color: "#B5632A" }}>파란 대문</strong>이 필사의방입니다. (3층)<br />
+              계단을 따라 <strong style={{ color: "#B5632A" }}>3층 끝까지</strong> 오시면 파란 대문이 필사의방입니다.<br />
               도어락 커버를 올리고 비밀번호 입력 후 닫으면 열려요.
             </p>
             <div className="rounded-xl overflow-hidden mt-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
@@ -187,6 +189,11 @@ export default function YeogwanManualPage() {
               <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>네네치킨 바로 앞이 아니에요!</p>
             </div>
             <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
+              <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                <Image src="/manual/philsa/가는길.png" alt="필사의방 가는 길 지도" width={600} height={400} className="w-full object-cover" />
+              </div>
+            </div>
+            <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
               <a href="https://m.blog.naver.com/bksong77/222609333636" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm" style={{ color: "#B5632A" }}>
                 골목길 즐기기 · 교통편 안내 블로그 →
@@ -201,10 +208,10 @@ export default function YeogwanManualPage() {
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>공통 비치 품목</p>
               <div className="space-y-1.5 text-sm" style={{ color: "#2C1810" }}>
-                <p>🛁 수건 (1인 3장/1박), 드라이기(JMW), 고데기</p>
-                <p>🧴 샴푸·바디워시·컨디셔너·샤워타월·폼클렌징·손세정제</p>
+                <p>🛁 수건 (1인 3장/1박), 드라이기, 고데기</p>
+                <p>🧴 샴푸·바디워시·컨디셔너·샤워타월·손세정제</p>
                 <p>🍳 그릇·수저·냄비·팬·와인잔·오프너</p>
-                <p>🌿 공기청정기·가습기·무드등·인센스 스틱</p>
+                <p>🌿 공기청정기·무드등·인센스 스틱</p>
                 <p>❄️ 냉장고·가스렌지·전자렌지</p>
                 <p>🪞 전신거울·옷걸이</p>
               </div>
