@@ -220,7 +220,7 @@ export default function YeogwanManualPage() {
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>공통 비치 품목</p>
               <div className="space-y-1.5 text-sm" style={{ color: "#2C1810" }}>
-                <p>🛁 수건, 드라이기, 고데기, 치약</p>
+                <p>🛁 수건, 물티슈, 휴지, 드라이기, 고데기, 치약</p>
                 <p>🧴 샴푸·바디워시·컨디셔너·샤워타월·손세정제</p>
                 <p>🍳 그릇·수저·냄비·팬·와인잔·오프너</p>
                 <p>🌿 공기청정기·무드등·인센스 스틱</p>
