@@ -257,7 +257,10 @@ export default function GeurimManualPage() {
 
             {/* 스마트폰 무선 연결 */}
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>📱 스마트폰 무선 연결</p>
+              <div className="flex items-center gap-2 mb-3">
+                <p className="section-label" style={{ fontSize: "10px", margin: 0 }}>📱 스마트폰 무선 연결</p>
+                <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ backgroundColor: "#B5632A", color: "#FAF5ED" }}>추천</span>
+              </div>
               <ol className="space-y-2" style={{ color: "#2C1810", paddingLeft: "4px" }}>
                 <li>1. 까만색 리모컨으로 <strong>빔 전원</strong>을 켭니다. <span style={{ color: "#9B7B6A" }}>(버튼 꾹 눌러야 작동해요)</span></li>
                 <li>2. 스마트폰을 <strong>seodongwifi4</strong>에 연결하세요.</li>
