@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://gogaeseodong.vercel.app";
+  const baseUrl = "https://gogaeseodong-sigma.vercel.app";
 
   return [
     {
@@ -30,6 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/story`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/guide`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,

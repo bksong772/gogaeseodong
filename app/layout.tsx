@@ -11,21 +11,32 @@ export const metadata: Metadata = {
     template: "%s | 고개서동",
   },
   description:
-    "부산 금정구 서동. 버려진 공간을 다시 쓰임 있게. 서동여관, 서동부엌, 서동영화, 서동문방.",
+    "부산 금정구 서동. 버려진 공간을 다시 쓰임 있게. 서동여관(독채 숙박), 서동부엌(공유주방), 서동영화(프라이빗 상영관).",
   keywords: [
-    "고개서동", "서동여관", "부산 숙박", "서동부엌",
-    "공유주방 부산", "서동영화", "부산 OTT룸",
-    "부산 금정구", "부산 독채숙박", "에어비앤비 부산",
+    "고개서동", "서동여관", "부산 독채 숙박", "부산 감성 숙박",
+    "서동부엌", "부산 공유주방", "서동영화", "부산 영화감상실",
+    "부산 금정구", "부산 에어비앤비", "부산 커플여행", "부산 가족여행",
+    "서동", "부산 감성 공간", "부산 프라이빗",
   ],
   authors: [{ name: "고개서동" }],
+  icons: {
+    icon: [{ url: "/logo.png" }],
+    apple: [{ url: "/logo.png" }],
+  },
   openGraph: {
     type: "website",
     locale: "ko_KR",
-    url: "https://gogaeseodong.vercel.app",
+    url: "https://gogaeseodong-sigma.vercel.app",
     siteName: "고개서동",
     title: "고개서동 | 부산 서동의 낡은 공간들",
     description: "버려진 공간을 다시 쓰임 있게. 서동여관, 서동부엌, 서동영화.",
-    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "고개서동" }],
+    images: [{ url: "/logo.png", alt: "고개서동" }],
+  },
+  twitter: {
+    card: "summary",
+    title: "고개서동 | 부산 서동의 낡은 공간들",
+    description: "버려진 공간을 다시 쓰임 있게. 서동여관, 서동부엌, 서동영화.",
+    images: ["/logo.png"],
   },
   robots: { index: true, follow: true },
 };
