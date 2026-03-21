@@ -55,7 +55,7 @@ export default function YeogwanManualPage() {
       >
         <Image src="/manual/philsa/필사의방.png" alt="필사의방" fill className="object-cover" priority />
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(44,24,16,0.05) 0%, rgba(44,24,16,0.72) 100%)" }} />
-        <div className="w-full pb-7 px-6 sm:px-8">
+        <div className="w-full pb-7 px-6 sm:px-8" style={{ position: "relative" }}>
           <div className="max-w-2xl mx-auto">
             <p className="section-label mb-3" style={{ color: "rgba(250,245,237,0.65)" }}>
               01 · SEODONG YEOGWAN · MANUAL
