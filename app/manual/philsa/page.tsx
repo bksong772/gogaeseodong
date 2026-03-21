@@ -284,6 +284,9 @@ export default function YeogwanManualPage() {
         {/* 8. 온풍기 */}
         <Block icon={Wind} title="온풍기 안내 (꼭 확인해주세요)">
           <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
+            <div className="rounded-xl overflow-hidden mb-3" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/philsa/온풍기.jpg" alt="온풍기" width={600} height={400} className="w-full object-cover" />
+            </div>
             <p>안방에 비치된 온풍기입니다. 직접 조작하시면 됩니다.</p>
             <div className="rounded-xl p-4"
               style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.25)" }}>
@@ -346,7 +349,7 @@ export default function YeogwanManualPage() {
               { num: "1", label: "전체 소등", sub: "방·부엌·화장실 전부" },
               { num: "2", label: "보일러", sub: "전원 OFF" },
               { num: "3", label: "가스렌지", sub: "가스밸브 잠금" },
-              { num: "4", label: "히터기·에어컨", sub: "켜두셨으면 전원 OFF" },
+              { num: "4", label: "온풍기·에어컨", sub: "켜두셨으면 전원 OFF" },
             ].map((item) => (
               <div key={item.num} className="rounded-xl p-4 text-center"
                 style={{ backgroundColor: "#FFF8F0", border: "1px solid rgba(181, 99, 42, 0.3)" }}>
