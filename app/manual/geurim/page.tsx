@@ -53,11 +53,11 @@ export default function GeurimManualPage() {
       {/* ── 히어로 ─────────────────────────────────────── */}
       <div
         className="relative w-full flex items-end"
-        style={{ height: "280px", background: "linear-gradient(135deg, #2C1810 0%, #4A2C1A 100%)" }}
+        style={{ height: "280px" }}
       >
-        {/* 사진 준비되면: <Image src="/manual/geurim/그림의방.png" alt="그림의방" fill className="object-cover" priority />
-            <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(44,24,16,0.05) 0%, rgba(44,24,16,0.72) 100%)" }} /> */}
-        <div className="w-full pb-7 px-6 sm:px-8">
+        <Image src="/manual/geurim/그림의방.JPG" alt="그림의방" fill className="object-cover" priority />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(44,24,16,0.05) 0%, rgba(44,24,16,0.72) 100%)" }} />
+        <div className="w-full pb-7 px-6 sm:px-8" style={{ position: "relative" }}>
           <div className="max-w-2xl mx-auto">
             <p className="section-label mb-3" style={{ color: "rgba(250,245,237,0.65)" }}>
               02 · SEODONG YEOGWAN · MANUAL
@@ -149,7 +149,7 @@ export default function GeurimManualPage() {
               도어락 커버를 올리고 비밀번호 입력 후 닫으면 열려요.
             </p>
             <div className="rounded-xl overflow-hidden mt-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              {/* 입구 사진 준비되면: <Image src="/manual/geurim/입구문.JPG" alt="그림의방 입구 문" width={600} height={400} className="w-full object-cover" /> */}
+              <Image src="/manual/geurim/입구문.JPG" alt="그림의방 입구 문" width={600} height={400} className="w-full object-cover" />
             </div>
           </div>
         </Block>
@@ -159,8 +159,8 @@ export default function GeurimManualPage() {
           <div className="space-y-2">
             {[
               { id: "seodongwifi1", pw: "seodong12!@", best: false },
-              { id: "seodongwifi3", pw: "seodong12!@", best: true },
-              { id: "seodongwifi4", pw: "seodong12!@", best: false },
+              { id: "seodongwifi3", pw: "seodong12!@", best: false },
+              { id: "seodongwifi4", pw: "seodong12!@", best: true },
             ].map((wifi) => (
               <div key={wifi.id} className="rounded-xl p-3 flex items-center justify-between"
                 style={{ backgroundColor: wifi.best ? "#FFF8F0" : "#F0E8D5", border: wifi.best ? "1px solid rgba(181, 99, 42, 0.5)" : "1px solid rgba(196, 168, 130, 0.4)" }}>
@@ -203,7 +203,9 @@ export default function GeurimManualPage() {
               <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>네네치킨 바로 앞이 아니에요!</p>
             </div>
             <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
-              {/* 가는길 사진 준비되면 추가 */}
+              <div className="rounded-xl overflow-hidden mb-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                <Image src="/manual/geurim/가는길.png" alt="그림의방 가는 길 지도" width={600} height={400} className="w-full object-cover" />
+              </div>
               <a href="https://m.blog.naver.com/bksong77/222609333636" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm" style={{ color: "#B5632A" }}>
                 골목길 즐기기 · 교통편 안내 블로그 →
@@ -234,6 +236,7 @@ export default function GeurimManualPage() {
                 <p>🛋️ 2인용 소파·소형 테이블·안락의자</p>
                 <p>📽️ 빔 프로젝터 (스마트폰 미러링)</p>
                 <p>🎵 턴테이블(LP)</p>
+                <p>📚 드래곤볼 전집·귀멸의칼날 전집</p>
                 <p>🎨 아크릴 물감·색연필·이젤·컬러링북</p>
                 <p>💼 책상·의자</p>
               </div>
@@ -250,9 +253,52 @@ export default function GeurimManualPage() {
 
         {/* 6. 빔 프로젝터 */}
         <Block icon={Tv} title="빔 프로젝터 사용 안내">
-          <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
-            <p>스마트폰 <strong>미러링</strong>으로 사용 가능합니다.</p>
-            <p style={{ color: "#9B7B6A" }}>태블릿도 비치되어 있으니 편하게 이용해주세요.</p>
+          <div className="space-y-5 text-sm" style={{ color: "#2C1810" }}>
+
+            {/* 스마트폰 무선 연결 */}
+            <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>📱 스마트폰 무선 연결</p>
+              <ol className="space-y-2" style={{ color: "#2C1810", paddingLeft: "4px" }}>
+                <li>1. 스마트폰을 <strong>seodongwifi4</strong>에 연결하세요.</li>
+                <li>2. 빔 프로젝터 메뉴에서 <strong>스마트뷰 or 미러링</strong> 선택</li>
+                <li>3. 스마트폰에서 스마트뷰 or 미러링 실행 후<br />
+                  <strong style={{ color: "#B5632A" }}>ZYCast로 시작하는 기기</strong>에 연결</li>
+                <li>4. 빔 화면에 <strong>Connect Success</strong> 뜨면 연결 완료!</li>
+              </ol>
+              <div className="mt-3 pt-3" style={{ borderTop: "1px solid rgba(196,168,130,0.3)" }}>
+                <p className="text-xs" style={{ color: "#9B7B6A" }}>
+                  안드로이드 → miracast / 아이폰 → iOS 미러링
+                </p>
+              </div>
+            </div>
+
+            {/* 태블릿 사용 */}
+            <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>📲 비치된 태블릿 사용 시</p>
+              <ol className="space-y-2" style={{ color: "#2C1810", paddingLeft: "4px" }}>
+                <li>1. 까만색 리모컨으로 빔 전원을 켭니다. <span style={{ color: "#9B7B6A" }}>(버튼 꾹 눌러야 작동해요)</span></li>
+                <li>2. 리모컨으로 <strong>Miracast</strong> 접속</li>
+                <li>3. 태블릿에서 <strong>Smart View</strong> 켜기</li>
+                <li>4. <strong style={{ color: "#B5632A" }}>ZYCast</strong> 기기명 확인 후 접속</li>
+                <li>5. 빔 화면에 <strong>Connect Success</strong> 뜨면 완료!</li>
+              </ol>
+            </div>
+
+            {/* HDMI */}
+            <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>🔌 HDMI · USB 연결</p>
+              <div className="rounded-xl overflow-hidden mb-3" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+                <Image src="/manual/geurim/HDMI.png" alt="HDMI 연결" width={600} height={400} className="w-full object-cover" />
+              </div>
+              <p className="mb-1"><strong>HDMI</strong> — 비치된 HDMI 선으로 연결 가능</p>
+              <p><strong>USB</strong> — 빔 프로젝터에 USB 연결 후 시청 가능</p>
+            </div>
+
+            {/* 참고 영상 */}
+            <a href="https://youtu.be/IQC2etAZMTQ" target="_blank" rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm" style={{ color: "#B5632A" }}>
+              📺 빔 프로젝터 사용법 참고 영상 →
+            </a>
           </div>
         </Block>
 
@@ -277,6 +323,9 @@ export default function GeurimManualPage() {
         {/* 9. 보일러 */}
         <Block icon={Wind} title="보일러">
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
+            <div className="rounded-xl overflow-hidden mb-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/geurim/보일러.jpg" alt="보일러" width={600} height={400} className="w-full object-cover" />
+            </div>
             <p><strong>우측 아래 전원 버튼</strong>을 누르면 작동합니다.</p>
             <div className="grid grid-cols-2 gap-2 mt-3">
               <div className="rounded-xl p-3 text-center"
