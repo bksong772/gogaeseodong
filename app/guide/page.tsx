@@ -69,6 +69,7 @@ const walkSpots = [
     youtubeUrls: [
       { label: "낮술 영상", url: "https://youtu.be/BUmXJ2Dpz_Y?si=vFukn1z1ljYMEV5h" },
       { label: "여행 영상", url: "https://youtu.be/op2t5Zn60wk?si=G7GKV0wQ4cLYkfw5" },
+      { label: "골목 걷기", url: "https://youtu.be/8IWGB_L62aU?si=5wjciZMHVkizQW_h" },
     ],
   },
   {
