@@ -113,6 +113,16 @@ export default function MoviePage() {
               ))}
             </div>
           </div>
+          <div className="flex flex-wrap items-center gap-3 mb-6">
+            <p
+              className="text-sm font-bold"
+              style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}
+            >
+              ★ 4.75 — 스페이스클라우드 리뷰 16개
+            </p>
+            <span style={{ color: "rgba(196, 168, 130, 0.5)" }}>|</span>
+            <p className="text-xs" style={{ color: "#9B7B6A" }}>네이버 리뷰도 좋아요</p>
+          </div>
           <p className="text-xs mb-6" style={{ color: "#9B7B6A" }}>
             카카오채널 직예약 시 더 저렴하게 이용하실 수 있습니다
           </p>
