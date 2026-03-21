@@ -263,7 +263,7 @@ export default function ChwiyhangManualPage() {
                 <li>2. 검정색 리모컨에서 <strong>HDMI</strong>를 누르세요.</li>
               </ol>
               <div className="rounded-xl overflow-hidden my-3" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-                <Image src="/manual/chwihyang/HDMI.png" alt="HDMI 연결" width={600} height={400} className="w-full object-cover" />
+                <Image src="/manual/chwihyang/hdmi.jpg" alt="HDMI 연결" width={600} height={400} className="w-full object-cover" />
               </div>
               <ol className="space-y-3" style={{ color: "#2C1810", paddingLeft: "4px" }}>
                 <li>3. <strong>하얀색 리모컨</strong>의 <strong>넷플릭스</strong> 버튼을 누르세요.</li>
