@@ -5,7 +5,7 @@ import { ArrowRight, Users, Clock, MapPin, Timer, MessageCircle, UtensilsCrossed
 export const metadata: Metadata = {
   title: "서동부엌 | 부산 공유주방",
   description:
-    "부산 금정구 서동의 프라이빗 공유주방. 노을이 예쁜 동네에서 요리를. 커플, 친구들과 함께. 스페이스클라우드·네이버 예약.",
+    "부산 금정구 서동의 프라이빗 공유주방. 골목 안 우리끼리 차리는 밥상. 커플, 친구들과 함께. 카카오·스페이스클라우드 예약.",
   keywords: ["서동부엌", "부산 공유주방", "금정구 공유주방", "부산 요리", "프라이빗 주방", "부산 데이트", "서동"],
 };
 
@@ -54,9 +54,9 @@ export default function KitchenPage() {
               color: "#2C1810",
             }}
           >
-            노을 지는 서동에서
+            서동 골목 안,
             <br />
-            차려먹는 밥 한 끼
+            우리끼리 차리는 밥상
             <span
               style={{
                 display: "block",
