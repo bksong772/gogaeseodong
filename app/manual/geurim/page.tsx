@@ -303,7 +303,7 @@ export default function GeurimManualPage() {
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
             <p>입구 정면 <strong>보일러 옆</strong>에 거실등 스위치가 있습니다.</p>
             <p>방·부엌·화장실 전등은 각 공간 벽면에서 켜시면 돼요.</p>
-            <p><strong>다락방 계단 전등</strong>은 거실 턴테이블 벽면 스위치를 켜주세요.</p>
+            <p><strong>다락방 계단</strong>은 소파 뒷편에 있습니다.</p>
             <p className="font-semibold" style={{ color: "#B5632A" }}>퇴실 시 전체 소등 꼭 부탁드립니다.</p>
           </div>
         </Block>
@@ -334,7 +334,7 @@ export default function GeurimManualPage() {
         {/* 10. 온풍기 */}
         <Block icon={Wind} title="온풍기 안내 · 겨울 한정 비치">
           <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
-            <p>안방에 비치된 온풍기입니다. 직접 조작하시면 됩니다.</p>
+            <p>안방과 다락방에 비치된 온풍기입니다. 직접 조작하시면 됩니다.</p>
             <div className="rounded-xl p-4"
               style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.25)" }}>
               <p className="font-semibold" style={{ color: "#B52A2A" }}>
@@ -347,14 +347,7 @@ export default function GeurimManualPage() {
           </div>
         </Block>
 
-        {/* 11. 선풍기 */}
-        <Block icon={Wind} title="선풍기 · 여름 한정 비치">
-          <div className="text-sm" style={{ color: "#2C1810" }}>
-            <p>선풍기 작동 버튼은 <strong>선풍기 머리 뒷부분</strong>에 있습니다.</p>
-          </div>
-        </Block>
-
-        {/* 12. 가스렌지 */}
+        {/* 11. 가스렌지 */}
         <Block icon={Flame} title="가스렌지">
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
             <p>가스렌지 <strong>좌측에 가스밸브</strong>가 위치합니다.</p>
