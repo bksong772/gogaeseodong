@@ -293,7 +293,7 @@ export default function GeurimManualPage() {
         {/* 7. 턴테이블 */}
         <Block icon={Music} title="턴테이블(LP) 사용 안내">
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
-            <p>거실에 LP 턴테이블이 비치되어 있습니다.</p>
+            <p>작은방에 LP 턴테이블이 비치되어 있습니다.</p>
             <p style={{ color: "#9B7B6A" }}>사용 방법이 궁금하시면 카카오 채널로 문의해주세요.</p>
           </div>
         </Block>
