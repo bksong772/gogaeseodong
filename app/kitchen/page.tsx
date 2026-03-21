@@ -1,19 +1,30 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Users, Clock, MapPin, Timer } from "lucide-react";
+import { ArrowRight, Users, Clock, MapPin, Timer, MessageCircle, UtensilsCrossed } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "서동부엌 | 부산 공유주방",
   description:
-    "부산 금정구 서동의 프라이빗 공유주방. 노을이 예쁜 동네에서 요리를. 커플, 친구들과 함께. 스페이스클라우드 예약.",
+    "부산 금정구 서동의 프라이빗 공유주방. 노을이 예쁜 동네에서 요리를. 커플, 친구들과 함께. 스페이스클라우드·네이버 예약.",
   keywords: ["서동부엌", "부산 공유주방", "금정구 공유주방", "부산 요리", "프라이빗 주방", "부산 데이트", "서동"],
 };
+
+const KAKAO_URL = "https://pf.kakao.com/_VCxnsb";
 
 const spaceInfo = [
   { icon: MapPin,  label: "위치",   value: "서동로91번길 7, 1층" },
   { icon: Users,   label: "수용인원", value: "최대 10인" },
   { icon: Clock,   label: "운영시간", value: "09:00 — 22:00" },
   { icon: Timer,   label: "최소예약", value: "2시간" },
+];
+
+const equipment = [
+  "인덕션 · 부탄버너",
+  "전자레인지 · 전기포트 · 정수기",
+  "후라이팬 · 냄비 · 칼 · 도마",
+  "집게 · 가위 · 국자 · 주걱 · 뒤집개",
+  "감자칼 · 채반 · 스파츌러 · 조리용 젓가락",
+  "와인잔 · 오프너 · 각종 그릇 · 수저",
 ];
 
 const users = [
@@ -61,18 +72,33 @@ export default function KitchenPage() {
             </span>
           </h1>
           <p
-            className="text-sm leading-relaxed mb-3"
+            className="text-sm leading-relaxed mb-4"
             style={{ color: "#6B4C3B", maxWidth: "480px" }}
           >
             부산 금정구 서동의 프라이빗 공유주방.<br />
             요리하고, 먹고, 어울리는 시간.
           </p>
-          <p
-            className="text-sm font-bold"
-            style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}
+          <div className="flex flex-wrap items-center gap-4 mb-4">
+            <p
+              className="text-sm font-bold"
+              style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}
+            >
+              ★ 5.0 — 리뷰 31개
+            </p>
+            <span style={{ color: "rgba(196, 168, 130, 0.5)" }}>|</span>
+            <p className="text-xs" style={{ color: "#9B7B6A" }}>
+              카카오채널로 예약 시 더 저렴하게 이용하실 수 있습니다
+            </p>
+          </div>
+          <a
+            href={KAKAO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center gap-2"
           >
-            ★ 5.0 — 리뷰 31개
-          </p>
+            <MessageCircle size={15} />
+            카카오로 예약 문의하기
+          </a>
         </div>
       </section>
 
@@ -89,26 +115,29 @@ export default function KitchenPage() {
               className="card min-h-[360px] flex items-center justify-center"
               style={{ backgroundColor: "#E5D9C3" }}
             >
-              <div className="text-center">
+              <div className="text-center px-8">
                 <p
                   style={{
                     fontSize: "11px",
                     color: "#C4A882",
                     fontFamily: "'Playfair Display', serif",
                     letterSpacing: "0.25em",
-                    marginBottom: "6px",
+                    marginBottom: "12px",
                   }}
                 >
-                  PHOTO
+                  SEODONG KITCHEN
                 </p>
                 <p
                   style={{
                     fontSize: "13px",
-                    color: "#C4A882",
+                    color: "#9B7B6A",
                     fontFamily: "'Noto Serif KR', serif",
+                    lineHeight: 1.8,
                   }}
                 >
-                  서동부엌
+                  오래된 골목 안,<br />
+                  혼자서도 여럿이서도<br />
+                  요리가 되는 주방
                 </p>
               </div>
             </div>
@@ -149,21 +178,76 @@ export default function KitchenPage() {
                   </div>
                 ))}
               </div>
+
+              {/* 요금 안내 */}
+              <div
+                className="rounded-xl p-5 mb-8"
+                style={{
+                  backgroundColor: "#F0E8D5",
+                  border: "1px solid rgba(196, 168, 130, 0.4)",
+                }}
+              >
+                <p className="text-xs mb-2" style={{ color: "#9B7B6A", letterSpacing: "0.1em" }}>PRICING</p>
+                <p className="text-sm" style={{ color: "#6B4C3B" }}>
+                  요금은 날짜·인원·베이킹 여부에 따라 달라집니다.<br />
+                  카카오 채널로 문의하시면 최신 요금 안내드립니다.
+                </p>
+              </div>
+
+              {/* CTA */}
               <div className="flex flex-col items-start gap-3">
                 <a
-                  href="https://www.spacecloud.kr/space/37505"
+                  href={KAKAO_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary"
+                  className="btn-primary inline-flex items-center gap-2"
                 >
-                  스페이스클라우드 예약 <ArrowRight size={15} />
+                  <MessageCircle size={15} />
+                  카카오로 예약하기 (직예약 할인)
                 </a>
-                <p className="text-xs" style={{ color: "#9B7B6A" }}>
-                  네이버 예약도 가능합니다
-                </p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://www.spacecloud.kr/space/37505"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs inline-flex items-center gap-1"
+                    style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                  >
+                    스페이스클라우드 예약 <ArrowRight size={11} />
+                  </a>
+                  <span style={{ color: "rgba(196, 168, 130, 0.5)", fontSize: "10px" }}>|</span>
+                  <span className="text-xs" style={{ color: "#9B7B6A" }}>
+                    네이버 예약도 가능합니다
+                  </span>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── 비치 물품 ────────────────────────────────────── */}
+      <section
+        className="py-24"
+        style={{ borderBottom: "1px solid rgba(196, 168, 130, 0.3)" }}
+      >
+        <div className="max-w-6xl mx-auto px-6 sm:px-8">
+          <p className="section-label mb-12">WHAT'S INCLUDED</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {equipment.map((eq) => (
+              <div
+                key={eq}
+                className="card p-5"
+                style={{ display: "flex", alignItems: "flex-start", gap: "12px" }}
+              >
+                <UtensilsCrossed size={14} style={{ color: "#B5632A", flexShrink: 0, marginTop: "2px" }} />
+                <span className="text-sm" style={{ color: "#6B4C3B" }}>{eq}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-xs mt-6" style={{ color: "#9B7B6A" }}>
+            ※ 베이킹 도구(오븐·핸드믹서 등)는 별도 요금이 적용됩니다. 카카오로 문의해 주세요.
+          </p>
         </div>
       </section>
 

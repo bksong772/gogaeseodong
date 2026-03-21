@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Check } from "lucide-react";
+import { ArrowRight, Check, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "서동여관 | 부산 독채 감성 숙박",
   description:
-    "부산 금정구 서동의 낡은 여관. 취향의방(가족), 그림의방(커플), 필사의방(커플). 에어비앤비로 예약 가능.",
+    "부산 금정구 서동의 낡은 여관. 취향의방(가족), 그림의방(커플), 필사의방(커플). 카카오채널 직예약 가능. 에어비앤비보다 저렴하게.",
   keywords: [
     "서동여관", "부산 독채", "부산 감성숙박", "부산 에어비앤비",
     "금정구 숙박", "취향의방", "그림의방", "필사의방",
     "부산 가족여행", "부산 커플여행",
   ],
 };
+
+const KAKAO_URL = "https://pf.kakao.com/_VCxnsb";
 
 const rooms = [
   {
@@ -90,9 +92,18 @@ export default function StayPage() {
             90년대 서동의 낡은 여관. 세 개의 방, 각기 다른 이야기.<br />
             깔끔하진 않지만, 따뜻합니다.
           </p>
-          <p className="text-xs" style={{ color: "#9B7B6A" }}>
-            ※ 예약은 카카오채널로 문의 후 계좌이체로 진행됩니다. Airbnb보다 저렴하게 이용하실 수 있습니다.
+          <p className="text-xs mb-6" style={{ color: "#9B7B6A" }}>
+            ※ 카카오채널로 문의 후 계좌이체로 예약이 확정됩니다. 에어비앤비보다 저렴하게 이용하실 수 있습니다.
           </p>
+          <a
+            href={KAKAO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center gap-2"
+          >
+            <MessageCircle size={15} />
+            카카오로 예약 문의하기
+          </a>
         </div>
       </section>
 
@@ -179,14 +190,27 @@ export default function StayPage() {
                     >
                       {room.note}
                     </p>
-                    <a
-                      href="https://pf.kakao.com/_VCxnsb"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-primary"
-                    >
-                      카카오로 예약하기 <ArrowRight size={15} />
-                    </a>
+                    {/* CTA — 카카오 PRIMARY + 에어비앤비 보조 */}
+                    <div className="flex flex-col items-start gap-3">
+                      <a
+                        href={KAKAO_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary inline-flex items-center gap-2"
+                      >
+                        <MessageCircle size={15} />
+                        카카오로 예약하기 (직예약 할인)
+                      </a>
+                      <a
+                        href={room.airbnb}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs inline-flex items-center gap-1"
+                        style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                      >
+                        에어비앤비로 예약 <ArrowRight size={11} />
+                      </a>
+                    </div>
                   </div>
 
                   {/* 이미지 플레이스홀더 */}
@@ -194,23 +218,24 @@ export default function StayPage() {
                     className="min-h-[280px] lg:min-h-[360px] flex items-center justify-center"
                     style={{ backgroundColor: "#E5D9C3" }}
                   >
-                    <div className="text-center">
+                    <div className="text-center px-8">
                       <p
                         style={{
                           fontSize: "11px",
                           color: "#C4A882",
                           fontFamily: "'Playfair Display', serif",
                           letterSpacing: "0.25em",
-                          marginBottom: "6px",
+                          marginBottom: "12px",
                         }}
                       >
-                        PHOTO
+                        {room.en.toUpperCase()}
                       </p>
                       <p
                         style={{
                           fontSize: "13px",
-                          color: "#C4A882",
+                          color: "#9B7B6A",
                           fontFamily: "'Noto Serif KR', serif",
+                          lineHeight: 1.8,
                         }}
                       >
                         {room.name}

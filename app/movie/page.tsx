@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, Users, Clock, Car, Timer, MonitorPlay } from "lucide-react";
+import { ArrowRight, Users, Clock, Car, Timer, MonitorPlay, MessageCircle } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "서동영화 | 부산 OTT룸 · 영화감상실",
   description:
-    "부산 금정구 서동의 프라이빗 영화감상실. 빔프로젝터, OTT, 암전. 사진사, 동아리, 커플에게 추천. 스페이스클라우드 예약.",
+    "부산 금정구 서동의 프라이빗 영화감상실. 빔프로젝터, OTT, 완전 암전. 사진사, 동아리, 커플에게 추천. 카카오·스페이스클라우드 예약.",
   keywords: ["서동영화", "부산 OTT룸", "부산 영화감상실", "부산 빔프로젝터", "부산 사진스튜디오", "부산 데이트"],
 };
+
+const KAKAO_URL = "https://pf.kakao.com/_VCxnsb";
 
 const spaceInfo = [
   { icon: Users,       label: "수용인원", value: "최대 8인" },
@@ -17,11 +19,14 @@ const spaceInfo = [
 ];
 
 const equipment = [
-  "빔프로젝터 (100인치급)",
-  "넷플릭스 · 왓챠 · 유튜브",
-  "완전 암전 가능",
-  "빈백 · 소파 좌석",
+  "빔프로젝터 · 노트북",
+  "3인 소파",
   "블루투스 스피커",
+  "완전 암전 가능",
+  "스튜디오 조명 · 거울",
+  "냉난방기",
+  "와인잔 · 오프너",
+  "전자레인지 · 냄비",
 ];
 
 const users = [
@@ -69,12 +74,26 @@ export default function MoviePage() {
             </span>
           </h1>
           <p
-            className="text-sm leading-relaxed"
+            className="text-sm leading-relaxed mb-4"
             style={{ color: "#6B4C3B", maxWidth: "480px" }}
           >
             오래된 공간에서 보는 영화는 더 영화답습니다.<br />
-            빔프로젝터, OTT, 완전 암전.
+            빔프로젝터, OTT 개인계정, 완전 암전.
           </p>
+          <div className="flex flex-wrap items-center gap-4 mb-6">
+            <p className="text-xs" style={{ color: "#9B7B6A" }}>
+              카카오채널로 예약 시 더 저렴하게 이용하실 수 있습니다
+            </p>
+          </div>
+          <a
+            href={KAKAO_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex items-center gap-2"
+          >
+            <MessageCircle size={15} />
+            카카오로 예약 문의하기
+          </a>
         </div>
       </section>
 
@@ -91,26 +110,29 @@ export default function MoviePage() {
               className="card min-h-[360px] flex items-center justify-center"
               style={{ backgroundColor: "#E5D9C3" }}
             >
-              <div className="text-center">
+              <div className="text-center px-8">
                 <p
                   style={{
                     fontSize: "11px",
                     color: "#C4A882",
                     fontFamily: "'Playfair Display', serif",
                     letterSpacing: "0.25em",
-                    marginBottom: "6px",
+                    marginBottom: "12px",
                   }}
                 >
-                  PHOTO
+                  SEODONG MOVIE
                 </p>
                 <p
                   style={{
                     fontSize: "13px",
-                    color: "#C4A882",
+                    color: "#9B7B6A",
                     fontFamily: "'Noto Serif KR', serif",
+                    lineHeight: 1.8,
                   }}
                 >
-                  서동영화
+                  낡은 옥탑방,<br />
+                  스크린 하나,<br />
+                  우리만의 상영관
                 </p>
               </div>
             </div>
@@ -153,31 +175,57 @@ export default function MoviePage() {
               </div>
 
               {/* 장비 목록 */}
-              <p className="section-label mb-5">EQUIPMENT</p>
-              <div className="flex flex-col gap-3 mb-10">
+              <p className="section-label mb-5">WHAT'S INCLUDED</p>
+              <div className="grid grid-cols-2 gap-2 mb-4">
                 {equipment.map((eq) => (
                   <div
                     key={eq}
-                    style={{ display: "flex", alignItems: "center", gap: "10px" }}
+                    style={{ display: "flex", alignItems: "center", gap: "8px" }}
                   >
-                    <MonitorPlay size={13} style={{ color: "#B5632A", flexShrink: 0 }} />
-                    <span className="text-sm" style={{ color: "#6B4C3B" }}>{eq}</span>
+                    <MonitorPlay size={12} style={{ color: "#B5632A", flexShrink: 0 }} />
+                    <span className="text-xs" style={{ color: "#6B4C3B" }}>{eq}</span>
                   </div>
                 ))}
               </div>
+              <p className="text-xs mb-8" style={{ color: "#9B7B6A", fontStyle: "italic" }}>
+                ※ 넷플릭스 · 왓챠 · 디즈니+ 개인계정 사용 가능
+              </p>
 
+              {/* 요금 안내 */}
+              <div
+                className="rounded-xl p-5 mb-8"
+                style={{
+                  backgroundColor: "#F0E8D5",
+                  border: "1px solid rgba(196, 168, 130, 0.4)",
+                }}
+              >
+                <p className="text-xs mb-2" style={{ color: "#9B7B6A", letterSpacing: "0.1em" }}>PRICING</p>
+                <p className="text-sm" style={{ color: "#6B4C3B" }}>
+                  요금은 날짜·인원에 따라 달라집니다.<br />
+                  카카오 채널로 문의하시면 최신 요금 안내드립니다.
+                </p>
+              </div>
+
+              {/* CTA */}
               <div className="flex flex-col items-start gap-3">
+                <a
+                  href={KAKAO_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary inline-flex items-center gap-2"
+                >
+                  <MessageCircle size={15} />
+                  카카오로 예약하기 (직예약 할인)
+                </a>
                 <a
                   href="https://www.spacecloud.kr/space/40932"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary"
+                  className="text-xs inline-flex items-center gap-1"
+                  style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
-                  스페이스클라우드 예약 <ArrowRight size={15} />
+                  스페이스클라우드 예약 <ArrowRight size={11} />
                 </a>
-                <p className="text-xs" style={{ color: "#9B7B6A" }}>
-                  네이버 예약도 가능합니다
-                </p>
               </div>
             </div>
           </div>
@@ -244,16 +292,18 @@ export default function MoviePage() {
               style={{ color: "#6B4C3B", maxWidth: "480px" }}
             >
               서동영화의 오래된 벽, 바래진 바닥, 독특한 조명.
-              필름 감성의 포트폴리오를 찍기에 완벽한 공간입니다.
+              스튜디오 조명과 거울까지 갖춰진 이 공간은
+              필름 감성의 포트폴리오를 찍기에 완벽합니다.
               개인 촬영, 동아리 작업, 모델 촬영 모두 가능합니다.
             </p>
             <a
-              href="https://www.spacecloud.kr/space/40932"
+              href={KAKAO_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
+              className="btn-primary inline-flex items-center gap-2"
             >
-              촬영 목적으로 예약하기 <ArrowRight size={15} />
+              <MessageCircle size={15} />
+              촬영 목적으로 문의하기
             </a>
           </div>
         </div>
