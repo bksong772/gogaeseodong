@@ -226,10 +226,10 @@ export default function ChwiyhangManualPage() {
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>공통 비치 품목</p>
               <div className="space-y-1.5 text-sm" style={{ color: "#2C1810" }}>
                 <p>🛁 수건, 물티슈, 드라이기, 휴지, 치약</p>
-                <p>🧴 손세정제·샴푸·바디워시·컨디셔너·샤워타월</p>
+                <p>🧴 손세정제·샴푸·바디워시·컨디셔너</p>
                 <p>🍳 그릇·수저·냄비·팬·와인잔·오프너</p>
                 <p>🌿 공기청정기·비데·전신거울·무드등·옷걸이·양키캔들 워머</p>
-                <p>❄️ 냉장고·가스렌지·전자렌지</p>
+                <p>❄️ 냉장고·가스렌지·전자렌지·커피포트</p>
               </div>
             </div>
             <div className="rounded-xl p-4" style={{ backgroundColor: "#FFF8F0", border: "1px solid rgba(181, 99, 42, 0.3)" }}>
@@ -239,7 +239,7 @@ export default function ChwiyhangManualPage() {
                 <p>📽️ 빔 프로젝터 (OTT 내장)</p>
                 <p>🛏️ 퀸 침대 (2인) + 싱글 침대 (1인)</p>
                 <p style={{ color: "#9B7B6A", fontSize: "12px" }}>침구(베개·이불)는 안방 수납장과 작은방 침대 수납장에 있어요.</p>
-                <p>📚 원피스 1~100권 · 무라카미 하루키</p>
+                <p>📚 원피스 1~97권 · 무라카미 하루키</p>
                 <p>🎲 보드게임 · 빈백</p>
               </div>
             </div>
