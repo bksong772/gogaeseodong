@@ -416,9 +416,25 @@ export default function ChwiyhangManualPage() {
               <div className="space-y-2">
                 {[
                   { name: "서동역 (4호선)", addr: "도보 약 200m" },
+                  { name: "탑플러스 편의점", addr: "부산 금정구 옥봉로 12" },
                   { name: "서동미로시장", addr: "부산 금정구 서동로141번길 16" },
                   { name: "다이소", addr: "부산 금정구 반송로 400" },
                   { name: "스타벅스", addr: "부산 금정구 서동로 173" },
+                ].map((place) => (
+                  <div key={place.name} className="flex items-start gap-2">
+                    <span className="font-semibold" style={{ flexShrink: 0 }}>{place.name}</span>
+                    <span style={{ color: "#9B7B6A" }}>{place.addr}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
+              <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>은행 · ATM</p>
+              <div className="space-y-2">
+                {[
+                  { name: "농협", addr: "부산 금정구 서동로 174" },
+                  { name: "부산은행 서동지점", addr: "부산 금정구 서동로 173" },
+                  { name: "기업은행", addr: "부산 금정구 개좌로 5" },
                 ].map((place) => (
                   <div key={place.name} className="flex items-start gap-2">
                     <span className="font-semibold" style={{ flexShrink: 0 }}>{place.name}</span>
