@@ -28,11 +28,6 @@ export default function HeaterPage() {
           </p>
         </div>
 
-        {/* 전체 사진 */}
-        <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-          <Image src="/manual/chwihyang/온풍기.jpg" alt="온풍기 전체" width={600} height={400} className="w-full object-cover" />
-        </div>
-
         {/* 주의사항 배너 */}
         <div className="rounded-xl p-4" style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.3)" }}>
           <p className="font-semibold text-sm mb-1" style={{ color: "#B52A2A" }}>⚠️ 과열 위험 — 반드시 타이머를 맞춰 이용해 주세요</p>
@@ -47,6 +42,9 @@ export default function HeaterPage() {
             <div className="flex items-center gap-3 mb-3">
               <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "20px", fontWeight: 700, color: "#B5632A" }}>1</span>
               <p className="text-sm font-semibold" style={{ color: "#2C1810" }}>콘센트를 먼저 꽂습니다.</p>
+            </div>
+            <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/chwihyang/온풍기.jpg" alt="온풍기 전체" width={600} height={400} className="w-full object-cover" />
             </div>
           </div>
 
