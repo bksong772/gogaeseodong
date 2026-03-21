@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "부산 금정구 서동. 동네 곳곳의 비어있던 공간들을 하나씩 되살리는 프로젝트. 서동여관, 서동부엌, 서동영화.",
 };
 
+const KAKAO_URL = "https://pf.kakao.com/_VCxnsb";
+
 const spaces = [
   {
     no: "一",
@@ -17,7 +19,6 @@ const spaces = [
     desc: "취향의방 · 그림의방 · 필사의방",
     sub: "할머니 집 같은 부산의 하룻밤",
     tag: "숙박",
-    cta: "카카오로 예약하기",
   },
   {
     no: "二",
@@ -27,7 +28,6 @@ const spaces = [
     desc: "노을이 예쁜 동네의 공유주방",
     sub: "노을 지는 서동에서 차려먹는 밥 한 끼",
     tag: "공유주방",
-    cta: "카카오로 예약하기",
   },
   {
     no: "三",
@@ -37,7 +37,6 @@ const spaces = [
     desc: "오래된 공간에서 보는 프라이빗 영화",
     sub: "옥탑방 빔프로젝터, 우리만의 상영관",
     tag: "영화감상실",
-    cta: "카카오로 예약하기",
   },
 ];
 
@@ -428,13 +427,8 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {spaces.map((space) => (
-              <Link
-                key={space.no}
-                href={space.href}
-                className="card card-hover block group"
-                style={{ textDecoration: "none" }}
-              >
-                <div className="p-8">
+              <div key={space.no} className="card flex flex-col">
+                <div className="p-8 flex flex-col flex-1">
                   <div className="flex items-center justify-between mb-7">
                     <span className="tag">{space.tag}</span>
                     <span
@@ -470,17 +464,29 @@ export default function HomePage() {
                     {space.en}
                   </p>
                   <p className="text-sm mb-2" style={{ color: "#6B4C3B" }}>{space.desc}</p>
-                  <p className="text-xs mb-10" style={{ color: "#9B7B6A" }}>{space.sub}</p>
-                  <div className="flex items-center gap-2 text-sm" style={{ color: "#B5632A" }}>
-                    <span>{space.cta}</span>
-                    <ArrowRight
-                      size={14}
-                      style={{ transition: "transform 0.25s ease" }}
-                      className="group-hover:translate-x-1"
-                    />
+                  <p className="text-xs mb-8" style={{ color: "#9B7B6A" }}>{space.sub}</p>
+
+                  {/* 버튼 영역 */}
+                  <div className="mt-auto flex flex-col gap-2">
+                    <a
+                      href={KAKAO_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary text-center text-sm"
+                      style={{ justifyContent: "center" }}
+                    >
+                      카카오로 예약하기
+                    </a>
+                    <Link
+                      href={space.href}
+                      className="flex items-center justify-center gap-1 text-sm py-2"
+                      style={{ color: "#9B7B6A", textDecoration: "none" }}
+                    >
+                      공간 자세히 보기 <ArrowRight size={13} />
+                    </Link>
                   </div>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>
