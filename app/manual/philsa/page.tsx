@@ -282,7 +282,7 @@ export default function YeogwanManualPage() {
         </Block>
 
         {/* 8. 온풍기 */}
-        <Block icon={Wind} title="온풍기 안내 (꼭 확인해주세요)">
+        <Block icon={Wind} title="온풍기 안내 · 겨울 한정 비치">
           <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
             <div className="rounded-xl overflow-hidden mb-3" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <Image src="/manual/philsa/온풍기.jpg" alt="온풍기" width={600} height={400} className="w-full object-cover" />
@@ -300,7 +300,14 @@ export default function YeogwanManualPage() {
           </div>
         </Block>
 
-        {/* 9. 가스렌지 */}
+        {/* 9. 선풍기 */}
+        <Block icon={Wind} title="선풍기">
+          <div className="text-sm" style={{ color: "#2C1810" }}>
+            <p>선풍기 작동 버튼은 <strong>선풍기 머리 뒷부분</strong>에 있습니다.</p>
+          </div>
+        </Block>
+
+        {/* 10. 가스렌지 */}
         <Block icon={Flame} title="가스렌지">
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
             <p>가스렌지 <strong>좌측에 가스밸브</strong>가 위치합니다.</p>
