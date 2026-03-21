@@ -225,24 +225,22 @@ export default function ChwiyhangManualPage() {
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>공통 비치 품목</p>
               <div className="space-y-1.5 text-sm" style={{ color: "#2C1810" }}>
-                <p>🛁 수건, 물티슈, 휴지, 드라이기, 고데기, 치약</p>
-                <p>🧴 샴푸·바디워시·컨디셔너·샤워타월·손세정제</p>
+                <p>🛁 수건, 물티슈, 드라이기, 휴지, 치약</p>
+                <p>🧴 손세정제·샴푸·바디워시·컨디셔너·샤워타월</p>
                 <p>🍳 그릇·수저·냄비·팬·와인잔·오프너</p>
-                <p>🌿 공기청정기·무드등·인센스 스틱</p>
+                <p>🌿 공기청정기·비데·전신거울·무드등·옷걸이·양키캔들 워머</p>
                 <p>❄️ 냉장고·가스렌지·전자렌지</p>
-                <p>🪞 전신거울·옷걸이</p>
               </div>
             </div>
             <div className="rounded-xl p-4" style={{ backgroundColor: "#FFF8F0", border: "1px solid rgba(181, 99, 42, 0.3)" }}>
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>취향의방 전용</p>
               <div className="space-y-1.5 text-sm" style={{ color: "#2C1810" }}>
-                <p>🛏️ 퀸 침대 (2인) + 싱글 침대 (1인)</p>
+                <p>🛋️ 2인용 소파 · 소형 테이블</p>
                 <p>📽️ 빔 프로젝터 (OTT 내장)</p>
+                <p>🛏️ 퀸 침대 (2인) + 싱글 침대 (1인)</p>
+                <p style={{ color: "#9B7B6A", fontSize: "12px" }}>침구(베개·이불)는 안방 수납장과 작은방 침대 수납장에 있어요.</p>
                 <p>📚 원피스 1~100권 · 무라카미 하루키</p>
-                <p>🎲 보드게임</p>
-                <p>🛋️ 빈백</p>
-                <p>🚿 비데</p>
-                <p>🕯️ 양키캔들 워머</p>
+                <p>🎲 보드게임 · 빈백</p>
               </div>
             </div>
             <div className="rounded-xl p-4" style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.2)" }}>
