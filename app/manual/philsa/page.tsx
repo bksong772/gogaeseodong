@@ -74,8 +74,19 @@ export default function YeogwanManualPage() {
       </div>
       <div style={{ borderBottom: "1px solid rgba(196, 168, 130, 0.3)" }} />
 
-      {/* ── 퇴실 배너 ──────────────────────────────────── */}
+      {/* ── TV 없음 안내 ────────────────────────────────── */}
       <div className="max-w-2xl mx-auto px-6 sm:px-8 pt-6">
+        <div className="rounded-xl px-5 py-4 mb-3"
+          style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.5)" }}>
+          <p className="text-sm font-semibold mb-1" style={{ color: "#2C1810" }}>📵 필사의방에는 TV·영상매체가 없습니다</p>
+          <p className="text-xs leading-5" style={{ color: "#6B4C3B" }}>
+            대신 책과 글, 조용한 시간을 드립니다. 온전히 나를 위한 하룻밤을 원하시는 분께 맞는 공간이에요.
+          </p>
+        </div>
+      </div>
+
+      {/* ── 퇴실 배너 ──────────────────────────────────── */}
+      <div className="max-w-2xl mx-auto px-6 sm:px-8">
         <a href="#checkout" className="flex items-center justify-between rounded-xl px-5 py-3"
           style={{ backgroundColor: "#FFF0E0", border: "1px solid rgba(181, 99, 42, 0.35)", textDecoration: "none" }}>
           <span className="text-sm font-semibold" style={{ color: "#B5632A" }}>퇴실 전 확인사항</span>
