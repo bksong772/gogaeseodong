@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "서동부엌 이용 메뉴얼",
     description: "서동부엌 공유주방 이용 안내",
-    images: [{ url: "/manual/서동부엌.png", width: 1200, height: 630, alt: "서동부엌" }],
+    images: [{ url: "/manual/kitchen/서동부엌.png", width: 1200, height: 630, alt: "서동부엌" }],
   },
 };
 
@@ -56,7 +56,7 @@ export default function KitchenManualPage() {
     <div className="pt-16">
       {/* ── 히어로 ─────────────────────────────────────── */}
       <div className="relative w-full" style={{ height: "280px" }}>
-        <Image src="/manual/서동부엌.png" alt="서동부엌" fill className="object-cover" priority />
+        <Image src="/manual/kitchen/서동부엌.png" alt="서동부엌" fill className="object-cover" priority />
         <div className="absolute inset-0"
           style={{ background: "linear-gradient(to bottom, rgba(44,24,16,0.05) 0%, rgba(44,24,16,0.72) 100%)" }} />
         <div className="absolute bottom-0 left-0 right-0 pb-7 px-6 sm:px-8">
@@ -117,7 +117,7 @@ export default function KitchenManualPage() {
               금속레버를 아래로 내리면 문이 열립니다.
             </p>
             <div className="rounded-xl overflow-hidden mt-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/입구문.JPG" alt="서동부엌 입구 문" width={600} height={400} className="w-full object-cover" />
+              <Image src="/manual/kitchen/입구문.JPG" alt="서동부엌 입구 문" width={600} height={400} className="w-full object-cover" />
             </div>
           </div>
         </Block>
@@ -172,7 +172,7 @@ export default function KitchenManualPage() {
             </div>
             <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
               <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-                <Image src="/manual/가는길.png" alt="서동부엌 가는 길 지도" width={600} height={400} className="w-full object-cover" />
+                <Image src="/manual/kitchen/가는길.png" alt="서동부엌 가는 길 지도" width={600} height={400} className="w-full object-cover" />
               </div>
             </div>
             <div style={{ borderTop: "1px solid rgba(196, 168, 130, 0.3)", paddingTop: "14px" }}>
@@ -229,7 +229,7 @@ export default function KitchenManualPage() {
               </a>
             </div>
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/인덕션.png" alt="인덕션 · 하이라이트" width={600} height={400} className="w-full object-cover" />
+              <Image src="/manual/kitchen/인덕션.png" alt="인덕션 · 하이라이트" width={600} height={400} className="w-full object-cover" />
               <div className="p-4" style={{ backgroundColor: "#F0E8D5" }}>
                 <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>인덕션 · 하이라이트 안내</p>
                 <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
@@ -282,7 +282,7 @@ export default function KitchenManualPage() {
             </div>
           </div>
           <div className="rounded-xl overflow-hidden mt-4" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-            <Image src="/manual/각종 양념류.JPG" alt="기본 양념류" width={600} height={400} className="w-full object-cover" />
+            <Image src="/manual/kitchen/각종 양념류.JPG" alt="기본 양념류" width={600} height={400} className="w-full object-cover" />
             <p className="text-xs text-center py-2" style={{ color: "#9B7B6A", backgroundColor: "#F0E8D5" }}>
               기본 양념류 (소금·설탕·후추·간장·식용유·참기름·식초 등)
             </p>
@@ -299,11 +299,11 @@ export default function KitchenManualPage() {
           </div>
           <div className="grid grid-cols-2 gap-3 mt-4">
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/음식물쓰레기.png" alt="음식물 쓰레기통" width={300} height={200} className="w-full object-cover" />
+              <Image src="/manual/kitchen/음식물쓰레기.png" alt="음식물 쓰레기통" width={300} height={200} className="w-full object-cover" />
               <p className="text-xs text-center py-2" style={{ color: "#9B7B6A", backgroundColor: "#F0E8D5" }}>음식물 쓰레기통</p>
             </div>
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/재활용.png" alt="재활용 분리수거" width={300} height={200} className="w-full object-cover" />
+              <Image src="/manual/kitchen/재활용.png" alt="재활용 분리수거" width={300} height={200} className="w-full object-cover" />
               <p className="text-xs text-center py-2" style={{ color: "#9B7B6A", backgroundColor: "#F0E8D5" }}>재활용 분리수거</p>
             </div>
           </div>
