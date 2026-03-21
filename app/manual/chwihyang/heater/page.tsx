@@ -57,10 +57,10 @@ export default function HeaterPage() {
               <p className="text-sm font-semibold" style={{ color: "#2C1810" }}>전원 버튼을 눌러주세요.</p>
             </div>
             <div className="rounded-xl overflow-hidden mb-2" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/chwihyang/heater/step1.jpg" alt="전원 버튼" width={600} height={400} className="w-full object-cover" />
+              <Image src="/manual/chwihyang/heater/온풍기1.jpg" alt="전원 버튼" width={600} height={400} className="w-full object-cover" />
             </div>
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/chwihyang/heater/step2.jpg" alt="전원 버튼 상세" width={600} height={400} className="w-full object-cover" />
+              <Image src="/manual/chwihyang/heater/온풍기2.jpg" alt="전원 버튼 상세" width={600} height={400} className="w-full object-cover" />
             </div>
           </div>
 
@@ -69,6 +69,9 @@ export default function HeaterPage() {
             <div className="flex items-center gap-3 mb-3">
               <span style={{ fontFamily: "'Playfair Display', serif", fontSize: "20px", fontWeight: 700, color: "#B5632A" }}>3</span>
               <p className="text-sm font-semibold" style={{ color: "#2C1810" }}>왼쪽 버튼 — 온도 조절 (강 / 약)</p>
+            </div>
+            <div className="rounded-xl overflow-hidden mb-3" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
+              <Image src="/manual/chwihyang/heater/온풍기3.jpg" alt="온도 조절 버튼" width={600} height={400} className="w-full object-cover" />
             </div>
             <div className="rounded-xl p-4 text-sm" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)", color: "#2C1810" }}>
               <p>• <strong>강</strong> — 너무 추우실 때</p>
@@ -84,7 +87,7 @@ export default function HeaterPage() {
               <p className="text-sm font-semibold" style={{ color: "#2C1810" }}>오른쪽 버튼 — 타이머 설정</p>
             </div>
             <div className="rounded-xl overflow-hidden mb-3" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/chwihyang/heater/step3.jpg" alt="타이머 버튼" width={600} height={400} className="w-full object-cover" />
+              <Image src="/manual/chwihyang/heater/온풍기4.jpg" alt="타이머 버튼" width={600} height={400} className="w-full object-cover" />
             </div>
             <div className="rounded-xl p-4" style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.25)" }}>
               <p className="text-sm font-semibold mb-2" style={{ color: "#B52A2A" }}>⚠️ 반드시 타이머를 맞춰 주세요!</p>
@@ -100,7 +103,7 @@ export default function HeaterPage() {
               <p className="text-sm font-semibold" style={{ color: "#2C1810" }}>중간 위쪽 버튼 — 현재 온도 확인 (확인만 가능)</p>
             </div>
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/chwihyang/heater/step4.jpg" alt="온도 확인 버튼" width={600} height={400} className="w-full object-cover" />
+              <Image src="/manual/chwihyang/heater/온풍기5.jpg" alt="온도 확인 버튼" width={600} height={400} className="w-full object-cover" />
             </div>
           </div>
 
@@ -111,7 +114,7 @@ export default function HeaterPage() {
               <p className="text-sm font-semibold" style={{ color: "#2C1810" }}>끄기 — 전원 버튼 또는 측면 버튼</p>
             </div>
             <div className="rounded-xl overflow-hidden" style={{ border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <Image src="/manual/chwihyang/heater/step5.jpg" alt="전원 끄기" width={600} height={400} className="w-full object-cover" />
+              <Image src="/manual/chwihyang/heater/온풍기6.jpg" alt="전원 끄기" width={600} height={400} className="w-full object-cover" />
             </div>
           </div>
 
