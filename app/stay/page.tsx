@@ -21,30 +21,39 @@ const rooms = [
     name: "취향의방",
     en: "Room of Taste",
     tag: "가족 추천",
-    desc: "서동여관의 시작. 90년대 고택의 한 층 독채. 거실과 침실, 각기 다른 취향으로 채워진 공간. 가족이 함께 머물기에 딱입니다.",
-    features: ["독채 1층", "침실 + 거실", "최대 4인", "에어컨·난방"],
+    addr: "옥봉로13번길 26, 2층",
+    desc: "서동여관의 시작. 90년대 고택 한 층 독채. 거실과 침실이 분리되어 가족이 함께 머물기에 딱입니다. 원피스 전권, 빔프로젝터, 빈백소파가 기다리고 있어요.",
+    features: ["독채 2층", "최대 4인", "빔프로젝터", "원피스 전권", "빈백소파"],
+    highlight: "원피스 전권 · 빔프로젝터 · 에피하임 빈백소파",
     airbnb: "https://www.airbnb.co.kr/rooms/997241625179311794",
-    note: "★ 4.65 · 리뷰 26개",
+    note: "★ 4.65 · 에어비앤비 리뷰 26개",
+    manual: "/manual/chwihyang",
   },
   {
     no: "二",
     name: "그림의방",
     en: "Room of Painting",
     tag: "커플 추천",
-    desc: "주인장이 직접 고른 그림들, 오래된 프레임들. 빔프로젝터로 영화도 볼 수 있는 옥탑방. 취향이 담긴 공간에서 조용히 쉬어가고 싶은 커플에게 어울립니다.",
-    features: ["옥탑방 독채", "더블침대", "최대 2인", "빔프로젝터"],
+    addr: "서동로91번길 7, 4층",
+    desc: "드래곤볼·귀멸의칼날 전집, LP 턴테이블, 아크릴 물감. 주인장이 직접 고른 그림들로 채워진 4층 독채. 빔프로젝터로 영화도 볼 수 있습니다.",
+    features: ["독채 4층", "최대 2인", "빔프로젝터", "LP 턴테이블"],
+    highlight: "드래곤볼·귀멸의칼날 · LP 턴테이블 · 아크릴 물감·이젤",
     airbnb: "https://www.airbnb.co.kr/rooms/699514631888252996",
     note: "커플에게 추천",
+    manual: "/manual/geurim",
   },
   {
     no: "三",
     name: "필사의방",
     en: "Room of Writing",
     tag: "커플 추천",
-    desc: "TV도 없고, 영상 매체도 없습니다. 조용한 책상, 편지지, 오래된 책장만 있습니다. 아무것도 하지 않아도 되는 하루, 또는 오랫동안 미뤄둔 글을 쓰고 싶은 분들을 위한 방입니다.",
-    features: ["독채", "더블침대", "최대 2인", "TV 없음"],
+    addr: "서동로91번길 7, 3층",
+    desc: "TV도 없고, 영상 매체도 없습니다. 책상, 안락의자, 스탠드 조명, 블루투스 스피커. 아무것도 하지 않아도 되는 하루, 오랫동안 미뤄둔 글을 쓰고 싶은 분들을 위한 방입니다.",
+    features: ["독채 3층", "최대 2인", "TV 없음", "안락의자·책상"],
+    highlight: "책상·스탠드 조명 · 안락의자 · 블루투스 스피커",
     airbnb: "https://www.airbnb.co.kr/rooms/746091488451213213",
-    note: "커플에게 추천",
+    note: "조용한 하룻밤을 원한다면",
+    manual: "/manual/philsa",
   },
 ];
 
@@ -144,7 +153,7 @@ export default function StayPage() {
                       {room.name}
                     </h2>
                     <p
-                      className="mb-5"
+                      className="mb-1"
                       style={{
                         fontFamily: "'Playfair Display', serif",
                         fontStyle: "italic",
@@ -155,11 +164,30 @@ export default function StayPage() {
                       {room.en}
                     </p>
                     <p
-                      className="text-sm leading-relaxed mb-7"
+                      className="text-xs mb-5"
+                      style={{ color: "#C4A882" }}
+                    >
+                      {room.addr}
+                    </p>
+                    <p
+                      className="text-sm leading-relaxed mb-5"
                       style={{ color: "#6B4C3B" }}
                     >
                       {room.desc}
                     </p>
+                    {/* 하이라이트 */}
+                    <div
+                      className="rounded-xl px-4 py-3 mb-6"
+                      style={{
+                        backgroundColor: "#F0E8D5",
+                        border: "1px solid rgba(196, 168, 130, 0.4)",
+                      }}
+                    >
+                      <p className="text-xs mb-1" style={{ color: "#9B7B6A", letterSpacing: "0.1em" }}>HIGHLIGHT</p>
+                      <p className="text-sm" style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}>
+                        {room.highlight}
+                      </p>
+                    </div>
 
                     {/* 특징 배지 */}
                     <div className="flex flex-wrap gap-2 mb-7">
@@ -185,12 +213,12 @@ export default function StayPage() {
                     </div>
 
                     <p
-                      className="text-xs mb-7"
+                      className="text-xs mb-6"
                       style={{ color: "#9B7B6A", fontStyle: "italic" }}
                     >
                       {room.note}
                     </p>
-                    {/* CTA — 카카오 PRIMARY + 에어비앤비 보조 */}
+                    {/* CTA — 카카오 PRIMARY + 에어비앤비·메뉴얼 보조 */}
                     <div className="flex flex-col items-start gap-3">
                       <a
                         href={KAKAO_URL}
@@ -201,15 +229,25 @@ export default function StayPage() {
                         <MessageCircle size={15} />
                         카카오로 예약하기 (직예약 할인)
                       </a>
-                      <a
-                        href={room.airbnb}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs inline-flex items-center gap-1"
-                        style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
-                      >
-                        에어비앤비로 예약 <ArrowRight size={11} />
-                      </a>
+                      <div className="flex flex-wrap gap-3 items-center">
+                        <a
+                          href={room.airbnb}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-xs inline-flex items-center gap-1"
+                          style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                        >
+                          에어비앤비로 예약 <ArrowRight size={11} />
+                        </a>
+                        <span style={{ color: "rgba(196, 168, 130, 0.5)", fontSize: "10px" }}>|</span>
+                        <Link
+                          href={room.manual}
+                          className="text-xs inline-flex items-center gap-1"
+                          style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                        >
+                          이용 메뉴얼 <ArrowRight size={11} />
+                        </Link>
+                      </div>
                     </div>
                   </div>
 
@@ -225,7 +263,7 @@ export default function StayPage() {
                           color: "#C4A882",
                           fontFamily: "'Playfair Display', serif",
                           letterSpacing: "0.25em",
-                          marginBottom: "12px",
+                          marginBottom: "16px",
                         }}
                       >
                         {room.en.toUpperCase()}
@@ -235,10 +273,12 @@ export default function StayPage() {
                           fontSize: "13px",
                           color: "#9B7B6A",
                           fontFamily: "'Noto Serif KR', serif",
-                          lineHeight: 1.8,
+                          lineHeight: 2,
                         }}
                       >
-                        {room.name}
+                        {room.highlight.split(" · ").map((item, i) => (
+                          <span key={i} style={{ display: "block" }}>{item}</span>
+                        ))}
                       </p>
                     </div>
                   </div>
