@@ -8,10 +8,13 @@ export const metadata: Metadata = {
 // 서동 분위기 사진 — public/images/guide/ 에 파일 넣으면 자동 표시
 // 파일명 예: alley1.jpg, market1.jpg, restaurant1.jpg 등
 const atmospherePhotos = [
-  // { src: "/images/guide/alley1.jpg", caption: "서동 고개 골목" },
-  // { src: "/images/guide/market1.jpg", caption: "서동 미로시장" },
-  // { src: "/images/guide/restaurant1.jpg", caption: "맛나분식 외관" },
-  // { src: "/images/guide/view1.jpg", caption: "서동 전경" },
+  { src: "/images/guide/street-view.jpg", caption: "서동 거리" },
+  { src: "/images/guide/narrow-alley.jpg", caption: "서동 골목" },
+  { src: "/images/guide/uphill.jpg", caption: "고개 오르막길" },
+  { src: "/images/guide/stairs.jpg", caption: "서동 계단길" },
+  { src: "/images/guide/village-houses.jpg", caption: "서동 마을" },
+  { src: "/images/guide/old-gym.jpg", caption: "동네 체육관" },
+  { src: "/images/guide/cat.jpg", caption: "골목 고양이" },
 ];
 
 // mapUrl: 네이버 지도 공유 링크 / youtubeUrl: 유튜브 링크 → 각 버튼 자동 표시
