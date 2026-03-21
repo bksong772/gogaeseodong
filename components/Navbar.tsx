@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Menu, X, ChevronRight } from "lucide-react";
+import { Menu, X, ChevronRight, MessageCircle } from "lucide-react";
 
 const navItems = [
   { href: "/story",   label: "우리이야기" },
@@ -82,6 +82,18 @@ export default function Navbar() {
               );
             })}
           </div>
+
+          {/* 예약하기 버튼 (데스크탑) */}
+          <a
+            href="https://pf.kakao.com/_VCxnsb"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden md:inline-flex items-center gap-2 btn-primary"
+            style={{ fontSize: "13px", padding: "8px 18px" }}
+          >
+            <MessageCircle size={14} />
+            예약하기
+          </a>
 
           {/* 모바일 햄버거 */}
           <button
