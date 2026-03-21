@@ -5,7 +5,13 @@ import { ArrowRight } from "lucide-react";
 export const metadata: Metadata = {
   title: "고개서동 | 부산 서동의 낡은 공간들",
   description:
-    "부산 금정구 서동. 동네 곳곳의 비어있던 공간들을 하나씩 되살리는 프로젝트. 서동여관, 서동부엌, 서동영화.",
+    "부산 금정구 서동. 비어있던 공간들을 하나씩 되살리는 프로젝트. 서동여관(독채 숙박), 서동부엌(공유주방), 서동영화(프라이빗 상영관).",
+  keywords: [
+    "고개서동", "부산 감성 공간", "서동", "부산 금정구",
+    "서동여관", "서동부엌", "서동영화",
+    "부산 독채 숙박", "부산 공유주방", "부산 영화감상실",
+    "부산 로컬", "부산 여행", "부산 데이트 코스",
+  ],
 };
 
 const KAKAO_URL = "https://pf.kakao.com/_VCxnsb";
@@ -25,8 +31,8 @@ const spaces = [
     href: "/kitchen",
     ko: "서동부엌",
     en: "Seodong Kitchen",
-    desc: "노을이 예쁜 동네의 공유주방",
-    sub: "노을 지는 서동에서 차려먹는 밥 한 끼",
+    desc: "서동 골목 안 프라이빗 공유주방",
+    sub: "우리끼리 차리는 밥상",
     tag: "공유주방",
   },
   {

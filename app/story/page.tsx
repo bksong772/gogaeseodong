@@ -4,7 +4,11 @@ import { ArrowRight } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "우리이야기 | 고개서동",
-  description: "고개서동 주인장이 태어나고 자란 동네, 그 건물 이야기.",
+  description: "고개서동 주인장이 태어나고 자란 동네, 서동. 버려진 공간을 다시 쓰임 있게 만들어가는 이야기.",
+  keywords: [
+    "고개서동 이야기", "서동 로컬 브랜드", "부산 로컬", "서동 주인장",
+    "부산 감성 공간", "빈 공간 재생", "부산 금정구 서동",
+  ],
 };
 
 
