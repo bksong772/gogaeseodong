@@ -281,7 +281,23 @@ export default function YeogwanManualPage() {
           </div>
         </Block>
 
-        {/* 8. 가스렌지 */}
+        {/* 8. 온풍기 */}
+        <Block icon={Wind} title="온풍기 안내 (꼭 확인해주세요)">
+          <div className="space-y-3 text-sm" style={{ color: "#2C1810" }}>
+            <p>안방에 비치된 온풍기입니다. 직접 조작하시면 됩니다.</p>
+            <div className="rounded-xl p-4"
+              style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.25)" }}>
+              <p className="font-semibold" style={{ color: "#B52A2A" }}>
+                ⚠️ 작동 중에는 커버가 뜨거우니 화상에 주의하세요!
+              </p>
+            </div>
+            <p style={{ color: "#9B7B6A" }}>
+              온도 조절이 필요하시면 카카오 채널로 편하게 연락 주세요 😊
+            </p>
+          </div>
+        </Block>
+
+        {/* 9. 가스렌지 */}
         <Block icon={Flame} title="가스렌지">
           <div className="space-y-2 text-sm" style={{ color: "#2C1810" }}>
             <p>가스렌지 <strong>좌측에 가스밸브</strong>가 위치합니다.</p>
