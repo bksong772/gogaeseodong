@@ -80,9 +80,9 @@ export default function ChwiyhangManualPage() {
       <div className="max-w-2xl mx-auto px-6 sm:px-8 pt-6">
         <div className="rounded-xl px-5 py-4 mb-3"
           style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.5)" }}>
-          <p className="text-sm font-semibold mb-1" style={{ color: "#2C1810" }}>📽️ 취향의방에는 빔 프로젝터(OTT 내장)가 있습니다</p>
+          <p className="text-sm font-semibold mb-1" style={{ color: "#2C1810" }}>📽️ 취향의방에는 빔 프로젝터(크롬캐스트)가 있습니다</p>
           <p className="text-xs leading-5" style={{ color: "#6B4C3B" }}>
-            넷플릭스·유튜브 등 OTT가 내장되어 있어 별도 미러링 없이 바로 영상 시청이 가능해요.
+            크롬캐스트 + 넷플릭스 개인 계정으로 바로 영상 시청이 가능해요. 리모컨 2개로 간단하게 조작하세요.
           </p>
         </div>
       </div>
@@ -236,7 +236,7 @@ export default function ChwiyhangManualPage() {
               <p className="section-label" style={{ fontSize: "10px", marginBottom: "10px" }}>취향의방 전용</p>
               <div className="space-y-1.5 text-sm" style={{ color: "#2C1810" }}>
                 <p>🛋️ 2인용 소파 · 소형 테이블</p>
-                <p>📽️ 빔 프로젝터 (OTT 내장)</p>
+                <p>📽️ 빔 프로젝터 (크롬캐스트)</p>
                 <p>🛏️ 퀸 침대 (2인) + 싱글 침대 (1인)</p>
                 <p style={{ color: "#9B7B6A", fontSize: "12px" }}>침구(베개·이불)는 안방 수납장과 작은방 침대 수납장에 있어요.</p>
                 <p>📚 원피스 1~97권 · 무라카미 하루키</p>
@@ -257,15 +257,23 @@ export default function ChwiyhangManualPage() {
         <Block icon={Tv} title="빔 프로젝터 사용 안내">
           <div className="space-y-4 text-sm" style={{ color: "#2C1810" }}>
             <div className="rounded-xl p-4" style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)" }}>
-              <p className="section-label" style={{ fontSize: "10px", marginBottom: "6px" }}>📽️ OTT 내장형 — 미러링 필요 없어요</p>
-              <ol className="space-y-2 mt-2" style={{ color: "#2C1810", paddingLeft: "4px" }}>
-                <li>1. 리모컨으로 <strong>빔 전원</strong>을 켭니다.</li>
-                <li>2. 메뉴에서 원하는 <strong>OTT 앱</strong> (넷플릭스·유튜브 등)을 선택합니다.</li>
-                <li>3. 계정 로그인 후 바로 감상하세요 🎬</li>
+              <p className="section-label" style={{ fontSize: "10px", marginBottom: "8px" }}>📽️ 넷플릭스 시청 방법</p>
+              <ol className="space-y-3" style={{ color: "#2C1810", paddingLeft: "4px" }}>
+                <li>1. <strong>검정색 리모컨</strong>으로 <strong>크롬캐스트</strong>를 켜세요.</li>
+                <li>2. 검정색 리모컨에서 <strong>HDMI</strong>를 누르세요.</li>
+                <li>3. <strong>하얀색 리모컨</strong>의 <strong>넷플릭스</strong> 버튼을 누르세요.</li>
+                <li>4. <strong>개인 계정</strong>으로 로그인 후 감상하시면 됩니다 🎬</li>
+              </ol>
+            </div>
+            <div className="rounded-xl p-4" style={{ backgroundColor: "#FFF8F0", border: "1px solid rgba(181, 99, 42, 0.3)" }}>
+              <p className="text-xs font-semibold mb-2" style={{ color: "#B5632A" }}>🔇 소리가 안 날 때</p>
+              <ol className="space-y-1.5 text-xs" style={{ color: "#6B4C3B" }}>
+                <li>1. <strong>검정색 리모컨</strong>의 <strong>홈 버튼</strong>을 누르세요.</li>
+                <li>2. 이후 <strong>하얀색 리모컨</strong>으로 다시 조작하시면 됩니다.</li>
               </ol>
             </div>
             <div className="rounded-xl p-3" style={{ backgroundColor: "#FFF5F5", border: "1px solid rgba(180, 50, 50, 0.2)" }}>
-              <p className="text-xs" style={{ color: "#6B4C3B" }}>⚠️ 개인 OTT 계정 사용 시 <strong>로그아웃</strong>을 꼭 해주세요!</p>
+              <p className="text-xs" style={{ color: "#6B4C3B" }}>⚠️ 넷플릭스는 <strong>개인 계정</strong>을 이용해 주세요. 사용 후 <strong>로그아웃</strong> 꼭 부탁드립니다!</p>
             </div>
           </div>
         </Block>
