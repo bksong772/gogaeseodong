@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import FloatingChat from "@/components/FloatingChat";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gogaeseodong-sigma.vercel.app"),
@@ -67,7 +66,6 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <FloatingChat />
       </body>
     </html>
   );
