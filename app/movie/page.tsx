@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 const KAKAO_URL = "https://pf.kakao.com/_VCxnsb";
 
 const spaceInfo = [
-  { icon: Users,  label: "수용인원", value: "최대 8인" },
-  { icon: Clock,  label: "운영시간", value: "10:00 — 22:00" },
+  { icon: Users,  label: "수용인원", value: "최대 5인" },
+  { icon: Clock,  label: "운영시간", value: "24시간" },
   { icon: Timer,  label: "최소예약", value: "3시간" },
-  { icon: Car,    label: "주차",    value: "건물 앞 가능" },
+  { icon: Car,    label: "주차",    value: "인근 공영주차장" },
 ];
 
 const equipment = [
@@ -89,13 +89,30 @@ export default function MoviePage() {
             </span>
           </h1>
           <p
-            className="text-sm leading-relaxed mb-4"
+            className="text-sm leading-relaxed mb-5"
             style={{ color: "#6B4C3B", maxWidth: "480px" }}
           >
             부산 금정구 서동, 골목 안 2층.<br />
             빔프로젝터, 완전 암전, OTT 개인계정 연결.<br />
             오래된 공간에서 보는 영화는 더 영화답습니다.
           </p>
+          <div
+            className="rounded-xl p-4 mb-6"
+            style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)", maxWidth: "480px" }}
+          >
+            <div className="flex flex-col gap-2">
+              {[
+                "24시간 운영 — 새벽 시간대는 동네 주민을 위해 정숙 부탁드립니다",
+                "주차는 인근 공영주차장을 이용해 주세요 (도보 5분)",
+                "오후 시간대 이용을 추천드립니다",
+              ].map((n) => (
+                <div key={n} style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
+                  <span style={{ color: "#B5632A", flexShrink: 0, fontSize: "12px" }}>—</span>
+                  <span className="text-xs" style={{ color: "#6B4C3B" }}>{n}</span>
+                </div>
+              ))}
+            </div>
+          </div>
           <p className="text-xs mb-6" style={{ color: "#9B7B6A" }}>
             카카오채널 직예약 시 더 저렴하게 이용하실 수 있습니다
           </p>
