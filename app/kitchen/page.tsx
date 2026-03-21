@@ -13,14 +13,14 @@ const KAKAO_URL = "https://pf.kakao.com/_VCxnsb";
 
 const spaceInfo = [
   { icon: MapPin,  label: "위치",   value: "서동로91번길 7, 1층" },
-  { icon: Users,   label: "수용인원", value: "최대 10인" },
-  { icon: Clock,   label: "운영시간", value: "09:00 — 22:00" },
+  { icon: Users,   label: "수용인원", value: "최대 8인" },
+  { icon: Clock,   label: "운영시간", value: "24시간" },
   { icon: Timer,   label: "최소예약", value: "3시간" },
 ];
 
 const equipment = [
   "인덕션 · 부탄버너",
-  "전자레인지 · 전기포트 · 정수기",
+  "전자레인지 · 전기포트",
   "후라이팬 · 냄비 · 칼 · 도마",
   "집게 · 가위 · 국자 · 주걱 · 뒤집개",
   "감자칼 · 채반 · 스파츌러 · 조리용 젓가락",
@@ -78,18 +78,31 @@ export default function KitchenPage() {
             부산 금정구 서동의 프라이빗 공유주방.<br />
             요리하고, 먹고, 어울리는 시간.
           </p>
-          <div className="flex flex-wrap items-center gap-4 mb-4">
-            <p
-              className="text-sm font-bold"
-              style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}
-            >
-              ★ 5.0 — 리뷰 31개
-            </p>
-            <span style={{ color: "rgba(196, 168, 130, 0.5)" }}>|</span>
-            <p className="text-xs" style={{ color: "#9B7B6A" }}>
-              카카오채널로 예약 시 더 저렴하게 이용하실 수 있습니다
-            </p>
+          <p
+            className="text-sm font-bold mb-4"
+            style={{ color: "#B5632A", fontFamily: "'Noto Serif KR', serif" }}
+          >
+            ★ 5.0 — 리뷰 31개
+          </p>
+          <div
+            className="rounded-xl p-4 mb-5"
+            style={{ backgroundColor: "#F0E8D5", border: "1px solid rgba(196, 168, 130, 0.4)", maxWidth: "480px" }}
+          >
+            <div className="flex flex-col gap-2">
+              {[
+                "24시간 운영 — 무인 공간입니다",
+                "새벽 시간대는 동네 주민을 위해 정숙 부탁드립니다",
+              ].map((n) => (
+                <div key={n} style={{ display: "flex", alignItems: "flex-start", gap: "8px" }}>
+                  <span style={{ color: "#B5632A", flexShrink: 0, fontSize: "12px" }}>—</span>
+                  <span className="text-xs" style={{ color: "#6B4C3B" }}>{n}</span>
+                </div>
+              ))}
+            </div>
           </div>
+          <p className="text-xs mb-4" style={{ color: "#9B7B6A" }}>
+            카카오채널로 예약 시 더 저렴하게 이용하실 수 있습니다
+          </p>
           <a
             href={KAKAO_URL}
             target="_blank"
