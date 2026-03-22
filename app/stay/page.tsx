@@ -41,7 +41,7 @@ const rooms = [
     highlight: "드래곤볼·귀멸의칼날 · LP 턴테이블 · 그림북·색연필",
     airbnb: "https://www.airbnb.co.kr/rooms/699514631888252996",
     note: "커플에게 추천",
-    image: "/images/stay/그림의방.JPG",
+    image: "/images/stay/geurim.jpg",
   },
   {
     no: "三",
