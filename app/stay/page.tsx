@@ -243,20 +243,31 @@ export default function StayPage() {
                   </div>
 
                   {/* 이미지 */}
-                  <div
-                    className="min-h-[280px] lg:min-h-[360px] relative overflow-hidden"
-                  >
-                    <img
-                      src={room.image}
-                      alt={room.name}
-                      style={{
-                        position: "absolute",
-                        inset: 0,
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                      }}
-                    />
+                  <div className="relative">
+                    <div className="min-h-[280px] lg:min-h-[360px] relative overflow-hidden">
+                      <img
+                        src={room.image}
+                        alt={room.name}
+                        style={{
+                          position: "absolute",
+                          inset: 0,
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
+                    <div className="p-4" style={{ borderTop: "1px solid rgba(196, 168, 130, 0.2)" }}>
+                      <a
+                        href={room.airbnb}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1 text-xs"
+                        style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                      >
+                        사진 더보기 <ArrowRight size={11} />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>

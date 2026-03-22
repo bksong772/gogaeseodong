@@ -152,18 +152,31 @@ export default function MoviePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
             {/* 이미지 */}
-            <div className="card min-h-[400px] relative overflow-hidden">
-              <img
-                src="/images/movie/서동영화.JPG"
-                alt="서동영화"
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
-              />
+            <div className="card overflow-hidden">
+              <div className="min-h-[400px] relative overflow-hidden">
+                <img
+                  src="/images/movie/서동영화.JPG"
+                  alt="서동영화"
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+              <div className="p-4" style={{ borderTop: "1px solid rgba(196, 168, 130, 0.2)" }}>
+                <a
+                  href="https://naver.me/xIer2BEQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs"
+                  style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                >
+                  사진 더보기 <ArrowRight size={11} />
+                </a>
+              </div>
             </div>
 
             {/* 공간 정보 */}
