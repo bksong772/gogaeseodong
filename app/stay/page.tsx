@@ -27,6 +27,8 @@ const rooms = [
     features: ["독채 3층", "최대 3인", "TV 없음", "안락의자·책상"],
     highlight: "책상·스탠드 조명 · 안락의자 · 블루투스 스피커",
     airbnb: "https://www.airbnb.co.kr/rooms/699514631888252996",
+    rating: "4.92",
+    reviews: "79",
     note: "조용한 하룻밤을 원한다면",
     image: "/images/stay/필사의방.JPG",
   },
@@ -40,6 +42,8 @@ const rooms = [
     features: ["독채 4층", "최대 4인", "빔프로젝터", "LP 턴테이블", "그림북·색연필"],
     highlight: "드래곤볼·귀멸의칼날 · LP 턴테이블 · 그림북·색연필",
     airbnb: "https://www.airbnb.co.kr/rooms/746091488451213213",
+    rating: "4.76",
+    reviews: "58",
     note: "커플에게 추천",
     image: "/images/stay/geurim.jpg",
   },
@@ -53,7 +57,9 @@ const rooms = [
     features: ["독채 2층", "최대 4인", "빔프로젝터", "원피스 97권", "빈백소파"],
     highlight: "원피스 97권 전권 · 빔프로젝터 · 에피하임 빈백소파",
     airbnb: "https://www.airbnb.co.kr/rooms/997241625179311794",
-    note: "★ 4.65 · 에어비앤비 리뷰 26개",
+    rating: "4.67",
+    reviews: "27",
+    note: "가족 여행에 추천",
     image: "/images/stay/취향의방.jpg",
   },
 ];
@@ -165,11 +171,26 @@ export default function StayPage() {
                       {room.en}
                     </p>
                     <p
-                      className="text-xs mb-5"
+                      className="text-xs mb-3"
                       style={{ color: "#C4A882" }}
                     >
                       {room.addr}
                     </p>
+                    <div className="flex items-center gap-2 mb-5">
+                      <span
+                        style={{
+                          fontFamily: "'Noto Serif KR', serif",
+                          fontSize: "14px",
+                          fontWeight: 700,
+                          color: "#B5632A",
+                        }}
+                      >
+                        ★ {room.rating}
+                      </span>
+                      <span style={{ fontSize: "12px", color: "#9B7B6A" }}>
+                        · 에어비앤비 후기 {room.reviews}개
+                      </span>
+                    </div>
                     <p
                       className="text-sm leading-relaxed mb-5"
                       style={{ color: "#6B4C3B" }}

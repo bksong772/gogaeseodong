@@ -48,8 +48,8 @@ const spaces = [
 
 const stats = [
   { label: "운영 중인 공간", value: "5",   unit: "개",  note: "여관 3개 방 · 부엌 · 영화" },
-  { label: "서동여관 평점",  value: "4.7", unit: "★",   note: "에어비앤비 방문객 평균" },
-  { label: "서동부엌 평점",  value: "5.0", unit: "★",   note: "스페이스클라우드 리뷰 31개" },
+  { label: "서동여관 평점",  value: "4.82", unit: "★",   note: "에어비앤비 후기 164개" },
+  { label: "서동부엌 평점",  value: "5.0", unit: "★",   note: "네이버 리뷰 31개" },
 ];
 
 const manifesto = [
@@ -569,10 +569,10 @@ export default function HomePage() {
                     color: "#B5632A",
                   }}
                 >
-                  ★ 4.7
+                  ★ 4.82
                 </p>
                 <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>
-                  에어비앤비 평균
+                  서동여관 · 에어비앤비 후기 164개
                 </p>
               </div>
               <div
@@ -595,7 +595,7 @@ export default function HomePage() {
                   ★ 5.0
                 </p>
                 <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>
-                  스페이스클라우드 리뷰 31개
+                  서동부엌 · 네이버 리뷰 31개
                 </p>
               </div>
             </div>
@@ -610,13 +610,13 @@ export default function HomePage() {
                 에어비앤비 후기 보기
               </a>
               <a
-                href="https://www.spacecloud.kr/space/37505"
+                href="https://naver.me/5Qi5a4za"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary"
                 style={{ fontSize: "13px" }}
               >
-                스페이스클라우드 후기
+                네이버 후기 보기
               </a>
             </div>
           </div>
