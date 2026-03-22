@@ -208,7 +208,7 @@ export default function KitchenPage() {
                   className="btn-primary inline-flex items-center gap-2"
                 >
                   <MessageCircle size={15} />
-                  카카오로 예약하기 (계좌이체 할인)
+                  카카오로 예약하기
                 </a>
                 <a
                   href="https://naver.me/5Qi5a4za"
