@@ -25,6 +25,7 @@ const foodSpots = [
       { name: "팔도족발", desc: "동네에서 가장 인기 많은 족발집. 반반족발 최애. 저녁 9시 이후에는 족발이 없는 경우 많으니 일찍 가세요.", mapUrl: "https://naver.me/GdyGTaeL" },
       { name: "일단마포", desc: "친한 동생이 운영하는 가게. 얇은 고기 좋아하시는 분께 딱. 가성비 끝판왕. 츄릅켠 유튜브 출연.", mapUrl: "https://naver.me/FmGbs8MQ" },
       { name: "동키치킨 서동점", desc: "맛있을 때는 진짜 맛있는 옛날 통닭. 들쑥날쑥한 편이라 기대치 조절 추천. 후라이드 위주로 시키세요.", mapUrl: "https://naver.me/GDQeh70O" },
+      { name: "막썰어횟집", desc: "동네 사람들이 가장 많이 찾는 서동 횟집. 그냥 무난무난하게 맛있는 집.", mapUrl: "https://naver.me/FTXIStzM" },
     ],
   },
   {
@@ -43,7 +44,7 @@ const foodSpots = [
     emoji: "🍶",
     hostNote: "이 동네 술자리는 소박합니다. 그게 이 동네 분위기예요.",
     items: [
-      { name: "일차로", desc: "진짜 레트로. 40~50대 단골 가득한 찐 옛날 술집. 안주 1~3인 총 15,000원·추가 1인 5,000원. 소주·맥주 3,000원.", mapUrl: "https://naver.me/58qg86Bv" },
+      { name: "일차로", desc: "진짜 레트로. 40~50대 단골 가득한 찐 옛날 술집. 안주 1~3인 총 15,000원·추가 1인 5,000원. 소주·맥주 4,000원.", mapUrl: "https://naver.me/58qg86Bv" },
       { name: "단미포차", desc: "레트로 분위기는 아니지만 맛있는 포차. 편하게 마시기 좋음.", mapUrl: "https://naver.me/FdqjKP58" },
       { name: "정가네선지국밥", desc: "선지국밥·우동이 맛있고 소주 한잔하기 딱. 새벽 4시까지 운영.", mapUrl: "https://naver.me/5h19VutU" },
       { name: "할매회무침", desc: "요즘 뜨는 서동 가성비 맛집. 부산 가성비 맛집 10위 안에 꼽히기도 하는 집. 정가네선지국밥 주변.", mapUrl: "https://naver.me/GOhjHSFn", youtubeUrl: "https://youtu.be/-iU7rqVp51o?si=38Rd5beUiHfegquE&t=663" },
@@ -54,7 +55,7 @@ const foodSpots = [
 const outsideSpots = [
   { name: "칼맛나는횟집", desc: "주인장의 넘사벽 픽. 부산대 근처 (29번 버스 10분). 모듬회 필수. 대기가 워낙 많아 오후 6시 이전에 가야 함.", emoji: "🐟", mapUrl: "https://naver.me/FG7xnTlC" },
   { name: "컬리반스 피자", desc: "도우가 진짜 맛있음. 부산대 위치.", emoji: "🍕", mapUrl: "https://naver.me/5FmwPxZ4" },
-  { name: "수수하지만 굉장해", desc: "돈까스 체인인데 진짜 맛있음. 부산대 위치.", emoji: "🍱", mapUrl: "https://naver.me/xv3DahEu" },
+  { name: "오시게크래프트", desc: "모모스커피 바로 옆에 있는 수제맥주집. 딱 한 잔 하기 좋은 분위기. 맛도 괜찮음.", emoji: "🍺", mapUrl: "https://naver.me/x0UEIyYd" },
 ];
 
 const cafeSpots = [
