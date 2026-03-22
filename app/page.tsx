@@ -49,7 +49,8 @@ const spaces = [
 const stats = [
   { label: "운영 중인 공간", value: "5",   unit: "개",  note: "여관 3개 방 · 부엌 · 영화" },
   { label: "서동여관 평점",  value: "4.82", unit: "★",   note: "에어비앤비 후기 164개" },
-  { label: "서동부엌 평점",  value: "5.0", unit: "★",   note: "네이버 리뷰 31개" },
+  { label: "서동부엌 평점",  value: "5.0",  unit: "★",   note: "스페이스클라우드 리뷰 31개" },
+  { label: "서동영화 평점",  value: "4.75", unit: "★",   note: "스페이스클라우드 리뷰 16개" },
 ];
 
 const manifesto = [
@@ -213,7 +214,7 @@ export default function HomePage() {
       {/* ── 통계 스트립 ───────────────────────────────────── */}
       <section style={{ backgroundColor: "#2C1810" }}>
         <div className="max-w-6xl mx-auto px-6 sm:px-8">
-          <div className="grid grid-cols-3 divide-x divide-white/10">
+          <div className="grid grid-cols-2 sm:grid-cols-4 divide-x divide-white/10">
             {stats.map((s) => (
               <div key={s.label} className="py-10 px-6 text-center">
                 <p
@@ -595,7 +596,30 @@ export default function HomePage() {
                   ★ 5.0
                 </p>
                 <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>
-                  서동부엌 · 네이버 리뷰 31개
+                  서동부엌 · 스페이스클라우드 31개
+                </p>
+              </div>
+              <div
+                style={{
+                  width: "1px",
+                  height: "40px",
+                  backgroundColor: "rgba(196,168,130,0.5)",
+                  alignSelf: "center",
+                }}
+              />
+              <div className="text-center">
+                <p
+                  style={{
+                    fontFamily: "'Noto Serif KR', serif",
+                    fontSize: "22px",
+                    fontWeight: 700,
+                    color: "#B5632A",
+                  }}
+                >
+                  ★ 4.75
+                </p>
+                <p className="text-xs mt-1" style={{ color: "#9B7B6A" }}>
+                  서동영화 · 스페이스클라우드 16개
                 </p>
               </div>
             </div>
