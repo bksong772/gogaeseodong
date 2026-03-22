@@ -405,7 +405,6 @@ export default function HomePage() {
                     lineHeight: 1.8,
                   }}
                 >
-                  <span style={{ color: "#D4884E", fontWeight: 600 }}>주인장 직접 응대 —</span>{" "}
                   체크인 안내부터 동네 맛집·카페 정보까지,
                   예약 후 개인 메시지로 꼼꼼히 챙겨드립니다.
                 </p>
