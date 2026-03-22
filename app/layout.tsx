@@ -52,6 +52,18 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        {/* Google Analytics */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-SW7DC2BWF4" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-SW7DC2BWF4');
+            `,
+          }}
+        />
         {/* 나눔명조 + Noto Sans KR - CDN으로 로드 (서버 시작 안 막음) */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
