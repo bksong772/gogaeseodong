@@ -231,13 +231,13 @@ export default function MoviePage() {
                   카카오로 예약하기 (계좌이체 할인)
                 </a>
                 <a
-                  href="https://www.spacecloud.kr/space/40932"
+                  href="https://naver.me/xIer2BEQ"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs inline-flex items-center gap-1"
                   style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
                 >
-                  스페이스클라우드 예약 <ArrowRight size={11} />
+                  네이버로 예약 <ArrowRight size={11} />
                 </a>
               </div>
             </div>

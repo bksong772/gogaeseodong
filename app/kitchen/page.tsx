@@ -210,21 +210,15 @@ export default function KitchenPage() {
                   <MessageCircle size={15} />
                   카카오로 예약하기 (계좌이체 할인)
                 </a>
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href="https://www.spacecloud.kr/space/37505"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xs inline-flex items-center gap-1"
-                    style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
-                  >
-                    스페이스클라우드 예약 <ArrowRight size={11} />
-                  </a>
-                  <span style={{ color: "rgba(196, 168, 130, 0.5)", fontSize: "10px" }}>|</span>
-                  <span className="text-xs" style={{ color: "#9B7B6A" }}>
-                    네이버 예약도 가능합니다
-                  </span>
-                </div>
+                <a
+                  href="https://naver.me/5Qi5a4za"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs inline-flex items-center gap-1"
+                  style={{ color: "#9B7B6A", textDecoration: "underline", textUnderlineOffset: "3px" }}
+                >
+                  네이버로 예약 <ArrowRight size={11} />
+                </a>
               </div>
             </div>
           </div>
